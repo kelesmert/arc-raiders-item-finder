@@ -21,7 +21,9 @@
                          },
         "salvagesInto":  {
                              "plastic_parts":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "combat_mk2",
@@ -45,7 +47,9 @@
                          },
         "salvagesInto":  {
                              "electrical_components":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "combat_mk3_aggressive",
@@ -69,7 +73,9 @@
                          },
         "salvagesInto":  {
                              "electrical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "combat_mk3_flanking",
@@ -93,7 +99,9 @@
                          },
         "salvagesInto":  {
                              "electrical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "free_loadout_augment",
@@ -109,7 +117,9 @@
         "craftBench":  null,
         "recipe":  null,
         "recyclesInto":  null,
-        "salvagesInto":  null
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "looting_mk1",
@@ -136,7 +146,9 @@
                          },
         "salvagesInto":  {
                              "plastic_parts":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "looting_mk2",
@@ -160,7 +172,9 @@
                          },
         "salvagesInto":  {
                              "electrical_components":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "looting_mk3_cautious",
@@ -184,7 +198,9 @@
                          },
         "salvagesInto":  {
                              "electrical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "looting_mk3_safekeeper",
@@ -208,7 +224,9 @@
                          },
         "salvagesInto":  {
                              "electrical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "looting_mk3_survivor",
@@ -232,7 +250,9 @@
                          },
         "salvagesInto":  {
                              "electrical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "tactical_mk1",
@@ -256,7 +276,9 @@
                          },
         "salvagesInto":  {
                              "plastic_parts":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "tactical_mk2",
@@ -280,7 +302,9 @@
                          },
         "salvagesInto":  {
                              "electrical_components":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "tactical_mk3_defensive",
@@ -304,7 +328,9 @@
                          },
         "salvagesInto":  {
                              "electrical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "tactical_mk3_healing",
@@ -328,7 +354,9 @@
                          },
         "salvagesInto":  {
                              "electrical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "tactical_mk3_revival",
@@ -350,7 +378,9 @@
                              "advanced_electrical_components":  1,
                              "processor":  1
                          },
-        "salvagesInto":  null
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "chemicals",
@@ -366,7 +396,9 @@
         "craftBench":  null,
         "recipe":  null,
         "recyclesInto":  null,
-        "salvagesInto":  null
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "fabric",
@@ -384,7 +416,9 @@
         "recyclesInto":  {
 
                          },
-        "salvagesInto":  null
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "metal_parts",
@@ -402,7 +436,9 @@
         "recyclesInto":  {
 
                          },
-        "salvagesInto":  null
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "plastic_parts",
@@ -420,7 +456,9 @@
         "recyclesInto":  {
 
                          },
-        "salvagesInto":  null
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "rubber_parts",
@@ -438,7 +476,9 @@
         "recyclesInto":  {
 
                          },
-        "salvagesInto":  null
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "acoustic_guitar",
@@ -459,7 +499,9 @@
                          },
         "salvagesInto":  {
                              "wires":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "adrenaline_shot",
@@ -483,7 +525,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "bandage",
@@ -508,7 +552,9 @@
                          },
         "salvagesInto":  {
                              "fabric":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "barricade_kit",
@@ -530,7 +576,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "binoculars",
@@ -554,7 +602,9 @@
                          },
         "salvagesInto":  {
                              "plastic_parts":  4
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "blaze_grenade",
@@ -578,7 +628,9 @@
                          },
         "salvagesInto":  {
                              "oil":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "blaze_grenade_trap",
@@ -597,7 +649,9 @@
                        "wires":  1
                    },
         "recyclesInto":  null,
-        "salvagesInto":  null
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "blue_light_stick",
@@ -619,7 +673,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "deadline",
@@ -643,7 +699,9 @@
                          },
         "salvagesInto":  {
                              "explosive_compound":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "defibrillator",
@@ -667,7 +725,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "door_blocker",
@@ -690,7 +750,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "explosive_mine",
@@ -714,7 +776,9 @@
                          },
         "salvagesInto":  {
                              "oil":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "firecracker",
@@ -737,7 +801,9 @@
                          },
         "salvagesInto":  {
                              "plastic_parts":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "fireworks_box",
@@ -760,7 +826,9 @@
                          },
         "salvagesInto":  {
                              "explosive_compound":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "flame_spray",
@@ -784,7 +852,9 @@
                          },
         "salvagesInto":  {
                              "fireball_burner":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "fruit_mix",
@@ -804,7 +874,9 @@
                        "prickly_pear":  1
                    },
         "recyclesInto":  null,
-        "salvagesInto":  null
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "gas_grenade",
@@ -828,7 +900,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "gas_grenade_trap",
@@ -847,7 +921,9 @@
                        "wires":  1
                    },
         "recyclesInto":  null,
-        "salvagesInto":  null
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "gas_mine",
@@ -871,7 +947,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "green_light_stick",
@@ -893,7 +971,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "heavy_fuze_grenade",
@@ -917,7 +997,9 @@
                          },
         "salvagesInto":  {
                              "crude_explosives":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "herbal_bandage",
@@ -941,7 +1023,9 @@
                          },
         "salvagesInto":  {
                              "fabric":  8
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "jolt_mine",
@@ -965,7 +1049,9 @@
                          },
         "salvagesInto":  {
                              "battery":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "light_impact_grenade",
@@ -992,7 +1078,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "lil_smoke_grenade",
@@ -1016,7 +1104,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "lure_grenade",
@@ -1039,7 +1129,9 @@
                          },
         "salvagesInto":  {
                              "speaker_component":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "lure_grenade_trap",
@@ -1058,7 +1150,9 @@
                        "wires":  1
                    },
         "recyclesInto":  null,
-        "salvagesInto":  null
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "noisemaker",
@@ -1081,7 +1175,9 @@
                          },
         "salvagesInto":  {
                              "speaker_component":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "photoelectric_cloak",
@@ -1105,7 +1201,9 @@
                          },
         "salvagesInto":  {
                              "advanced_electrical_components":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "pulse_mine",
@@ -1128,7 +1226,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "recorder",
@@ -1148,7 +1248,9 @@
                          },
         "salvagesInto":  {
                              "plastic_parts":  4
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "red_light_stick",
@@ -1170,7 +1272,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "remote_raider_flare",
@@ -1194,7 +1298,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "seeker_grenade",
@@ -1217,7 +1323,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "shaker",
@@ -1237,7 +1345,9 @@
                          },
         "salvagesInto":  {
                              "plastic_parts":  4
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "shield_recharger",
@@ -1264,7 +1374,9 @@
                          },
         "salvagesInto":  {
                              "rubber_parts":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "showstopper",
@@ -1288,7 +1400,9 @@
                          },
         "salvagesInto":  {
                              "battery":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "shrapnel_grenade",
@@ -1312,7 +1426,9 @@
                          },
         "salvagesInto":  {
                              "crude_explosives":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "smoke_grenade",
@@ -1336,7 +1452,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "smoke_grenade_trap",
@@ -1355,7 +1473,9 @@
                        "wires":  1
                    },
         "recyclesInto":  null,
-        "salvagesInto":  null
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "snap_blast_grenade",
@@ -1379,7 +1499,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "snap_hook",
@@ -1404,7 +1526,9 @@
                          },
         "salvagesInto":  {
                              "advanced_electrical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "snowball",
@@ -1422,7 +1546,9 @@
         "recyclesInto":  {
 
                          },
-        "salvagesInto":  null
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "sterilized_bandage",
@@ -1446,7 +1572,9 @@
                          },
         "salvagesInto":  {
                              "durable_cloth":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "surge_shield_recharger",
@@ -1469,7 +1597,9 @@
                          },
         "salvagesInto":  {
                              "plastic_parts":  5
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "tagging_grenade",
@@ -1493,7 +1623,9 @@
                          },
         "salvagesInto":  {
                              "sensors":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "trailblazer",
@@ -1516,7 +1648,9 @@
                          },
         "salvagesInto":  {
                              "crude_explosives":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "trigger_nade",
@@ -1540,7 +1674,9 @@
                          },
         "salvagesInto":  {
                              "processor":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "vita_shot",
@@ -1564,7 +1700,9 @@
                          },
         "salvagesInto":  {
                              "syringe":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "vita_spray",
@@ -1588,7 +1726,9 @@
                          },
         "salvagesInto":  {
                              "antiseptic":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "wolfpack",
@@ -1612,7 +1752,9 @@
                          },
         "salvagesInto":  {
                              "explosive_compound":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "yellow_light_stick",
@@ -1634,7 +1776,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "zipline",
@@ -1658,7 +1802,9 @@
                          },
         "salvagesInto":  {
                              "rope":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "alarm_clock",
@@ -1679,7 +1825,9 @@
                          },
         "salvagesInto":  {
                              "processor":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "arc_coolant",
@@ -1699,7 +1847,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  9
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "arc_flex_rubber",
@@ -1719,7 +1869,9 @@
                          },
         "salvagesInto":  {
                              "rubber_parts":  9
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "arc_performance_steel",
@@ -1739,7 +1891,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  7
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "arc_synthetic_resin",
@@ -1759,7 +1913,9 @@
                          },
         "salvagesInto":  {
                              "plastic_parts":  9
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "arc_thermo_lining",
@@ -1779,7 +1935,9 @@
                          },
         "salvagesInto":  {
                              "fabric":  9
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "bastion_cell",
@@ -1800,7 +1958,9 @@
                          },
         "salvagesInto":  {
                              "advanced_mechanical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "bicycle_pump",
@@ -1821,7 +1981,9 @@
                          },
         "salvagesInto":  {
                              "canister":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "bombardier_cell",
@@ -1840,7 +2002,9 @@
                              "advanced_mechanical_components":  2,
                              "arc_alloy":  2
                          },
-        "salvagesInto":  null
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "broken_flashlight",
@@ -1861,7 +2025,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  7
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "broken_guidance_system",
@@ -1881,7 +2047,9 @@
                          },
         "salvagesInto":  {
                              "processor":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "broken_handheld_radio",
@@ -1902,7 +2070,9 @@
                          },
         "salvagesInto":  {
                              "sensors":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "broken_taser",
@@ -1923,7 +2093,9 @@
                          },
         "salvagesInto":  {
                              "battery":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "burned_arc_circuitry",
@@ -1943,7 +2115,9 @@
                          },
         "salvagesInto":  {
                              "arc_alloy":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "camera_lens",
@@ -1963,7 +2137,9 @@
                          },
         "salvagesInto":  {
                              "plastic_parts":  4
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "candle_holder",
@@ -1983,7 +2159,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  4
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "coolant",
@@ -2004,7 +2182,9 @@
                          },
         "salvagesInto":  {
                              "oil":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "cooling_coil",
@@ -2025,7 +2205,9 @@
                          },
         "salvagesInto":  {
                              "steel_spring":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "cooling_fan",
@@ -2046,7 +2228,9 @@
                          },
         "salvagesInto":  {
                              "wires":  4
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "cracked_bioscanner",
@@ -2067,7 +2251,9 @@
                          },
         "salvagesInto":  {
                              "battery":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "crumpled_plastic_bottle",
@@ -2087,7 +2273,9 @@
                          },
         "salvagesInto":  {
                              "plastic_parts":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "damaged_arc_motion_core",
@@ -2107,7 +2295,9 @@
                          },
         "salvagesInto":  {
                              "arc_alloy":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "damaged_arc_powercell",
@@ -2127,7 +2317,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "damaged_fireball_burner",
@@ -2147,7 +2339,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "damaged_heat_sink",
@@ -2168,7 +2362,9 @@
                          },
         "salvagesInto":  {
                              "wires":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "damaged_hornet_driver",
@@ -2188,7 +2384,9 @@
                          },
         "salvagesInto":  {
                              "arc_alloy":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "damaged_rocketeer_driver",
@@ -2208,7 +2406,9 @@
                          },
         "salvagesInto":  {
                              "arc_alloy":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "damaged_snitch_scanner",
@@ -2224,7 +2424,9 @@
         "craftBench":  null,
         "recipe":  null,
         "recyclesInto":  null,
-        "salvagesInto":  null
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "damaged_tick_pod",
@@ -2244,7 +2446,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "damaged_wasp_driver",
@@ -2264,7 +2468,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "deflated_football",
@@ -2285,7 +2491,9 @@
                          },
         "salvagesInto":  {
                              "rubber_parts":  9
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "degraded_arc_rubber",
@@ -2305,7 +2513,9 @@
                          },
         "salvagesInto":  {
                              "rubber_parts":  5
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "diving_goggles",
@@ -2325,7 +2535,9 @@
                          },
         "salvagesInto":  {
                              "rubber_parts":  5
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "dog_collar",
@@ -2346,7 +2558,9 @@
                          },
         "salvagesInto":  {
                              "fabric":  5
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "dried_out_arc_resin",
@@ -2366,7 +2580,9 @@
                          },
         "salvagesInto":  {
                              "plastic_parts":  4
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "expired_respirator",
@@ -2387,7 +2603,9 @@
                          },
         "salvagesInto":  {
                              "rubber_parts":  5
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "fireball_burner",
@@ -2408,7 +2626,9 @@
                          },
         "salvagesInto":  {
                              "arc_alloy":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "flow_controller",
@@ -2429,7 +2649,9 @@
                          },
         "salvagesInto":  {
                              "mechanical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "frequency_modulation_box",
@@ -2450,7 +2672,9 @@
                          },
         "salvagesInto":  {
                              "electrical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "fried_motherboard",
@@ -2471,7 +2695,9 @@
                          },
         "salvagesInto":  {
                              "wires":  5
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "frying_pan",
@@ -2491,7 +2717,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  4
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "garlic_press",
@@ -2511,7 +2739,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  7
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "geiger_counter",
@@ -2532,7 +2762,9 @@
                          },
         "salvagesInto":  {
                              "battery":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "headphones",
@@ -2553,7 +2785,9 @@
                          },
         "salvagesInto":  {
                              "speaker_component":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "hornet_driver",
@@ -2574,7 +2808,9 @@
                          },
         "salvagesInto":  {
                              "electrical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "household_cleaner",
@@ -2594,7 +2830,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  5
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "humidifier",
@@ -2615,7 +2853,9 @@
                          },
         "salvagesInto":  {
                              "canister":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "ice_cream_scooper",
@@ -2635,7 +2875,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "impure_arc_coolant",
@@ -2655,7 +2897,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  5
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "industrial_battery",
@@ -2676,7 +2920,9 @@
                          },
         "salvagesInto":  {
                              "battery":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "industrial_charger",
@@ -2697,7 +2943,9 @@
                          },
         "salvagesInto":  {
                              "voltage_converter":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "industrial_magnet",
@@ -2718,7 +2966,9 @@
                          },
         "salvagesInto":  {
                              "magnet":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "ion_sputter",
@@ -2739,7 +2989,9 @@
                          },
         "salvagesInto":  {
                              "exodus_modules":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "laboratory_reagents",
@@ -2760,7 +3012,9 @@
                          },
         "salvagesInto":  {
                              "crude_explosives":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "leaper_pulse_unit",
@@ -2781,7 +3035,9 @@
                          },
         "salvagesInto":  {
                              "mechanical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "magnetron",
@@ -2802,7 +3058,9 @@
                          },
         "salvagesInto":  {
                              "advanced_mechanical_components":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "matriarch_reactor",
@@ -2823,7 +3081,9 @@
                          },
         "salvagesInto":  {
                              "power_rod":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "metal_brackets",
@@ -2843,7 +3103,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  4
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "microscope",
@@ -2864,7 +3126,9 @@
                          },
         "salvagesInto":  {
                              "mechanical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "mini_centrifuge",
@@ -2885,7 +3149,9 @@
                          },
         "salvagesInto":  {
                              "mechanical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "motor",
@@ -2906,7 +3172,9 @@
                          },
         "salvagesInto":  {
                              "oil":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "number_plate",
@@ -2926,7 +3194,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "polluted_air_filter",
@@ -2947,7 +3217,9 @@
                          },
         "salvagesInto":  {
                              "oil":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "pop_trigger",
@@ -2968,7 +3240,9 @@
                          },
         "salvagesInto":  {
                              "crude_explosives":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "portable_tv",
@@ -2989,7 +3263,9 @@
                          },
         "salvagesInto":  {
                              "wires":  4
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "power_bank",
@@ -3010,7 +3286,9 @@
                          },
         "salvagesInto":  {
                              "battery":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "power_cable",
@@ -3030,7 +3308,9 @@
                          },
         "salvagesInto":  {
                              "wires":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "projector",
@@ -3051,7 +3331,9 @@
                          },
         "salvagesInto":  {
                              "processor":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "queen_reactor",
@@ -3072,7 +3354,9 @@
                          },
         "salvagesInto":  {
                              "power_rod":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "radio",
@@ -3093,7 +3377,9 @@
                          },
         "salvagesInto":  {
                              "speaker_component":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "radio_relay",
@@ -3114,7 +3400,9 @@
                          },
         "salvagesInto":  {
                              "sensors":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "remote_control",
@@ -3135,7 +3423,9 @@
                          },
         "salvagesInto":  {
                              "sensors":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "ripped_safety_vest",
@@ -3156,7 +3446,9 @@
                          },
         "salvagesInto":  {
                              "fabric":  8
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "rocket_thruster",
@@ -3177,7 +3469,9 @@
                          },
         "salvagesInto":  {
                              "synthesized_fuel":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "rocketeer_driver",
@@ -3198,7 +3492,9 @@
                          },
         "salvagesInto":  {
                              "arc_circuitry":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "rotary_encoder",
@@ -3219,7 +3515,9 @@
                          },
         "salvagesInto":  {
                              "processor":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "rubber_pad",
@@ -3239,7 +3537,9 @@
                          },
         "salvagesInto":  {
                              "rubber_parts":  9
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "ruined_accordion",
@@ -3260,7 +3560,9 @@
                          },
         "salvagesInto":  {
                              "rubber_parts":  13
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "ruined_augment",
@@ -3279,7 +3581,9 @@
                              "plastic_parts":  2,
                              "rubber_parts":  2
                          },
-        "salvagesInto":  null
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "ruined_baton",
@@ -3300,7 +3604,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  4
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "ruined_handcuffs",
@@ -3320,7 +3626,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  4
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "ruined_parachute",
@@ -3340,7 +3648,9 @@
                          },
         "salvagesInto":  {
                              "fabric":  5
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "ruined_riot_shield",
@@ -3361,7 +3671,9 @@
                          },
         "salvagesInto":  {
                              "plastic_parts":  10
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "ruined_tactical_vest",
@@ -3382,7 +3694,9 @@
                          },
         "salvagesInto":  {
                              "fabric":  5
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "rusted_bolts",
@@ -3402,7 +3716,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  4
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "rusted_gear",
@@ -3423,7 +3739,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  12
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "rusted_shut_medical_kit",
@@ -3444,7 +3762,9 @@
                          },
         "salvagesInto":  {
                              "syringe":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "rusted_tools",
@@ -3465,7 +3785,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  7
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "rusty_arc_steel",
@@ -3485,7 +3807,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "sample_cleaner",
@@ -3506,7 +3830,9 @@
                          },
         "salvagesInto":  {
                              "assorted_seeds":  12
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "sentinel_firing_core",
@@ -3527,7 +3853,9 @@
                          },
         "salvagesInto":  {
                              "mechanical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "shredder_gyro",
@@ -3548,7 +3876,9 @@
                          },
         "salvagesInto":  {
                              "mechanical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "signal_amplifier",
@@ -3569,7 +3899,9 @@
                          },
         "salvagesInto":  {
                              "voltage_converter":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "snitch_scanner",
@@ -3590,7 +3922,9 @@
                          },
         "salvagesInto":  {
                              "electrical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "spectrometer",
@@ -3611,7 +3945,9 @@
                          },
         "salvagesInto":  {
                              "electrical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "spectrum_analyzer",
@@ -3632,7 +3968,9 @@
                          },
         "salvagesInto":  {
                              "processor":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "spotter_relay",
@@ -3651,7 +3989,9 @@
                              "arc_alloy":  1,
                              "electrical_components":  2
                          },
-        "salvagesInto":  null
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "spring_cushion",
@@ -3672,7 +4012,9 @@
                          },
         "salvagesInto":  {
                              "steel_spring":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "surveyor_vault",
@@ -3693,7 +4035,9 @@
                          },
         "salvagesInto":  {
                              "mechanical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "tattered_arc_lining",
@@ -3713,7 +4057,9 @@
                          },
         "salvagesInto":  {
                              "fabric":  5
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "tattered_clothes",
@@ -3733,7 +4079,9 @@
                          },
         "salvagesInto":  {
                              "fabric":  5
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "telemetry_transceiver",
@@ -3754,7 +4102,9 @@
                          },
         "salvagesInto":  {
                              "electrical_components":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "thermostat",
@@ -3775,7 +4125,9 @@
                          },
         "salvagesInto":  {
                              "sensors":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "tick_pod",
@@ -3796,7 +4148,9 @@
                          },
         "salvagesInto":  {
                              "arc_alloy":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "toaster",
@@ -3817,7 +4171,9 @@
                          },
         "salvagesInto":  {
                              "wires":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "torn_blanket",
@@ -3837,7 +4193,9 @@
                          },
         "salvagesInto":  {
                              "fabric":  5
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "turbo_pump",
@@ -3858,7 +4216,9 @@
                          },
         "salvagesInto":  {
                              "steel_spring":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "unusable_weapon",
@@ -3879,7 +4239,9 @@
                          },
         "salvagesInto":  {
                              "simple_gun_parts":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "wasp_driver",
@@ -3900,7 +4262,9 @@
                          },
         "salvagesInto":  {
                              "electrical_components":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "water_filter",
@@ -3921,7 +4285,9 @@
                          },
         "salvagesInto":  {
                              "canister":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "water_pump",
@@ -3942,7 +4308,9 @@
                          },
         "salvagesInto":  {
                              "oil":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "advanced_electrical_components",
@@ -3966,7 +4334,9 @@
                          },
         "salvagesInto":  {
                              "electrical_components":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "advanced_mechanical_components",
@@ -3990,7 +4360,9 @@
                          },
         "salvagesInto":  {
                              "mechanical_components":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "antiseptic",
@@ -4013,7 +4385,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  5
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "crude_explosives",
@@ -4035,7 +4409,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "durable_cloth",
@@ -4057,7 +4433,9 @@
                          },
         "salvagesInto":  {
                              "fabric":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "electrical_components",
@@ -4081,7 +4459,9 @@
                          },
         "salvagesInto":  {
                              "plastic_parts":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "explosive_compound",
@@ -4104,7 +4484,9 @@
                          },
         "salvagesInto":  {
                              "crude_explosives":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "magnetic_accelerator",
@@ -4128,7 +4510,9 @@
                          },
         "salvagesInto":  {
                              "advanced_mechanical_components":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "mechanical_components",
@@ -4152,7 +4536,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  3
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "mod_components",
@@ -4176,7 +4562,9 @@
                          },
         "salvagesInto":  {
                              "mechanical_components":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "power_rod",
@@ -4200,7 +4588,9 @@
                          },
         "salvagesInto":  {
                              "advanced_electrical_components":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "heavy_shield",
@@ -4224,7 +4614,9 @@
                          },
         "salvagesInto":  {
                              "arc_alloy":  4
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "light_shield",
@@ -4250,7 +4642,9 @@
                          },
         "salvagesInto":  {
                              "arc_alloy":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "medium_shield",
@@ -4271,7 +4665,9 @@
         "recyclesInto":  {
                              "arc_circuitry":  1
                          },
-        "salvagesInto":  null
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "advanced_arc_powercell",
@@ -4291,7 +4687,9 @@
                          },
         "salvagesInto":  {
                              "arc_powercell":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "arc_alloy",
@@ -4311,7 +4709,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "arc_circuitry",
@@ -4333,7 +4733,9 @@
                          },
         "salvagesInto":  {
                              "arc_alloy":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "arc_motion_core",
@@ -4355,7 +4757,9 @@
                          },
         "salvagesInto":  {
                              "arc_alloy":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "arc_powercell",
@@ -4373,7 +4777,9 @@
         "recyclesInto":  {
 
                          },
-        "salvagesInto":  null
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "battery",
@@ -4393,7 +4799,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "canister",
@@ -4413,7 +4821,9 @@
                          },
         "salvagesInto":  {
                              "plastic_parts":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "complex_gun_parts",
@@ -4437,7 +4847,9 @@
                          },
         "salvagesInto":  {
                              "simple_gun_parts":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "duct_tape",
@@ -4457,7 +4869,9 @@
                          },
         "salvagesInto":  {
                              "fabric":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "exodus_modules",
@@ -4478,7 +4892,9 @@
                          },
         "salvagesInto":  {
                              "processor":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "fossilized_lightning",
@@ -4498,7 +4914,9 @@
                          },
         "salvagesInto":  {
                              "explosive_compound":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "great_mullein",
@@ -4518,7 +4936,9 @@
                          },
         "salvagesInto":  {
                              "assorted_seeds":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "heavy_gun_parts",
@@ -4540,7 +4960,9 @@
                          },
         "salvagesInto":  {
                              "simple_gun_parts":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "light_gun_parts",
@@ -4562,7 +4984,9 @@
                          },
         "salvagesInto":  {
                              "simple_gun_parts":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "magnet",
@@ -4582,7 +5006,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "medium_gun_parts",
@@ -4604,7 +5030,9 @@
                          },
         "salvagesInto":  {
                              "simple_gun_parts":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "moss",
@@ -4624,7 +5052,9 @@
                          },
         "salvagesInto":  {
                              "assorted_seeds":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "oil",
@@ -4644,7 +5074,9 @@
                          },
         "salvagesInto":  {
                              "chemicals":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "processor",
@@ -4665,7 +5097,9 @@
                          },
         "salvagesInto":  {
                              "plastic_parts":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "rope",
@@ -4685,7 +5119,9 @@
                          },
         "salvagesInto":  {
                              "fabric":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "sensors",
@@ -4706,7 +5142,9 @@
                          },
         "salvagesInto":  {
                              "wires":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "simple_gun_parts",
@@ -4726,7 +5164,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "speaker_component",
@@ -4747,7 +5187,9 @@
                          },
         "salvagesInto":  {
                              "plastic_parts":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "steel_spring",
@@ -4767,7 +5209,9 @@
                          },
         "salvagesInto":  {
                              "metal_parts":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "synthesized_fuel",
@@ -4788,7 +5232,9 @@
                          },
         "salvagesInto":  {
                              "oil":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "syringe",
@@ -4809,7 +5255,9 @@
                          },
         "salvagesInto":  {
                              "plastic_parts":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "voltage_converter",
@@ -4830,7 +5278,9 @@
                          },
         "salvagesInto":  {
                              "rubber_parts":  2
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
     },
     {
         "id":  "wires",
@@ -4850,6 +5300,3038 @@
                          },
         "salvagesInto":  {
                              "rubber_parts":  1
-                         }
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "angled_grip_i",
+        "name":  {
+                     "en":  "Angled Grip I",
+                     "tr":  "Açılı Tutamaç I"
+                 },
+        "type":  "Modification",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  640,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "duct_tape":  1,
+                       "plastic_parts":  6
+                   },
+        "recyclesInto":  {
+                             "plastic_parts":  6
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  3
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "angled_grip_ii",
+        "name":  {
+                     "en":  "Angled Grip II",
+                     "tr":  "Açılı Tutamaç II"
+                 },
+        "type":  "Modification",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  2000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "duct_tape":  3,
+                       "mechanical_components":  2
+                   },
+        "recyclesInto":  {
+                             "duct_tape":  1,
+                             "mechanical_components":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  1
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "angled_grip_i"
+    },
+    {
+        "id":  "angled_grip_iii",
+        "name":  {
+                     "en":  "Angled Grip III",
+                     "tr":  "Açılı Tutamaç III"
+                 },
+        "type":  "Modification",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "duct_tape":  5,
+                       "mod_components":  2
+                   },
+        "recyclesInto":  {
+                             "duct_tape":  2,
+                             "mod_components":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "angled_grip_ii"
+    },
+    {
+        "id":  "anvil_i",
+        "name":  {
+                     "en":  "Anvil I",
+                     "tr":  "Örs I"
+                 },
+        "type":  "Hand Cannon",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "mechanical_components":  5,
+                       "simple_gun_parts":  6
+                   },
+        "recyclesInto":  {
+                             "mechanical_components":  2,
+                             "simple_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "anvil_ii",
+        "name":  {
+                     "en":  "Anvil II",
+                     "tr":  "Örs II"
+                 },
+        "type":  "Hand Cannon",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  7000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  3,
+                             "simple_gun_parts":  3
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  3
+                         },
+        "upgradeCost":  {
+                            "mechanical_components":  3,
+                            "simple_gun_parts":  1
+                        },
+        "upgradesFrom":  "anvil_i"
+    },
+    {
+        "id":  "anvil_iii",
+        "name":  {
+                     "en":  "Anvil III",
+                     "tr":  "Örs III"
+                 },
+        "type":  "Hand Cannon",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  10000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  4,
+                             "simple_gun_parts":  4
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  4
+                         },
+        "upgradeCost":  {
+                            "heavy_gun_parts":  1,
+                            "mechanical_components":  4
+                        },
+        "upgradesFrom":  "anvil_ii"
+    },
+    {
+        "id":  "anvil_iv",
+        "name":  {
+                     "en":  "Anvil IV",
+                     "tr":  "Örs IV"
+                 },
+        "type":  "Hand Cannon",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  13000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  5,
+                             "simple_gun_parts":  5
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  5
+                         },
+        "upgradeCost":  {
+                            "heavy_gun_parts":  1,
+                            "mechanical_components":  4
+                        },
+        "upgradesFrom":  "anvil_iii"
+    },
+    {
+        "id":  "anvil_splitter",
+        "name":  {
+                     "en":  "Anvil Splitter",
+                     "tr":  "Örs Bölücü"
+                 },
+        "type":  "Modification",
+        "rarity":  "Legendary",
+        "foundIn":  null,
+        "value":  7000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mod_components":  1,
+                             "processor":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "aphelion",
+        "name":  {
+                     "en":  "Aphelion",
+                     "tr":  "Aphelion"
+                 },
+        "type":  "Special",
+        "rarity":  "Legendary",
+        "foundIn":  null,
+        "value":  27500,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "complex_gun_parts":  3,
+                       "magnetic_accelerator":  3,
+                       "matriarch_reactor":  1
+                   },
+        "recyclesInto":  {
+                             "complex_gun_parts":  1,
+                             "magnetic_accelerator":  2
+                         },
+        "salvagesInto":  {
+                             "magnetic_accelerator":  1
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "arpeggio_i",
+        "name":  {
+                     "en":  "Arpeggio I",
+                     "tr":  "Arpeggio I"
+                 },
+        "type":  "Assault Rifle",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  5500,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "mechanical_components":  6,
+                       "simple_gun_parts":  6
+                   },
+        "recyclesInto":  {
+                             "mechanical_components":  2,
+                             "simple_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "arpeggio_ii",
+        "name":  {
+                     "en":  "Arpeggio II",
+                     "tr":  "Arpeggio II"
+                 },
+        "type":  "Assault Rifle",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  8000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  3,
+                             "simple_gun_parts":  3
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  3
+                         },
+        "upgradeCost":  {
+                            "mechanical_components":  4,
+                            "simple_gun_parts":  1
+                        },
+        "upgradesFrom":  "arpeggio_i"
+    },
+    {
+        "id":  "arpeggio_iii",
+        "name":  {
+                     "en":  "Arpeggio III",
+                     "tr":  "Arpeggio III"
+                 },
+        "type":  "Assault Rifle",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  11500,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  4,
+                             "simple_gun_parts":  4
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  4
+                         },
+        "upgradeCost":  {
+                            "mechanical_components":  5,
+                            "medium_gun_parts":  1
+                        },
+        "upgradesFrom":  "arpeggio_ii"
+    },
+    {
+        "id":  "arpeggio_iv",
+        "name":  {
+                     "en":  "Arpeggio IV",
+                     "tr":  "Arpeggio IV"
+                 },
+        "type":  "Assault Rifle",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  15000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  5,
+                             "simple_gun_parts":  5
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  5
+                         },
+        "upgradeCost":  {
+                            "mechanical_components":  5,
+                            "medium_gun_parts":  1
+                        },
+        "upgradesFrom":  "arpeggio_iii"
+    },
+    {
+        "id":  "bettina_i",
+        "name":  {
+                     "en":  "Bettina I",
+                     "tr":  "Bettina I"
+                 },
+        "type":  "Assault Rifle",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  8000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "advanced_mechanical_components":  3,
+                       "canister":  3,
+                       "heavy_gun_parts":  3
+                   },
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  1,
+                             "heavy_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "advanced_mechanical_components":  1
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "bettina_ii",
+        "name":  {
+                     "en":  "Bettina II",
+                     "tr":  "Bettina II"
+                 },
+        "type":  "Assault Rifle",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  11000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  2,
+                             "heavy_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "advanced_mechanical_components":  2
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  1,
+                            "heavy_gun_parts":  2
+                        },
+        "upgradesFrom":  "bettina_i"
+    },
+    {
+        "id":  "bettina_iii",
+        "name":  {
+                     "en":  "Bettina III",
+                     "tr":  "Bettina III"
+                 },
+        "type":  "Assault Rifle",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  14000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  2,
+                             "heavy_gun_parts":  3
+                         },
+        "salvagesInto":  {
+                             "advanced_mechanical_components":  3
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  1,
+                            "heavy_gun_parts":  2
+                        },
+        "upgradesFrom":  "bettina_ii"
+    },
+    {
+        "id":  "bettina_iv",
+        "name":  {
+                     "en":  "Bettina IV",
+                     "tr":  "Bettina IV"
+                 },
+        "type":  "Assault Rifle",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  17000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  3,
+                             "heavy_gun_parts":  3
+                         },
+        "salvagesInto":  {
+                             "advanced_mechanical_components":  4
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  2,
+                            "heavy_gun_parts":  2
+                        },
+        "upgradesFrom":  "bettina_iii"
+    },
+    {
+        "id":  "bobcat_i",
+        "name":  {
+                     "en":  "Bobcat I",
+                     "tr":  "Vaşak I"
+                 },
+        "type":  "SMG",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  13000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "exodus_modules":  2,
+                       "light_gun_parts":  3,
+                       "magnetic_accelerator":  1
+                   },
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  2,
+                             "light_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "light_gun_parts":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "bobcat_ii",
+        "name":  {
+                     "en":  "Bobcat II",
+                     "tr":  "Vaşak II"
+                 },
+        "type":  "SMG",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  17000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  3,
+                             "light_gun_parts":  3
+                         },
+        "salvagesInto":  {
+                             "light_gun_parts":  3
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  2,
+                            "light_gun_parts":  1
+                        },
+        "upgradesFrom":  "bobcat_i"
+    },
+    {
+        "id":  "bobcat_iii",
+        "name":  {
+                     "en":  "Bobcat III",
+                     "tr":  "Vaşak III"
+                 },
+        "type":  "SMG",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  22000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  4,
+                             "light_gun_parts":  4
+                         },
+        "salvagesInto":  {
+                             "light_gun_parts":  4
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  2,
+                            "light_gun_parts":  3
+                        },
+        "upgradesFrom":  "bobcat_ii"
+    },
+    {
+        "id":  "bobcat_iv",
+        "name":  {
+                     "en":  "Bobcat IV",
+                     "tr":  "Vaşak IV"
+                 },
+        "type":  "SMG",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  27000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  5,
+                             "light_gun_parts":  4
+                         },
+        "salvagesInto":  {
+                             "light_gun_parts":  5
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  2,
+                            "light_gun_parts":  3
+                        },
+        "upgradesFrom":  "bobcat_iii"
+    },
+    {
+        "id":  "burletta_i",
+        "name":  {
+                     "en":  "Burletta I",
+                     "tr":  "Burletta I"
+                 },
+        "type":  "Pistol",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  2900,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "mechanical_components":  3,
+                       "simple_gun_parts":  3
+                   },
+        "recyclesInto":  {
+                             "mechanical_components":  1,
+                             "simple_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "burletta_ii",
+        "name":  {
+                     "en":  "Burletta II",
+                     "tr":  "Burletta II"
+                 },
+        "type":  "Pistol",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  2,
+                             "simple_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  2
+                         },
+        "upgradeCost":  {
+                            "mechanical_components":  3,
+                            "simple_gun_parts":  1
+                        },
+        "upgradesFrom":  "burletta_i"
+    },
+    {
+        "id":  "burletta_iii",
+        "name":  {
+                     "en":  "Burletta III",
+                     "tr":  "Burletta III"
+                 },
+        "type":  "Pistol",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  7000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  3,
+                             "simple_gun_parts":  3
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  3
+                         },
+        "upgradeCost":  {
+                            "mechanical_components":  3,
+                            "simple_gun_parts":  1
+                        },
+        "upgradesFrom":  "burletta_ii"
+    },
+    {
+        "id":  "burletta_iv",
+        "name":  {
+                     "en":  "Burletta IV",
+                     "tr":  "Burletta IV"
+                 },
+        "type":  "Pistol",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  10000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  4,
+                             "simple_gun_parts":  4
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  3
+                         },
+        "upgradeCost":  {
+                            "light_gun_parts":  1,
+                            "mechanical_components":  4
+                        },
+        "upgradesFrom":  "burletta_iii"
+    },
+    {
+        "id":  "compensator_i",
+        "name":  {
+                     "en":  "Compensator I",
+                     "tr":  "Namlu Ağzı Baskısı I"
+                 },
+        "type":  "Modification",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  640,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "metal_parts":  6,
+                       "wires":  1
+                   },
+        "recyclesInto":  {
+                             "metal_parts":  5
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  3
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "compensator_ii",
+        "name":  {
+                     "en":  "Compensator II",
+                     "tr":  "Namlu Ağzı Baskısı II"
+                 },
+        "type":  "Modification",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  2000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "mechanical_components":  2,
+                       "wires":  4
+                   },
+        "recyclesInto":  {
+                             "mechanical_components":  1,
+                             "wires":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  1
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "compensator_i"
+    },
+    {
+        "id":  "compensator_iii",
+        "name":  {
+                     "en":  "Compensator III",
+                     "tr":  "Namlu Ağzı Baskısı III"
+                 },
+        "type":  "Modification",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "mod_components":  2,
+                       "wires":  8
+                   },
+        "recyclesInto":  {
+                             "mod_components":  1,
+                             "wires":  2
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  1
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "compensator_ii"
+    },
+    {
+        "id":  "energy_clip",
+        "name":  {
+                     "en":  "Energy Clip",
+                     "tr":  "Enerji Şarjörü"
+                 },
+        "type":  "Ammunition",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  1000,
+        "stackSize":  5,
+        "craftBench":  "workbench",
+        "recipe":  {
+                       "advanced_arc_powercell":  1,
+                       "battery":  2
+                   },
+        "recyclesInto":  null,
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "equalizer",
+        "name":  {
+                     "en":  "Equalizer",
+                     "tr":  "Dengeleyici"
+                 },
+        "type":  "LMG",
+        "rarity":  "Legendary",
+        "foundIn":  null,
+        "value":  27500,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "complex_gun_parts":  3,
+                       "magnetic_accelerator":  3,
+                       "queen_reactor":  1
+                   },
+        "recyclesInto":  {
+                             "complex_gun_parts":  1,
+                             "magnetic_accelerator":  2
+                         },
+        "salvagesInto":  {
+                             "magnetic_accelerator":  1
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "extended_barrel",
+        "name":  {
+                     "en":  "Extended Barrel",
+                     "tr":  "Uzatılmış Namlu"
+                 },
+        "type":  "Modification",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "mod_components":  2,
+                       "wires":  8
+                   },
+        "recyclesInto":  {
+                             "mod_components":  1,
+                             "wires":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "extended_light_mag_i",
+        "name":  {
+                     "en":  "Extended Light Mag I",
+                     "tr":  "Uzatılmış Hafif Şarjör I"
+                 },
+        "type":  "Modification",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  640,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "plastic_parts":  6,
+                       "steel_spring":  1
+                   },
+        "recyclesInto":  {
+                             "plastic_parts":  6
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  3
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "extended_light_mag_ii",
+        "name":  {
+                     "en":  "Extended Light Mag II",
+                     "tr":  "Uzatılmış Hafif Şarjör II"
+                 },
+        "type":  "Modification",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  2000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "mechanical_components":  2,
+                       "steel_spring":  3
+                   },
+        "recyclesInto":  {
+                             "mechanical_components":  1,
+                             "steel_spring":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  1
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "extended_light_mag_i"
+    },
+    {
+        "id":  "extended_light_mag_iii",
+        "name":  {
+                     "en":  "Extended Light Mag III",
+                     "tr":  "Uzatılmış Hafif Şarjör III"
+                 },
+        "type":  "Modification",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "mod_components":  2,
+                       "steel_spring":  5
+                   },
+        "recyclesInto":  {
+                             "mod_components":  1,
+                             "steel_spring":  2
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "extended_light_mag_ii"
+    },
+    {
+        "id":  "extended_medium_mag_i",
+        "name":  {
+                     "en":  "Extended Medium Mag I",
+                     "tr":  "Uzatılmış Orta Şarjör I"
+                 },
+        "type":  "Modification",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  640,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "plastic_parts":  6,
+                       "steel_spring":  1
+                   },
+        "recyclesInto":  {
+                             "plastic_parts":  6
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  3
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "extended_medium_mag_ii",
+        "name":  {
+                     "en":  "Extended Medium Mag II",
+                     "tr":  "Uzatılmış Orta Şarjör II"
+                 },
+        "type":  "Modification",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  2000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "mechanical_components":  2,
+                       "steel_spring":  3
+                   },
+        "recyclesInto":  {
+                             "mechanical_components":  1,
+                             "steel_spring":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  1
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "extended_medium_mag_i"
+    },
+    {
+        "id":  "extended_medium_mag_iii",
+        "name":  {
+                     "en":  "Extended Medium Mag III",
+                     "tr":  "Uzatılmış Orta Şarjör III"
+                 },
+        "type":  "Modification",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "mod_components":  2,
+                       "steel_spring":  5
+                   },
+        "recyclesInto":  {
+                             "mod_components":  1,
+                             "steel_spring":  2
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "extended_medium_mag_ii"
+    },
+    {
+        "id":  "extended_shotgun_mag_i",
+        "name":  {
+                     "en":  "Extended Shotgun Mag I",
+                     "tr":  "Uzatılmış Av Tüfeği Şarjörü I"
+                 },
+        "type":  "Modification",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  640,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "plastic_parts":  6,
+                       "steel_spring":  1
+                   },
+        "recyclesInto":  {
+                             "plastic_parts":  6
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  3
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "extended_shotgun_mag_ii",
+        "name":  {
+                     "en":  "Extended Shotgun Mag II",
+                     "tr":  "Uzatılmış Av Tüfeği Şarjörü II"
+                 },
+        "type":  "Modification",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  2000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "mechanical_components":  2,
+                       "steel_spring":  3
+                   },
+        "recyclesInto":  {
+                             "mechanical_components":  1,
+                             "steel_spring":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  1
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "extended_shotgun_mag_i"
+    },
+    {
+        "id":  "extended_shotgun_mag_iii",
+        "name":  {
+                     "en":  "Extended Shotgun Mag III",
+                     "tr":  "Uzatılmış Av Tüfeği Şarjörü III"
+                 },
+        "type":  "Modification",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mod_components":  1,
+                             "steel_spring":  2
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         },
+        "upgradeCost":  {
+                            "mod_components":  2,
+                            "steel_spring":  5
+                        },
+        "upgradesFrom":  "extended_shotgun_mag_ii"
+    },
+    {
+        "id":  "ferro_i",
+        "name":  {
+                     "en":  "Ferro I",
+                     "tr":  "Ferro I"
+                 },
+        "type":  "Battle Rifle",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  475,
+        "stackSize":  null,
+        "craftBench":  [
+                           "workbench",
+                           "weapon_bench"
+                       ],
+        "recipe":  {
+                       "metal_parts":  5,
+                       "rubber_parts":  2
+                   },
+        "recyclesInto":  {
+                             "metal_parts":  2,
+                             "rubber_parts":  1
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "ferro_ii",
+        "name":  {
+                     "en":  "Ferro II",
+                     "tr":  "Ferro II"
+                 },
+        "type":  "Battle Rifle",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  1000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  4,
+                             "rubber_parts":  3
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  2
+                         },
+        "upgradeCost":  {
+                            "metal_parts":  7
+                        },
+        "upgradesFrom":  "ferro_i"
+    },
+    {
+        "id":  "ferro_iii",
+        "name":  {
+                     "en":  "Ferro III",
+                     "tr":  "Ferro III"
+                 },
+        "type":  "Battle Rifle",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  2000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  6,
+                             "simple_gun_parts":  1
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  1
+                         },
+        "upgradeCost":  {
+                            "metal_parts":  9,
+                            "simple_gun_parts":  1
+                        },
+        "upgradesFrom":  "ferro_ii"
+    },
+    {
+        "id":  "ferro_iv",
+        "name":  {
+                     "en":  "Ferro IV",
+                     "tr":  "Ferro IV"
+                 },
+        "type":  "Battle Rifle",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  2900,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  1,
+                             "simple_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  2
+                         },
+        "upgradeCost":  {
+                            "mechanical_components":  1,
+                            "simple_gun_parts":  1
+                        },
+        "upgradesFrom":  "ferro_iii"
+    },
+    {
+        "id":  "hairpin_i",
+        "name":  {
+                     "en":  "Hairpin I",
+                     "tr":  "Toka I"
+                 },
+        "type":  "Pistol",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  450,
+        "stackSize":  null,
+        "craftBench":  [
+                           "workbench",
+                           "weapon_bench"
+                       ],
+        "recipe":  {
+                       "metal_parts":  2,
+                       "plastic_parts":  5
+                   },
+        "recyclesInto":  {
+                             "metal_parts":  2,
+                             "rubber_parts":  1
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "hairpin_ii",
+        "name":  {
+                     "en":  "Hairpin II",
+                     "tr":  "Toka II"
+                 },
+        "type":  "Pistol",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  1000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  4,
+                             "rubber_parts":  3
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  4
+                         },
+        "upgradeCost":  {
+                            "metal_parts":  8
+                        },
+        "upgradesFrom":  "hairpin_i"
+    },
+    {
+        "id":  "hairpin_iii",
+        "name":  {
+                     "en":  "Hairpin III",
+                     "tr":  "Toka III"
+                 },
+        "type":  "Pistol",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  2000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  6,
+                             "simple_gun_parts":  1
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  1
+                         },
+        "upgradeCost":  {
+                            "metal_parts":  9,
+                            "simple_gun_parts":  1
+                        },
+        "upgradesFrom":  "hairpin_ii"
+    },
+    {
+        "id":  "hairpin_iv",
+        "name":  {
+                     "en":  "Hairpin IV",
+                     "tr":  "Toka IV"
+                 },
+        "type":  "Pistol",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  2900,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  1,
+                             "simple_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  2
+                         },
+        "upgradeCost":  {
+                            "mechanical_components":  1,
+                            "simple_gun_parts":  1
+                        },
+        "upgradesFrom":  "hairpin_iii"
+    },
+    {
+        "id":  "heavy_ammo",
+        "name":  {
+                     "en":  "Heavy Ammo",
+                     "tr":  "Ağır Cephane"
+                 },
+        "type":  "Ammunition",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  12,
+        "stackSize":  40,
+        "craftBench":  "workbench",
+        "recipe":  {
+                       "chemicals":  2,
+                       "metal_parts":  3
+                   },
+        "recyclesInto":  null,
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "horizontal_grip",
+        "name":  {
+                     "en":  "Horizontal Grip",
+                     "tr":  "Yatay Tutamaç"
+                 },
+        "type":  "Modification",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  7000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "duct_tape":  5,
+                       "mod_components":  2
+                   },
+        "recyclesInto":  {
+                             "duct_tape":  2,
+                             "mod_components":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "hullcracker_i",
+        "name":  {
+                     "en":  "Hullcracker I",
+                     "tr":  "Kabukkıran I"
+                 },
+        "type":  "Special",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  10000,
+        "stackSize":  1,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "exodus_modules":  1,
+                       "heavy_gun_parts":  3,
+                       "magnetic_accelerator":  1
+                   },
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  2,
+                             "heavy_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "heavy_gun_parts":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "hullcracker_ii",
+        "name":  {
+                     "en":  "Hullcracker II",
+                     "tr":  "Kabukkıran II"
+                 },
+        "type":  "Special",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  13000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  2,
+                             "heavy_gun_parts":  3
+                         },
+        "salvagesInto":  {
+                             "heavy_gun_parts":  3
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  1,
+                            "heavy_gun_parts":  2
+                        },
+        "upgradesFrom":  "hullcracker_i"
+    },
+    {
+        "id":  "hullcracker_iii",
+        "name":  {
+                     "en":  "Hullcracker III",
+                     "tr":  "Kabukkıran III"
+                 },
+        "type":  "Special",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  17000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  3,
+                             "heavy_gun_parts":  4
+                         },
+        "salvagesInto":  {
+                             "heavy_gun_parts":  4
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  2,
+                            "heavy_gun_parts":  1
+                        },
+        "upgradesFrom":  "hullcracker_ii"
+    },
+    {
+        "id":  "hullcracker_iv",
+        "name":  {
+                     "en":  "Hullcracker IV",
+                     "tr":  "Kabukkıran IV"
+                 },
+        "type":  "Special",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  22000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  4,
+                             "heavy_gun_parts":  5
+                         },
+        "salvagesInto":  {
+                             "heavy_gun_parts":  5
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  2,
+                            "heavy_gun_parts":  3
+                        },
+        "upgradesFrom":  "hullcracker_iii"
+    },
+    {
+        "id":  "il_toro_i",
+        "name":  {
+                     "en":  "Il Toro I",
+                     "tr":  "Il Toro I"
+                 },
+        "type":  "Shotgun",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "mechanical_components":  5,
+                       "simple_gun_parts":  6
+                   },
+        "recyclesInto":  {
+                             "mechanical_components":  2,
+                             "simple_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "il_toro_ii",
+        "name":  {
+                     "en":  "Il Toro II",
+                     "tr":  "Il Toro II"
+                 },
+        "type":  "Shotgun",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  7000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  3,
+                             "simple_gun_parts":  3
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  3
+                         },
+        "upgradeCost":  {
+                            "mechanical_components":  3,
+                            "simple_gun_parts":  1
+                        },
+        "upgradesFrom":  "il_toro_i"
+    },
+    {
+        "id":  "il_toro_iii",
+        "name":  {
+                     "en":  "Il Toro III",
+                     "tr":  "Il Toro III"
+                 },
+        "type":  "Shotgun",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  10000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  4,
+                             "simple_gun_parts":  4
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  4
+                         },
+        "upgradeCost":  {
+                            "heavy_gun_parts":  1,
+                            "mechanical_components":  4
+                        },
+        "upgradesFrom":  "il_toro_ii"
+    },
+    {
+        "id":  "il_toro_iv",
+        "name":  {
+                     "en":  "Il Toro IV",
+                     "tr":  "Il Toro IV"
+                 },
+        "type":  "Shotgun",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  13000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  5,
+                             "simple_gun_parts":  5
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  5
+                         },
+        "upgradeCost":  {
+                            "heavy_gun_parts":  1,
+                            "mechanical_components":  4
+                        },
+        "upgradesFrom":  "il_toro_iii"
+    },
+    {
+        "id":  "jupiter",
+        "name":  {
+                     "en":  "Jupiter",
+                     "tr":  "Erendiz"
+                 },
+        "type":  "Sniper Rifle",
+        "rarity":  "Legendary",
+        "foundIn":  null,
+        "value":  27500,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "complex_gun_parts":  3,
+                       "magnetic_accelerator":  3,
+                       "queen_reactor":  1
+                   },
+        "recyclesInto":  {
+                             "complex_gun_parts":  1,
+                             "magnetic_accelerator":  2
+                         },
+        "salvagesInto":  {
+                             "advanced_mechanical_components":  3
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "kettle_i",
+        "name":  {
+                     "en":  "Kettle I",
+                     "tr":  "Isıtıcı I"
+                 },
+        "type":  "Assault Rifle",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  840,
+        "stackSize":  null,
+        "craftBench":  [
+                           "workbench",
+                           "weapon_bench"
+                       ],
+        "recipe":  {
+                       "metal_parts":  6,
+                       "rubber_parts":  8
+                   },
+        "recyclesInto":  {
+                             "metal_parts":  3,
+                             "rubber_parts":  2
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  3
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "kettle_ii",
+        "name":  {
+                     "en":  "Kettle II",
+                     "tr":  "Isıtıcı II"
+                 },
+        "type":  "Assault Rifle",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  2000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  6,
+                             "rubber_parts":  6
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  6
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "kettle_i"
+    },
+    {
+        "id":  "kettle_iii",
+        "name":  {
+                     "en":  "Kettle III",
+                     "tr":  "Isıtıcı III"
+                 },
+        "type":  "Assault Rifle",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  3000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  12,
+                             "simple_gun_parts":  1
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  1
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "kettle_ii"
+    },
+    {
+        "id":  "kettle_iv",
+        "name":  {
+                     "en":  "Kettle IV",
+                     "tr":  "Isıtıcı IV"
+                 },
+        "type":  "Assault Rifle",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  2,
+                             "simple_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "kettle_iii"
+    },
+    {
+        "id":  "kinetic_converter",
+        "name":  {
+                     "en":  "Kinetic Converter",
+                     "tr":  "Kinetik Dönüştürücü"
+                 },
+        "type":  "Modification",
+        "rarity":  "Legendary",
+        "foundIn":  null,
+        "value":  7000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "duct_tape":  2,
+                             "mod_components":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "launcher_ammo",
+        "name":  {
+                     "en":  "Launcher Ammo",
+                     "tr":  "Fırlatıcı Cephanesi"
+                 },
+        "type":  "Ammunition",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  250,
+        "stackSize":  24,
+        "craftBench":  "workbench",
+        "recipe":  {
+                       "arc_motion_core":  1,
+                       "crude_explosives":  2
+                   },
+        "recyclesInto":  null,
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "light_ammo",
+        "name":  {
+                     "en":  "Light Ammo",
+                     "tr":  "Hafif Cephane"
+                 },
+        "type":  "Ammunition",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  4,
+        "stackSize":  100,
+        "craftBench":  "workbench",
+        "recipe":  {
+                       "chemicals":  2,
+                       "metal_parts":  3
+                   },
+        "recyclesInto":  null,
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "lightweight_stock",
+        "name":  {
+                     "en":  "Lightweight Stock",
+                     "tr":  "Hafif Dipçik"
+                 },
+        "type":  "Modification",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "duct_tape":  5,
+                       "mod_components":  2
+                   },
+        "recyclesInto":  {
+                             "duct_tape":  1,
+                             "mod_components":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "medium_ammo",
+        "name":  {
+                     "en":  "Medium Ammo",
+                     "tr":  "Orta Cephane "
+                 },
+        "type":  "Ammunition",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  6,
+        "stackSize":  80,
+        "craftBench":  "workbench",
+        "recipe":  {
+                       "chemicals":  2,
+                       "metal_parts":  3
+                   },
+        "recyclesInto":  null,
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "muzzle_brake_i",
+        "name":  {
+                     "en":  "Muzzle Brake I",
+                     "tr":  "Namlu Ağzı Freni I"
+                 },
+        "type":  "Modification",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  640,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "metal_parts":  6,
+                       "wires":  1
+                   },
+        "recyclesInto":  {
+                             "metal_parts":  5
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  3
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "muzzle_brake_ii",
+        "name":  {
+                     "en":  "Muzzle Brake II",
+                     "tr":  "Namlu Ağzı Freni II"
+                 },
+        "type":  "Modification",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  2000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "mechanical_components":  2,
+                       "wires":  4
+                   },
+        "recyclesInto":  {
+                             "mechanical_components":  1,
+                             "wires":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  1
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "muzzle_brake_i"
+    },
+    {
+        "id":  "muzzle_brake_iii",
+        "name":  {
+                     "en":  "Muzzle Brake III",
+                     "tr":  "Namlu Ağzı Freni III"
+                 },
+        "type":  "Modification",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "mod_components":  2,
+                       "wires":  8
+                   },
+        "recyclesInto":  {
+                             "mod_components":  1,
+                             "wires":  2
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "muzzle_brake_ii"
+    },
+    {
+        "id":  "osprey_i",
+        "name":  {
+                     "en":  "Osprey I",
+                     "tr":  "Kartal I"
+                 },
+        "type":  "Sniper Rifle",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  7000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "advanced_mechanical_components":  2,
+                       "medium_gun_parts":  3,
+                       "wires":  7
+                   },
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  1,
+                             "medium_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "medium_gun_parts":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "osprey_ii",
+        "name":  {
+                     "en":  "Osprey II",
+                     "tr":  "Kartal II"
+                 },
+        "type":  "Sniper Rifle",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  10000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  2,
+                             "medium_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "medium_gun_parts":  2
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  1,
+                            "medium_gun_parts":  2
+                        },
+        "upgradesFrom":  "osprey_i"
+    },
+    {
+        "id":  "osprey_iii",
+        "name":  {
+                     "en":  "Osprey III",
+                     "tr":  "Kartal III"
+                 },
+        "type":  "Sniper Rifle",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  13000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  2,
+                             "medium_gun_parts":  3
+                         },
+        "salvagesInto":  {
+                             "medium_gun_parts":  3
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  1,
+                            "medium_gun_parts":  2
+                        },
+        "upgradesFrom":  "osprey_ii"
+    },
+    {
+        "id":  "osprey_iv",
+        "name":  {
+                     "en":  "Osprey IV",
+                     "tr":  "Kartal IV"
+                 },
+        "type":  "Sniper Rifle",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  17000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  3,
+                             "medium_gun_parts":  3
+                         },
+        "salvagesInto":  {
+                             "medium_gun_parts":  3
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  2,
+                            "medium_gun_parts":  2
+                        },
+        "upgradesFrom":  "osprey_iii"
+    },
+    {
+        "id":  "padded_stock",
+        "name":  {
+                     "en":  "Padded Stock",
+                     "tr":  "Yastıklı Dipçik"
+                 },
+        "type":  "Modification",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "duct_tape":  5,
+                       "mod_components":  2
+                   },
+        "recyclesInto":  {
+                             "duct_tape":  1,
+                             "mod_components":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "rattler_i",
+        "name":  {
+                     "en":  "Rattler I",
+                     "tr":  "Çıngırak I"
+                 },
+        "type":  "Assault Rifle",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  1750,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "metal_parts":  16,
+                       "rubber_parts":  12
+                   },
+        "recyclesInto":  {
+                             "metal_parts":  8
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  4
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "rattler_ii",
+        "name":  {
+                     "en":  "Rattler II",
+                     "tr":  "Çıngırak II"
+                 },
+        "type":  "Assault Rifle",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  3000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  12
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  8
+                         },
+        "upgradeCost":  {
+                            "mechanical_components":  2
+                        },
+        "upgradesFrom":  "rattler_i"
+    },
+    {
+        "id":  "rattler_iii",
+        "name":  {
+                     "en":  "Rattler III",
+                     "tr":  "Çıngırak III"
+                 },
+        "type":  "Assault Rifle",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  3,
+                             "simple_gun_parts":  1
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  12
+                         },
+        "upgradeCost":  {
+                            "mechanical_components":  2,
+                            "simple_gun_parts":  1
+                        },
+        "upgradesFrom":  "rattler_ii"
+    },
+    {
+        "id":  "rattler_iv",
+        "name":  {
+                     "en":  "Rattler IV",
+                     "tr":  "Çıngırak IV"
+                 },
+        "type":  "Assault Rifle",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  7000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  4,
+                             "simple_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  14
+                         },
+        "upgradeCost":  {
+                            "mechanical_components":  3,
+                            "simple_gun_parts":  1
+                        },
+        "upgradesFrom":  "rattler_iii"
+    },
+    {
+        "id":  "renegade_i",
+        "name":  {
+                     "en":  "Renegade I",
+                     "tr":  "Kaçak I"
+                 },
+        "type":  "Battle Rifle",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  7000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "advanced_mechanical_components":  2,
+                       "medium_gun_parts":  3,
+                       "oil":  5
+                   },
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  1,
+                             "medium_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "medium_gun_parts":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "renegade_ii",
+        "name":  {
+                     "en":  "Renegade II",
+                     "tr":  "Kaçak II"
+                 },
+        "type":  "Battle Rifle",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  10000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  2,
+                             "medium_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "medium_gun_parts":  2
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  1,
+                            "medium_gun_parts":  2
+                        },
+        "upgradesFrom":  "renegade_i"
+    },
+    {
+        "id":  "renegade_iii",
+        "name":  {
+                     "en":  "Renegade III",
+                     "tr":  "Kaçak III"
+                 },
+        "type":  "Battle Rifle",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  13000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  2,
+                             "medium_gun_parts":  3
+                         },
+        "salvagesInto":  {
+                             "medium_gun_parts":  3
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  1,
+                            "medium_gun_parts":  2
+                        },
+        "upgradesFrom":  "renegade_ii"
+    },
+    {
+        "id":  "renegade_iv",
+        "name":  {
+                     "en":  "Renegade IV",
+                     "tr":  "Kaçak IV"
+                 },
+        "type":  "Battle Rifle",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  17000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  3,
+                             "medium_gun_parts":  3
+                         },
+        "salvagesInto":  {
+                             "medium_gun_parts":  3
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  2,
+                            "medium_gun_parts":  2
+                        },
+        "upgradesFrom":  "renegade_iii"
+    },
+    {
+        "id":  "shotgun_ammo",
+        "name":  {
+                     "en":  "Shotgun Ammo",
+                     "tr":  "Av Tüfeği Cephanesi"
+                 },
+        "type":  "Ammunition",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  20,
+        "stackSize":  20,
+        "craftBench":  "workbench",
+        "recipe":  {
+                       "chemicals":  2,
+                       "metal_parts":  3
+                   },
+        "recyclesInto":  null,
+        "salvagesInto":  null,
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "shotgun_choke_i",
+        "name":  {
+                     "en":  "Shotgun Choke I",
+                     "tr":  "Av Tüfeği Boğumlu Namlusu I"
+                 },
+        "type":  "Modification",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  640,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "metal_parts":  6,
+                       "wires":  1
+                   },
+        "recyclesInto":  {
+                             "metal_parts":  5
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  3
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "shotgun_choke_ii",
+        "name":  {
+                     "en":  "Shotgun Choke II",
+                     "tr":  "Av Tüfeği Boğumlu Namlusu II"
+                 },
+        "type":  "Modification",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  2000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "mechanical_components":  2,
+                       "wires":  4
+                   },
+        "recyclesInto":  {
+                             "mechanical_components":  1,
+                             "wires":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  1
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "shotgun_choke_i"
+    },
+    {
+        "id":  "shotgun_choke_iii",
+        "name":  {
+                     "en":  "Shotgun Choke III",
+                     "tr":  "Av Tüfeği Boğumlu Namlusu III"
+                 },
+        "type":  "Modification",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "mod_components":  2,
+                       "wires":  8
+                   },
+        "recyclesInto":  {
+                             "mod_components":  1,
+                             "wires":  2
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "shotgun_choke_ii"
+    },
+    {
+        "id":  "shotgun_silencer",
+        "name":  {
+                     "en":  "Shotgun Silencer",
+                     "tr":  "Pompalı Tüfek Susturucusu"
+                 },
+        "type":  "Modification",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "mod_components":  2,
+                       "wires":  8
+                   },
+        "recyclesInto":  {
+                             "mod_components":  1,
+                             "wires":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "silencer_i",
+        "name":  {
+                     "en":  "Silencer I",
+                     "tr":  "Susturucu I"
+                 },
+        "type":  "Modification",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  2000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "mechanical_components":  2,
+                       "wires":  4
+                   },
+        "recyclesInto":  {
+                             "mechanical_components":  1,
+                             "wires":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  1
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "silencer_ii",
+        "name":  {
+                     "en":  "Silencer II",
+                     "tr":  "Susturucu II"
+                 },
+        "type":  "Modification",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "mod_components":  2,
+                       "wires":  8
+                   },
+        "recyclesInto":  {
+                             "mod_components":  1,
+                             "wires":  2
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "silencer_i"
+    },
+    {
+        "id":  "silencer_iii",
+        "name":  {
+                     "en":  "Silencer III",
+                     "tr":  "Susturucu III"
+                 },
+        "type":  "Modification",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  7000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mod_components":  1,
+                             "wires":  3
+                         },
+        "salvagesInto":  {
+                             "mod_components":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "silencer_ii"
+    },
+    {
+        "id":  "stable_stock_i",
+        "name":  {
+                     "en":  "Stable Stock I",
+                     "tr":  "Dengeli Dipçik I"
+                 },
+        "type":  "Modification",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  640,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "duct_tape":  1,
+                       "rubber_parts":  6
+                   },
+        "recyclesInto":  {
+                             "rubber_parts":  6
+                         },
+        "salvagesInto":  {
+                             "rubber_parts":  3
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "stable_stock_ii",
+        "name":  {
+                     "en":  "Stable Stock II",
+                     "tr":  "Dengeli Dipçik II"
+                 },
+        "type":  "Modification",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  2000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "duct_tape":  3,
+                       "mechanical_components":  2
+                   },
+        "recyclesInto":  {
+                             "duct_tape":  1,
+                             "mechanical_components":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  1
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "stable_stock_i"
+    },
+    {
+        "id":  "stable_stock_iii",
+        "name":  {
+                     "en":  "Stable Stock III",
+                     "tr":  "Dengeli Dipçik III"
+                 },
+        "type":  "Modification",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "duct_tape":  5,
+                       "mod_components":  2
+                   },
+        "recyclesInto":  {
+                             "duct_tape":  2,
+                             "mod_components":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "stable_stock_ii"
+    },
+    {
+        "id":  "stitcher_i",
+        "name":  {
+                     "en":  "Stitcher I",
+                     "tr":  "Zımba I"
+                 },
+        "type":  "SMG",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  800,
+        "stackSize":  null,
+        "craftBench":  [
+                           "workbench",
+                           "weapon_bench"
+                       ],
+        "recipe":  {
+                       "metal_parts":  8,
+                       "rubber_parts":  4
+                   },
+        "recyclesInto":  {
+                             "metal_parts":  3,
+                             "rubber_parts":  2
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  3
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "stitcher_ii",
+        "name":  {
+                     "en":  "Stitcher II",
+                     "tr":  "Zımba II"
+                 },
+        "type":  "SMG",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  2000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  6,
+                             "rubber_parts":  6
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  6
+                         },
+        "upgradeCost":  {
+                            "metal_parts":  8,
+                            "rubber_parts":  12
+                        },
+        "upgradesFrom":  "stitcher_i"
+    },
+    {
+        "id":  "stitcher_iii",
+        "name":  {
+                     "en":  "Stitcher III",
+                     "tr":  "Zımba III"
+                 },
+        "type":  "SMG",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  3000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  12,
+                             "simple_gun_parts":  1
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  1
+                         },
+        "upgradeCost":  {
+                            "metal_parts":  10,
+                            "simple_gun_parts":  1
+                        },
+        "upgradesFrom":  "stitcher_ii"
+    },
+    {
+        "id":  "stitcher_iv",
+        "name":  {
+                     "en":  "Stitcher IV",
+                     "tr":  "Zımba IV"
+                 },
+        "type":  "SMG",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  2,
+                             "simple_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  2
+                         },
+        "upgradeCost":  {
+                            "mechanical_components":  3,
+                            "simple_gun_parts":  1
+                        },
+        "upgradesFrom":  "stitcher_iii"
+    },
+    {
+        "id":  "tempest_i",
+        "name":  {
+                     "en":  "Tempest I",
+                     "tr":  "Bora I"
+                 },
+        "type":  "Assault Rifle",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  13000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "exodus_modules":  2,
+                       "magnetic_accelerator":  1,
+                       "medium_gun_parts":  3
+                   },
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  2,
+                             "medium_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "medium_gun_parts":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "tempest_ii",
+        "name":  {
+                     "en":  "Tempest II",
+                     "tr":  "Bora II"
+                 },
+        "type":  "Assault Rifle",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  17000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  3,
+                             "medium_gun_parts":  3
+                         },
+        "salvagesInto":  {
+                             "medium_gun_parts":  3
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  2,
+                            "medium_gun_parts":  3
+                        },
+        "upgradesFrom":  "tempest_i"
+    },
+    {
+        "id":  "tempest_iii",
+        "name":  {
+                     "en":  "Tempest III",
+                     "tr":  "Bora III"
+                 },
+        "type":  "Assault Rifle",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  22000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  4,
+                             "medium_gun_parts":  4
+                         },
+        "salvagesInto":  {
+                             "medium_gun_parts":  4
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  4,
+                            "medium_gun_parts":  4
+                        },
+        "upgradesFrom":  "tempest_ii"
+    },
+    {
+        "id":  "tempest_iv",
+        "name":  {
+                     "en":  "Tempest IV",
+                     "tr":  "Bora IV"
+                 },
+        "type":  "Assault Rifle",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  27000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  5,
+                             "medium_gun_parts":  4
+                         },
+        "salvagesInto":  {
+                             "medium_gun_parts":  5
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  2,
+                            "medium_gun_parts":  3
+                        },
+        "upgradesFrom":  "tempest_iii"
+    },
+    {
+        "id":  "torrente_i",
+        "name":  {
+                     "en":  "Torrente I",
+                     "tr":  "Torrente I"
+                 },
+        "type":  "LMG",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  7000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "advanced_mechanical_components":  2,
+                       "medium_gun_parts":  3,
+                       "steel_spring":  6
+                   },
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  1,
+                             "medium_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "medium_gun_parts":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "torrente_ii",
+        "name":  {
+                     "en":  "Torrente II",
+                     "tr":  "Torrente II"
+                 },
+        "type":  "LMG",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  10000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  2,
+                             "medium_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "medium_gun_parts":  2
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  1,
+                            "medium_gun_parts":  2
+                        },
+        "upgradesFrom":  "torrente_i"
+    },
+    {
+        "id":  "torrente_iii",
+        "name":  {
+                     "en":  "Torrente III",
+                     "tr":  "Torrente III"
+                 },
+        "type":  "LMG",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  13000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  2,
+                             "medium_gun_parts":  3
+                         },
+        "salvagesInto":  {
+                             "medium_gun_parts":  3
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  1,
+                            "medium_gun_parts":  2
+                        },
+        "upgradesFrom":  "torrente_ii"
+    },
+    {
+        "id":  "torrente_iv",
+        "name":  {
+                     "en":  "Torrente IV",
+                     "tr":  "Torrente IV"
+                 },
+        "type":  "LMG",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  16000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  3,
+                             "medium_gun_parts":  3
+                         },
+        "salvagesInto":  {
+                             "medium_gun_parts":  3
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  2,
+                            "medium_gun_parts":  2
+                        },
+        "upgradesFrom":  "torrente_iii"
+    },
+    {
+        "id":  "venator_i",
+        "name":  {
+                     "en":  "Venator I",
+                     "tr":  "Avcı I"
+                 },
+        "type":  "Pistol",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  7000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "advanced_mechanical_components":  2,
+                       "magnet":  5,
+                       "medium_gun_parts":  3
+                   },
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  1,
+                             "medium_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "medium_gun_parts":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "venator_ii",
+        "name":  {
+                     "en":  "Venator II",
+                     "tr":  "Avcı II"
+                 },
+        "type":  "Pistol",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  10000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  2,
+                             "medium_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "medium_gun_parts":  2
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  1,
+                            "medium_gun_parts":  2
+                        },
+        "upgradesFrom":  "venator_i"
+    },
+    {
+        "id":  "venator_iii",
+        "name":  {
+                     "en":  "Venator III",
+                     "tr":  "Avcı III"
+                 },
+        "type":  "Pistol",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  13000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  2,
+                             "medium_gun_parts":  3
+                         },
+        "salvagesInto":  {
+                             "medium_gun_parts":  3
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  1,
+                            "medium_gun_parts":  2
+                        },
+        "upgradesFrom":  "venator_ii"
+    },
+    {
+        "id":  "venator_iv",
+        "name":  {
+                     "en":  "Venator IV",
+                     "tr":  "Avcı IV"
+                 },
+        "type":  "Pistol",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  17000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  3,
+                             "medium_gun_parts":  3
+                         },
+        "salvagesInto":  {
+                             "medium_gun_parts":  3
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  2,
+                            "medium_gun_parts":  2
+                        },
+        "upgradesFrom":  "venator_iii"
+    },
+    {
+        "id":  "vertical_grip_i",
+        "name":  {
+                     "en":  "Vertical Grip I",
+                     "tr":  "Dikey Tutamaç I"
+                 },
+        "type":  "Modification",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  640,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "duct_tape":  1,
+                       "plastic_parts":  6
+                   },
+        "recyclesInto":  {
+                             "plastic_parts":  6
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  3
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "vertical_grip_ii",
+        "name":  {
+                     "en":  "Vertical Grip II",
+                     "tr":  "Dikey Tutamaç II"
+                 },
+        "type":  "Modification",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  2000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "duct_tape":  3,
+                       "mechanical_components":  2
+                   },
+        "recyclesInto":  {
+                             "duct_tape":  1,
+                             "mechanical_components":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  1
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "vertical_grip_i"
+    },
+    {
+        "id":  "vertical_grip_iii",
+        "name":  {
+                     "en":  "Vertical Grip III",
+                     "tr":  "Dikey Tutamaç III"
+                 },
+        "type":  "Modification",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "duct_tape":  5,
+                       "mod_components":  2
+                   },
+        "recyclesInto":  {
+                             "duct_tape":  2,
+                             "mechanical_components":  2
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  "vertical_grip_ii"
+    },
+    {
+        "id":  "vulcano_i",
+        "name":  {
+                     "en":  "Vulcano I",
+                     "tr":  "Yanardağ I"
+                 },
+        "type":  "Shotgun",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  10000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  {
+                       "exodus_modules":  1,
+                       "heavy_gun_parts":  3,
+                       "magnetic_accelerator":  1
+                   },
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  2,
+                             "heavy_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "heavy_gun_parts":  2
+                         },
+        "upgradeCost":  null,
+        "upgradesFrom":  null
+    },
+    {
+        "id":  "vulcano_ii",
+        "name":  {
+                     "en":  "Vulcano II",
+                     "tr":  "Yanardağ II"
+                 },
+        "type":  "Shotgun",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  13000,
+        "stackSize":  1,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  2,
+                             "heavy_gun_parts":  3
+                         },
+        "salvagesInto":  {
+                             "heavy_gun_parts":  3
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  1,
+                            "heavy_gun_parts":  2
+                        },
+        "upgradesFrom":  "vulcano_i"
+    },
+    {
+        "id":  "vulcano_iii",
+        "name":  {
+                     "en":  "Vulcano III",
+                     "tr":  "Yanardağ III"
+                 },
+        "type":  "Shotgun",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  17000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  3,
+                             "heavy_gun_parts":  4
+                         },
+        "salvagesInto":  {
+                             "heavy_gun_parts":  4
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  2,
+                            "heavy_gun_parts":  1
+                        },
+        "upgradesFrom":  "vulcano_ii"
+    },
+    {
+        "id":  "vulcano_iv",
+        "name":  {
+                     "en":  "Vulcano IV",
+                     "tr":  "Yanardağ IV"
+                 },
+        "type":  "Shotgun",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  22000,
+        "stackSize":  null,
+        "craftBench":  "weapon_bench",
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  4,
+                             "heavy_gun_parts":  5
+                         },
+        "salvagesInto":  {
+                             "heavy_gun_parts":  5
+                         },
+        "upgradeCost":  {
+                            "advanced_mechanical_components":  2,
+                            "heavy_gun_parts":  3
+                        },
+        "upgradesFrom":  "vulcano_iii"
     }
 ]
