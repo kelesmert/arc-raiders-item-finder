@@ -12,7 +12,24 @@ import {
 // ===== State =====
 let allItems = [];
 let selected = [];          // calculator: { id, quantity }
+let lootSelected = [];      // loot finder: { id }
 let currentDetailId = null; // currently displayed item in browse tab
+
+// Location metadata (for future use: photos, descriptions, etc.)
+const LOCATIONS = {
+  'ARC':           { id: 'arc',           label: 'ARC',           color: '#6c5ce7' },
+  'Residential':   { id: 'residential',   label: 'Residential',   color: '#00b894' },
+  'Exodus':        { id: 'exodus',        label: 'Exodus',        color: '#e17055' },
+  'Security':      { id: 'security',      label: 'Security',      color: '#d63031' },
+  'Commercial':    { id: 'commercial',    label: 'Commercial',    color: '#fdcb6e' },
+  'Industrial':    { id: 'industrial',    label: 'Industrial',    color: '#636e72' },
+  'Mechanical':    { id: 'mechanical',    label: 'Mechanical',    color: '#b2bec3' },
+  'Electrical':    { id: 'electrical',    label: 'Electrical',    color: '#0984e3' },
+  'Medical':       { id: 'medical',       label: 'Medical',       color: '#55efc4' },
+  'Technological': { id: 'technological', label: 'Technological', color: '#a29bfe' },
+  'Raider':        { id: 'raider',        label: 'Raider',        color: '#ff7675' },
+  'Nature':        { id: 'nature',        label: 'Nature',        color: '#00cec9' }
+};
 
 const COMBAT_TYPES = new Set([
   'Ammunition', 'Assault Rifle', 'Battle Rifle', 'Hand Cannon',
@@ -649,6 +666,143 @@ function renderLocations(locations) {
   }).join('');
 }
 
+// ================================================================
+//  PAGE 3: Where to Loot
+// ================================================================
+function initLoot() {
+  const input = document.getElementById('lootSearch');
+  const results = document.getElementById('lootSearchResults');
+  const filterFn = item => {
+    if (lootSelected.some(s => s.id === item.id)) return false;
+    // Only show items that have foundIn data
+    if (!item.foundIn) return false;
+    return true;
+  };
+  setupSearch(input, results, addLootItem, filterFn);
+  document.getElementById('lootFindBtn').addEventListener('click', onFindLoot);
+}
+
+function addLootItem(id) {
+  if (lootSelected.some(s => s.id === id)) return;
+  lootSelected.push({ id });
+  renderLootSelected();
+}
+
+function removeLootItem(id) {
+  lootSelected = lootSelected.filter(s => s.id !== id);
+  renderLootSelected();
+  if (lootSelected.length === 0) document.getElementById('lootResultsContainer').classList.add('hidden');
+}
+
+function renderLootSelected() {
+  const btn = document.getElementById('lootFindBtn');
+  const el = document.getElementById('lootSelectedItems');
+  btn.disabled = lootSelected.length === 0;
+
+  el.innerHTML = lootSelected.map(s => {
+    const item = itemsMap[s.id];
+    const rc = rarityClass(item.rarity);
+    return `
+      <div class="selected-item">
+        ${imgTag(item.id, 'item-icon-md')}
+        <span class="si-name ${rc}">${item.name.en}</span>
+        <span class="si-type">${item.type}</span>
+        <span class="si-found">${item.foundIn || '?'}</span>
+        <button class="si-remove" data-id="${s.id}">✕</button>
+      </div>
+    `;
+  }).join('');
+
+  el.querySelectorAll('.si-remove').forEach(btn => {
+    btn.addEventListener('click', () => removeLootItem(btn.dataset.id));
+  });
+}
+
+function onFindLoot() {
+  if (lootSelected.length === 0) return;
+
+  // Gather all locations per selected item
+  const itemLocations = lootSelected.map(s => {
+    const item = itemsMap[s.id];
+    const locs = item.foundIn ? item.foundIn.split(',').map(l => l.trim()) : [];
+    return { id: s.id, name: item.name.en, rarity: item.rarity, locations: new Set(locs) };
+  });
+
+  // Score each location: how many of the selected items can be found there
+  const locationScores = {};
+  for (const loc of Object.keys(LOCATIONS)) {
+    const itemsHere = itemLocations.filter(il => il.locations.has(loc));
+    if (itemsHere.length === 0) continue;
+    locationScores[loc] = {
+      location: loc,
+      meta: LOCATIONS[loc],
+      score: itemsHere.length,
+      total: lootSelected.length,
+      percentage: Math.round((itemsHere.length / lootSelected.length) * 100),
+      items: itemsHere,
+      missing: itemLocations.filter(il => !il.locations.has(loc))
+    };
+  }
+
+  renderLootResults(locationScores, itemLocations);
+  document.getElementById('lootResultsContainer').classList.remove('hidden');
+}
+
+function renderLootResults(locationScores, itemLocations) {
+  const el = document.getElementById('lootLocations');
+  const sorted = Object.values(locationScores).sort((a, b) => b.score - a.score || a.location.localeCompare(b.location));
+
+  if (sorted.length === 0) {
+    el.innerHTML = '<p class="no-results">No matching locations found.</p>';
+    return;
+  }
+
+  const maxScore = sorted[0].score;
+
+  el.innerHTML = sorted.map(loc => {
+    const isBest = loc.score === maxScore;
+    const barWidth = loc.percentage;
+
+    const foundItems = loc.items.map(il => `
+      <span class="loot-chip found">
+        ${imgTag(il.id, 'item-icon-xs')}
+        <span class="${rarityClass(il.rarity)}">${il.name}</span>
+      </span>
+    `).join('');
+
+    const missingItems = loc.missing.map(il => `
+      <span class="loot-chip missing">
+        ${imgTag(il.id, 'item-icon-xs')}
+        <span class="${rarityClass(il.rarity)}">${il.name}</span>
+      </span>
+    `).join('');
+
+    return `
+      <div class="loot-location-card ${isBest ? 'best' : ''}">
+        <div class="loot-loc-header">
+          <span class="loot-loc-name" style="color:${loc.meta.color}">
+            ${isBest ? '⭐ ' : ''}${loc.location}
+          </span>
+          <span class="loot-loc-score">${loc.score}/${loc.total} items (${loc.percentage}%)</span>
+        </div>
+        <div class="loot-bar-track">
+          <div class="loot-bar-fill ${isBest ? 'best' : ''}" style="width:${barWidth}%;background:${loc.meta.color}"></div>
+        </div>
+        <div class="loot-items-section">
+          <div class="loot-items-label">✅ Found here:</div>
+          <div class="loot-chips">${foundItems}</div>
+        </div>
+        ${loc.missing.length > 0 ? `
+          <div class="loot-items-section">
+            <div class="loot-items-label">❌ Not here:</div>
+            <div class="loot-chips">${missingItems}</div>
+          </div>
+        ` : ''}
+      </div>
+    `;
+  }).join('');
+}
+
 // ===== Init =====
 async function init() {
   await loadItems('./filtered-items.json');
@@ -656,5 +810,6 @@ async function init() {
   initTabs();
   initBrowse();
   initCalc();
+  initLoot();
 }
 init();
