@@ -111,6 +111,52 @@ body {
 .item-icon-lg { width: 44px; height: 44px; }
 .item-icon-xl { width: 72px; height: 72px; border-radius: 8px; }
 
+/* ===== Combat Toggle ===== */
+.combat-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+.combat-toggle input { display: none; }
+.toggle-slider {
+  width: 36px;
+  height: 20px;
+  background: var(--border);
+  border-radius: 10px;
+  position: relative;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+.toggle-slider::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: var(--text-dim);
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+.combat-toggle input:checked + .toggle-slider {
+  background: var(--accent);
+}
+.combat-toggle input:checked + .toggle-slider::after {
+  left: 18px;
+  background: #fff;
+}
+.toggle-label {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  transition: color 0.2s;
+}
+.combat-toggle input:checked ~ .toggle-label {
+  color: var(--text);
+}
+
 /* ===== Search Box ===== */
 .search-box {
   position: relative;
@@ -520,6 +566,20 @@ body {
   transition: background 0.15s;
 }
 .obtain-sub-row:hover { background: var(--surface-hover); }
+
+/* ===== Upgrade Info ===== */
+.upgrade-from-label,
+.upgrade-cost-label {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  font-weight: 600;
+  margin: 8px 0 4px 0;
+}
+.upgrade-cost-label {
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--border);
+}
 
 /* ===== By Location ===== */
 .by-location { display: flex; flex-direction: column; gap: 12px; }

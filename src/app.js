@@ -13,6 +13,13 @@ import {
 let allItems = [];
 let selected = [];          // calculator: { id, quantity }
 
+const COMBAT_TYPES = new Set([
+  'Ammunition', 'Assault Rifle', 'Battle Rifle', 'Hand Cannon',
+  'LMG', 'Modification', 'Pistol', 'Shotgun', 'SMG', 'Sniper Rifle', 'Special'
+]);
+
+function isCombatItem(item) { return COMBAT_TYPES.has(item.type); }
+
 // ===== Helpers =====
 function benchLabel(bench) {
   if (!bench) return null;
@@ -134,7 +141,17 @@ function showDropdown(inputEl, resultsEl, onSelect, filterFn) {
 function initBrowse() {
   const input = document.getElementById('browseSearch');
   const results = document.getElementById('browseResults');
-  setupSearch(input, results, showItemDetail);
+  const toggle = document.getElementById('browseIncludeCombat');
+  setupSearch(input, results, showItemDetail, item => {
+    if (!toggle.checked && isCombatItem(item)) return false;
+    return true;
+  });
+  toggle.addEventListener('change', () => {
+    if (input.value.trim().length > 0) showDropdown(input, results, showItemDetail, item => {
+      if (!toggle.checked && isCombatItem(item)) return false;
+      return true;
+    });
+  });
 }
 
 function showItemDetail(id) {
@@ -295,6 +312,69 @@ function showItemDetail(id) {
     html += `</div>`;
   }
 
+  // Upgrade Info (upgradesFrom + upgradeCost)
+  if (item.upgradesFrom) {
+    const prev = itemsMap[item.upgradesFrom];
+    const prevName = prev ? prev.name.en : item.upgradesFrom;
+    html += `
+      <div class="detail-section">
+        <h3>⬆ Upgrade Info</h3>
+        <p class="upgrade-from-label">Upgraded from:</p>
+        <div class="recipe-row clickable-item" data-id="${item.upgradesFrom}">
+          ${imgTag(item.upgradesFrom, 'item-icon-md')}
+          <span class="${prev ? rarityClass(prev.rarity) : ''}">${prevName}</span>
+        </div>`;
+    if (item.upgradeCost && Object.keys(item.upgradeCost).length > 0) {
+      html += `
+        <p class="upgrade-cost-label">Upgrade cost:</p>
+        <div class="detail-breakdown">
+          ${Object.entries(item.upgradeCost).map(([matId, qty]) => {
+            const mat = itemsMap[matId];
+            const name = mat ? mat.name.en : matId;
+            return `
+              <div class="recipe-row clickable-item" data-id="${matId}">
+                ${imgTag(matId, 'item-icon-md')}
+                <span class="${mat ? rarityClass(mat.rarity) : ''}">${name}</span>
+                <span class="qty-badge">${qty}×</span>
+              </div>`;
+          }).join('')}
+        </div>`;
+    }
+
+    // Full upgrade chain: I → II → III → IV total cost
+    const chain = [];
+    let cur = item;
+    while (cur) {
+      if (cur.upgradeCost) chain.unshift({ id: cur.id, name: cur.name.en, cost: cur.upgradeCost });
+      const prevItem = cur.upgradesFrom ? itemsMap[cur.upgradesFrom] : null;
+      cur = prevItem;
+    }
+    if (chain.length > 1) {
+      const totalMats = {};
+      for (const step of chain) {
+        for (const [matId, qty] of Object.entries(step.cost)) {
+          totalMats[matId] = (totalMats[matId] || 0) + qty;
+        }
+      }
+      html += `
+        <p class="upgrade-cost-label">Total upgrade chain (${chain.map(c => c.name).join(' → ')}):</p>
+        <div class="detail-breakdown">
+          ${Object.entries(totalMats).sort((a,b) => b[1] - a[1]).map(([matId, qty]) => {
+            const mat = itemsMap[matId];
+            const name = mat ? mat.name.en : matId;
+            return `
+              <div class="recipe-row clickable-item" data-id="${matId}">
+                ${imgTag(matId, 'item-icon-md')}
+                <span class="${mat ? rarityClass(mat.rarity) : ''}">${name}</span>
+                <span class="qty-badge">${qty}×</span>
+              </div>`;
+          }).join('')}
+        </div>`;
+    }
+
+    html += `</div>`;
+  }
+
   // Used In (reverse lookup)
   const uses = usedInMap[item.id];
   if (uses && uses.length > 0) {
@@ -362,7 +442,16 @@ function showItemDetail(id) {
 function initCalc() {
   const input = document.getElementById('calcSearch');
   const results = document.getElementById('calcResults');
-  setupSearch(input, results, addItem, item => !selected.some(s => s.id === item.id));
+  const toggle = document.getElementById('calcIncludeCombat');
+  const filterFn = item => {
+    if (selected.some(s => s.id === item.id)) return false;
+    if (!toggle.checked && isCombatItem(item)) return false;
+    return true;
+  };
+  setupSearch(input, results, addItem, filterFn);
+  toggle.addEventListener('change', () => {
+    if (input.value.trim().length > 0) showDropdown(input, results, addItem, filterFn);
+  });
   document.getElementById('calculateBtn').addEventListener('click', onCalculate);
 }
 
