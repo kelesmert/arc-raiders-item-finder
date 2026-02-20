@@ -12,6 +12,7 @@ import {
 // ===== State =====
 let allItems = [];
 let selected = [];          // calculator: { id, quantity }
+let currentDetailId = null; // currently displayed item in browse tab
 
 const COMBAT_TYPES = new Set([
   'Ammunition', 'Assault Rifle', 'Battle Rifle', 'Hand Cannon',
@@ -30,6 +31,35 @@ function imgTag(id, cls) {
   return `<img class="item-icon ${cls}" src="item-photos/${id}.png" alt="" loading="lazy">`;
 }
 function rarityClass(r) { return r ? `rarity-${r.toLowerCase()}` : ''; }
+
+/** For a craftable material and a quantity, return inline HTML showing base material breakdown */
+function baseBreakdownHint(matId, qty) {
+  const mat = itemsMap[matId];
+  if (!mat || !mat.recipe) return '';  // base material, no breakdown
+  const tree = resolveTree(matId, qty);
+  const bases = flattenToBaseMaterials(tree);
+  const parts = Object.values(bases)
+    .sort((a, b) => b.totalQuantity - a.totalQuantity)
+    .map(b => `${imgTag(b.id, 'item-icon-xs')}<span class="${rarityClass(b.rarity)}">${b.totalQuantity} ${b.name.en}</span>`)
+    .join(' + ');
+  return `<div class="base-hint">${qty}×${mat.recipe ? Object.keys(mat.recipe).length + ' mats' : ''} = ${parts}</div>`;
+}
+
+// ===== Filter combat items from obtain tree nodes =====
+function filterObtainNodes(nodes) {
+  return nodes
+    .filter(n => {
+      const item = itemsMap[n.id];
+      return !item || !isCombatItem(item);
+    })
+    .map(n => ({
+      ...n,
+      children: n.children ? {
+        recycle: filterObtainNodes(n.children.recycle || []),
+        salvage: filterObtainNodes(n.children.salvage || [])
+      } : n.children
+    }));
+}
 
 // ===== Obtain Node Renderer (multi-level reverse tree) =====
 function renderObtainNode(node) {
@@ -142,24 +172,22 @@ function initBrowse() {
   const input = document.getElementById('browseSearch');
   const results = document.getElementById('browseResults');
   const toggle = document.getElementById('browseIncludeCombat');
-  setupSearch(input, results, showItemDetail, item => {
-    if (!toggle.checked && isCombatItem(item)) return false;
-    return true;
-  });
+  // Search always shows all items (no combat filter on search)
+  setupSearch(input, results, showItemDetail);
   toggle.addEventListener('change', () => {
-    if (input.value.trim().length > 0) showDropdown(input, results, showItemDetail, item => {
-      if (!toggle.checked && isCombatItem(item)) return false;
-      return true;
-    });
+    // Re-render current detail to apply combat filter to detail sections
+    if (currentDetailId) showItemDetail(currentDetailId);
   });
 }
 
 function showItemDetail(id) {
   const item = itemsMap[id];
   if (!item) return;
+  currentDetailId = id;
   const el = document.getElementById('itemDetail');
   const rc = rarityClass(item.rarity);
   const craftable = !!item.recipe;
+  const includeCombat = document.getElementById('browseIncludeCombat').checked;
 
   // Header section
   let html = `
@@ -274,13 +302,18 @@ function showItemDetail(id) {
 
   // Obtained From (reverse recycle/salvage multi-level tree)
   const obtainTree = resolveObtainTree(item.id, 2);
-  const hasRecycleSrc = obtainTree.recycle.length > 0;
-  const hasSalvageSrc = obtainTree.salvage.length > 0;
+  // Filter out combat items if toggle is off
+  const filteredRecycle = includeCombat ? obtainTree.recycle
+    : filterObtainNodes(obtainTree.recycle);
+  const filteredSalvage = includeCombat ? obtainTree.salvage
+    : filterObtainNodes(obtainTree.salvage);
+  const hasRecycleSrc = filteredRecycle.length > 0;
+  const hasSalvageSrc = filteredSalvage.length > 0;
   if (hasRecycleSrc || hasSalvageSrc) {
     html += `<div class="detail-section"><h3>📥 Obtained From</h3>`;
 
     if (hasRecycleSrc) {
-      const sorted = [...obtainTree.recycle].sort((a, b) => b.quantity - a.quantity);
+      const sorted = [...filteredRecycle].sort((a, b) => b.quantity - a.quantity);
       html += `
         <div class="obtain-group">
           <div class="obtain-group-header">
@@ -295,7 +328,7 @@ function showItemDetail(id) {
     }
 
     if (hasSalvageSrc) {
-      const sorted = [...obtainTree.salvage].sort((a, b) => b.quantity - a.quantity);
+      const sorted = [...filteredSalvage].sort((a, b) => b.quantity - a.quantity);
       html += `
         <div class="obtain-group">
           <div class="obtain-group-header">
@@ -332,10 +365,13 @@ function showItemDetail(id) {
             const mat = itemsMap[matId];
             const name = mat ? mat.name.en : matId;
             return `
-              <div class="recipe-row clickable-item" data-id="${matId}">
-                ${imgTag(matId, 'item-icon-md')}
-                <span class="${mat ? rarityClass(mat.rarity) : ''}">${name}</span>
-                <span class="qty-badge">${qty}×</span>
+              <div class="upgrade-mat-block">
+                <div class="recipe-row clickable-item" data-id="${matId}">
+                  ${imgTag(matId, 'item-icon-md')}
+                  <span class="${mat ? rarityClass(mat.rarity) : ''}">${name}</span>
+                  <span class="qty-badge">${qty}×</span>
+                </div>
+                ${baseBreakdownHint(matId, qty)}
               </div>`;
           }).join('')}
         </div>`;
@@ -363,10 +399,13 @@ function showItemDetail(id) {
             const mat = itemsMap[matId];
             const name = mat ? mat.name.en : matId;
             return `
-              <div class="recipe-row clickable-item" data-id="${matId}">
-                ${imgTag(matId, 'item-icon-md')}
-                <span class="${mat ? rarityClass(mat.rarity) : ''}">${name}</span>
-                <span class="qty-badge">${qty}×</span>
+              <div class="upgrade-mat-block">
+                <div class="recipe-row clickable-item" data-id="${matId}">
+                  ${imgTag(matId, 'item-icon-md')}
+                  <span class="${mat ? rarityClass(mat.rarity) : ''}">${name}</span>
+                  <span class="qty-badge">${qty}×</span>
+                </div>
+                ${baseBreakdownHint(matId, qty)}
               </div>`;
           }).join('')}
         </div>`;
@@ -377,12 +416,17 @@ function showItemDetail(id) {
 
   // Used In (reverse lookup)
   const uses = usedInMap[item.id];
-  if (uses && uses.length > 0) {
+  const filteredUses = uses ? uses.filter(u => {
+    if (includeCombat) return true;
+    const parent = itemsMap[u.id];
+    return parent && !isCombatItem(parent);
+  }) : [];
+  if (filteredUses.length > 0) {
     html += `
       <div class="detail-section">
         <h3>🔧 Used to Craft</h3>
         <div class="detail-breakdown">
-          ${uses.map(u => {
+          ${filteredUses.map(u => {
             const parent = itemsMap[u.id];
             if (!parent) return '';
             return `
