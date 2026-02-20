@@ -1,0 +1,4855 @@
+[
+    {
+        "id":  "combat_mk1",
+        "name":  {
+                     "en":  "Combat Mk. 1",
+                     "tr":  "Çatışma Mod. 1"
+                 },
+        "type":  "Augment",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  640,
+        "stackSize":  1,
+        "craftBench":  "equipment_bench",
+        "recipe":  {
+                       "plastic_parts":  6,
+                       "rubber_parts":  6
+                   },
+        "recyclesInto":  {
+                             "plastic_parts":  3,
+                             "rubber_parts":  3
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  3
+                         }
+    },
+    {
+        "id":  "combat_mk2",
+        "name":  {
+                     "en":  "Combat Mk. 2",
+                     "tr":  "Çatışma Mod. 2"
+                 },
+        "type":  "Augment",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  2000,
+        "stackSize":  1,
+        "craftBench":  "equipment_bench",
+        "recipe":  {
+                       "electrical_components":  2,
+                       "magnet":  3
+                   },
+        "recyclesInto":  {
+                             "electrical_components":  1,
+                             "magnet":  1
+                         },
+        "salvagesInto":  {
+                             "electrical_components":  1
+                         }
+    },
+    {
+        "id":  "combat_mk3_aggressive",
+        "name":  {
+                     "en":  "Combat Mk. 3 (Aggressive)",
+                     "tr":  "Çatışma Mod. 3 (Saldırgan)"
+                 },
+        "type":  "Augment",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  1,
+        "craftBench":  "equipment_bench",
+        "recipe":  {
+                       "advanced_electrical_components":  2,
+                       "processor":  3
+                   },
+        "recyclesInto":  {
+                             "advanced_electrical_components":  1,
+                             "processor":  1
+                         },
+        "salvagesInto":  {
+                             "electrical_components":  2
+                         }
+    },
+    {
+        "id":  "combat_mk3_flanking",
+        "name":  {
+                     "en":  "Combat Mk. 3 (Flanking)",
+                     "tr":  "Çatışma Mod. 3 (Baskın)"
+                 },
+        "type":  "Augment",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  1,
+        "craftBench":  "equipment_bench",
+        "recipe":  {
+                       "advanced_electrical_components":  2,
+                       "processor":  3
+                   },
+        "recyclesInto":  {
+                             "advanced_electrical_components":  1,
+                             "processor":  1
+                         },
+        "salvagesInto":  {
+                             "electrical_components":  2
+                         }
+    },
+    {
+        "id":  "free_loadout_augment",
+        "name":  {
+                     "en":  "Free Loadout Augment",
+                     "tr":  "Ücretsiz Teçhizat Yükseltici"
+                 },
+        "type":  "Augment",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  100,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  null,
+        "salvagesInto":  null
+    },
+    {
+        "id":  "looting_mk1",
+        "name":  {
+                     "en":  "Looting Mk. 1",
+                     "tr":  "Yağmalama Mod. 1"
+                 },
+        "type":  "Augment",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  640,
+        "stackSize":  1,
+        "craftBench":  [
+                           "equipment_bench",
+                           "workbench"
+                       ],
+        "recipe":  {
+                       "plastic_parts":  6,
+                       "rubber_parts":  6
+                   },
+        "recyclesInto":  {
+                             "plastic_parts":  3,
+                             "rubber_parts":  3
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  3
+                         }
+    },
+    {
+        "id":  "looting_mk2",
+        "name":  {
+                     "en":  "Looting Mk. 2",
+                     "tr":  "Yağmalama Mod. 2"
+                 },
+        "type":  "Augment",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  2000,
+        "stackSize":  1,
+        "craftBench":  "equipment_bench",
+        "recipe":  {
+                       "electrical_components":  2,
+                       "magnet":  3
+                   },
+        "recyclesInto":  {
+                             "electrical_components":  1,
+                             "magnet":  1
+                         },
+        "salvagesInto":  {
+                             "electrical_components":  1
+                         }
+    },
+    {
+        "id":  "looting_mk3_cautious",
+        "name":  {
+                     "en":  "Looting Mk. 3 (Cautious)",
+                     "tr":  "Yağmalama Mod. 3 (Dikkatli)"
+                 },
+        "type":  "Augment",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  1,
+        "craftBench":  "equipment_bench",
+        "recipe":  {
+                       "advanced_electrical_components":  2,
+                       "processor":  3
+                   },
+        "recyclesInto":  {
+                             "advanced_electrical_components":  1,
+                             "processor":  1
+                         },
+        "salvagesInto":  {
+                             "electrical_components":  2
+                         }
+    },
+    {
+        "id":  "looting_mk3_safekeeper",
+        "name":  {
+                     "en":  "Looting Mk. 3 (Safekeeper)",
+                     "tr":  "Yağmalama Mod.3 (Koruyucu)"
+                 },
+        "type":  "Augment",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  1,
+        "craftBench":  "equipment_bench",
+        "recipe":  {
+                       "advanced_electrical_components":  2,
+                       "processor":  3
+                   },
+        "recyclesInto":  {
+                             "advanced_electrical_components":  1,
+                             "processor":  1
+                         },
+        "salvagesInto":  {
+                             "electrical_components":  2
+                         }
+    },
+    {
+        "id":  "looting_mk3_survivor",
+        "name":  {
+                     "en":  "Looting Mk. 3 (Survivor)",
+                     "tr":  "Yağmalama Mod.3 (Hayatta Kalan)"
+                 },
+        "type":  "Augment",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  1,
+        "craftBench":  "equipment_bench",
+        "recipe":  {
+                       "advanced_electrical_components":  2,
+                       "processor":  3
+                   },
+        "recyclesInto":  {
+                             "advanced_electrical_components":  1,
+                             "processor":  1
+                         },
+        "salvagesInto":  {
+                             "electrical_components":  2
+                         }
+    },
+    {
+        "id":  "tactical_mk1",
+        "name":  {
+                     "en":  "Tactical Mk. 1",
+                     "tr":  "Taktiksel Mod. 1"
+                 },
+        "type":  "Augment",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  640,
+        "stackSize":  1,
+        "craftBench":  "equipment_bench",
+        "recipe":  {
+                       "plastic_parts":  6,
+                       "rubber_parts":  6
+                   },
+        "recyclesInto":  {
+                             "plastic_parts":  3,
+                             "rubber_parts":  3
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  3
+                         }
+    },
+    {
+        "id":  "tactical_mk2",
+        "name":  {
+                     "en":  "Tactical Mk. 2",
+                     "tr":  "Taktiksel Mod. 2"
+                 },
+        "type":  "Augment",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  2000,
+        "stackSize":  1,
+        "craftBench":  "equipment_bench",
+        "recipe":  {
+                       "electrical_components":  2,
+                       "magnet":  3
+                   },
+        "recyclesInto":  {
+                             "electrical_components":  1,
+                             "magnet":  1
+                         },
+        "salvagesInto":  {
+                             "electrical_components":  1
+                         }
+    },
+    {
+        "id":  "tactical_mk3_defensive",
+        "name":  {
+                     "en":  "Tactical Mk. 3 (Defensive)",
+                     "tr":  "Taktiksel Mod. 3 (Savunma)"
+                 },
+        "type":  "Augment",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  1,
+        "craftBench":  "equipment_bench",
+        "recipe":  {
+                       "advanced_electrical_components":  2,
+                       "processor":  3
+                   },
+        "recyclesInto":  {
+                             "advanced_electrical_components":  1,
+                             "processor":  1
+                         },
+        "salvagesInto":  {
+                             "electrical_components":  2
+                         }
+    },
+    {
+        "id":  "tactical_mk3_healing",
+        "name":  {
+                     "en":  "Tactical Mk. 3 (Healing)",
+                     "tr":  "Taktiksel Mod. 3 (İyileştirme)"
+                 },
+        "type":  "Augment",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  1,
+        "craftBench":  "equipment_bench",
+        "recipe":  {
+                       "advanced_electrical_components":  2,
+                       "processor":  3
+                   },
+        "recyclesInto":  {
+                             "advanced_electrical_components":  1,
+                             "processor":  1
+                         },
+        "salvagesInto":  {
+                             "electrical_components":  2
+                         }
+    },
+    {
+        "id":  "tactical_mk3_revival",
+        "name":  {
+                     "en":  "Tactical Mk. 3 (Revival)",
+                     "tr":  "Taktiksel Mod. 3 (Diriltici)"
+                 },
+        "type":  "Augment",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  1,
+        "craftBench":  "equipment_bench",
+        "recipe":  {
+                       "advanced_electrical_components":  2,
+                       "processor":  3
+                   },
+        "recyclesInto":  {
+                             "advanced_electrical_components":  1,
+                             "processor":  1
+                         },
+        "salvagesInto":  null
+    },
+    {
+        "id":  "chemicals",
+        "name":  {
+                     "en":  "Chemicals",
+                     "tr":  "Kimyasallar"
+                 },
+        "type":  "Basic Material",
+        "rarity":  "Common",
+        "foundIn":  "Medical, Residential, Mechanical",
+        "value":  50,
+        "stackSize":  50,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  null,
+        "salvagesInto":  null
+    },
+    {
+        "id":  "fabric",
+        "name":  {
+                     "en":  "Fabric",
+                     "tr":  "Kumaş"
+                 },
+        "type":  "Basic Material",
+        "rarity":  "Common",
+        "foundIn":  "Commercial, Medical, Residential",
+        "value":  50,
+        "stackSize":  50,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+
+                         },
+        "salvagesInto":  null
+    },
+    {
+        "id":  "metal_parts",
+        "name":  {
+                     "en":  "Metal Parts",
+                     "tr":  "Metal Parçalar"
+                 },
+        "type":  "Basic Material",
+        "rarity":  "Common",
+        "foundIn":  "Mechanical, Industrial, Electrical, Technological",
+        "value":  75,
+        "stackSize":  50,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+
+                         },
+        "salvagesInto":  null
+    },
+    {
+        "id":  "plastic_parts",
+        "name":  {
+                     "en":  "Plastic Parts",
+                     "tr":  "Plastik Parçalar"
+                 },
+        "type":  "Basic Material",
+        "rarity":  "Common",
+        "foundIn":  "Commercial, Residential, Technological",
+        "value":  60,
+        "stackSize":  50,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+
+                         },
+        "salvagesInto":  null
+    },
+    {
+        "id":  "rubber_parts",
+        "name":  {
+                     "en":  "Rubber Parts",
+                     "tr":  "Kauçuk Parçalar"
+                 },
+        "type":  "Basic Material",
+        "rarity":  "Common",
+        "foundIn":  "Mechanical, Industrial, Electrical",
+        "value":  50,
+        "stackSize":  50,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+
+                         },
+        "salvagesInto":  null
+    },
+    {
+        "id":  "acoustic_guitar",
+        "name":  {
+                     "en":  "Acoustic Guitar",
+                     "tr":  "Akustik Gitar"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Legendary",
+        "foundIn":  null,
+        "value":  7000,
+        "stackSize":  1,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  4,
+                             "wires":  6
+                         },
+        "salvagesInto":  {
+                             "wires":  3
+                         }
+    },
+    {
+        "id":  "adrenaline_shot",
+        "name":  {
+                     "en":  "Adrenaline Shot",
+                     "tr":  "Adrenalin İğnesi"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  300,
+        "stackSize":  5,
+        "craftBench":  "med_station",
+        "recipe":  {
+                       "chemicals":  3,
+                       "plastic_parts":  3
+                   },
+        "recyclesInto":  {
+                             "chemicals":  1,
+                             "plastic_parts":  1
+                         },
+        "salvagesInto":  {
+                             "chemicals":  1
+                         }
+    },
+    {
+        "id":  "bandage",
+        "name":  {
+                     "en":  "Bandage",
+                     "tr":  "Bandaj"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  250,
+        "stackSize":  5,
+        "craftBench":  [
+                           "workbench",
+                           "med_station"
+                       ],
+        "recipe":  {
+                       "fabric":  5
+                   },
+        "recyclesInto":  {
+                             "fabric":  2
+                         },
+        "salvagesInto":  {
+                             "fabric":  1
+                         }
+    },
+    {
+        "id":  "barricade_kit",
+        "name":  {
+                     "en":  "Barricade Kit",
+                     "tr":  "Barikat Kiti"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  "utility_bench",
+        "recipe":  {
+                       "mechanical_components":  1
+                   },
+        "recyclesInto":  {
+                             "metal_parts":  4
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  3
+                         }
+    },
+    {
+        "id":  "binoculars",
+        "name":  {
+                     "en":  "Binoculars",
+                     "tr":  "Dürbün"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  640,
+        "stackSize":  null,
+        "craftBench":  "utility_bench",
+        "recipe":  {
+                       "plastic_parts":  8,
+                       "rubber_parts":  4
+                   },
+        "recyclesInto":  {
+                             "plastic_parts":  4,
+                             "rubber_parts":  2
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  4
+                         }
+    },
+    {
+        "id":  "blaze_grenade",
+        "name":  {
+                     "en":  "Blaze Grenade",
+                     "tr":  "Alev Bombası"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  1600,
+        "stackSize":  5,
+        "craftBench":  "explosives_bench",
+        "recipe":  {
+                       "explosive_compound":  1,
+                       "oil":  2
+                   },
+        "recyclesInto":  {
+                             "metal_parts":  4,
+                             "oil":  2
+                         },
+        "salvagesInto":  {
+                             "oil":  1
+                         }
+    },
+    {
+        "id":  "blaze_grenade_trap",
+        "name":  {
+                     "en":  "Blaze Grenade Trap",
+                     "tr":  "Lazer Tuzağı: Ateş"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  "workbench",
+        "recipe":  {
+                       "blaze_grenade":  1,
+                       "wires":  1
+                   },
+        "recyclesInto":  null,
+        "salvagesInto":  null
+    },
+    {
+        "id":  "blue_light_stick",
+        "name":  {
+                     "en":  "Blue Light Stick",
+                     "tr":  "Mavi Işık Çubuğu"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  150,
+        "stackSize":  5,
+        "craftBench":  "utility_bench",
+        "recipe":  {
+                       "chemicals":  3
+                   },
+        "recyclesInto":  {
+                             "chemicals":  1
+                         },
+        "salvagesInto":  {
+                             "chemicals":  1
+                         }
+    },
+    {
+        "id":  "deadline",
+        "name":  {
+                     "en":  "Deadline",
+                     "tr":  "Mühlet"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  1,
+        "craftBench":  "explosives_bench",
+        "recipe":  {
+                       "arc_circuitry":  2,
+                       "explosive_compound":  3
+                   },
+        "recyclesInto":  {
+                             "arc_circuitry":  1,
+                             "explosive_compound":  1
+                         },
+        "salvagesInto":  {
+                             "explosive_compound":  1
+                         }
+    },
+    {
+        "id":  "defibrillator",
+        "name":  {
+                     "en":  "Defibrillator",
+                     "tr":  "Şok Cihazı"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  "med_station",
+        "recipe":  {
+                       "moss":  1,
+                       "plastic_parts":  9
+                   },
+        "recyclesInto":  {
+                             "moss":  1,
+                             "plastic_parts":  1
+                         },
+        "salvagesInto":  {
+                             "chemicals":  2
+                         }
+    },
+    {
+        "id":  "door_blocker",
+        "name":  {
+                     "en":  "Door Blocker",
+                     "tr":  "Kapı Engeli"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  270,
+        "stackSize":  3,
+        "craftBench":  "utility_bench",
+        "recipe":  {
+                       "metal_parts":  3,
+                       "rubber_parts":  3
+                   },
+        "recyclesInto":  {
+                             "metal_parts":  2
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  1
+                         }
+    },
+    {
+        "id":  "explosive_mine",
+        "name":  {
+                     "en":  "Explosive Mine",
+                     "tr":  "Patlayıcı Mayın"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  1500,
+        "stackSize":  3,
+        "craftBench":  "explosives_bench",
+        "recipe":  {
+                       "explosive_compound":  1,
+                       "sensors":  1
+                   },
+        "recyclesInto":  {
+                             "oil":  2,
+                             "sensors":  1
+                         },
+        "salvagesInto":  {
+                             "oil":  2
+                         }
+    },
+    {
+        "id":  "firecracker",
+        "name":  {
+                     "en":  "Firecracker",
+                     "tr":  "Maytap"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  270,
+        "stackSize":  5,
+        "craftBench":  "utility_bench",
+        "recipe":  {
+                       "chemicals":  2,
+                       "plastic_parts":  4
+                   },
+        "recyclesInto":  {
+                             "plastic_parts":  3
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  1
+                         }
+    },
+    {
+        "id":  "fireworks_box",
+        "name":  {
+                     "en":  "Fireworks Box",
+                     "tr":  "Havai Fişek Kutusu"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  2000,
+        "stackSize":  1,
+        "craftBench":  "explosives_bench",
+        "recipe":  {
+                       "explosive_compound":  1,
+                       "pop_trigger":  3
+                   },
+        "recyclesInto":  {
+                             "explosive_compound":  1
+                         },
+        "salvagesInto":  {
+                             "explosive_compound":  1
+                         }
+    },
+    {
+        "id":  "flame_spray",
+        "name":  {
+                     "en":  "Flame Spray",
+                     "tr":  "Alev Püskürtücü"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  640,
+        "stackSize":  null,
+        "craftBench":  "in_raid",
+        "recipe":  {
+                       "air_freshener":  1,
+                       "fireball_burner":  1
+                   },
+        "recyclesInto":  {
+                             "canister":  1,
+                             "fireball_burner":  1
+                         },
+        "salvagesInto":  {
+                             "fireball_burner":  1
+                         }
+    },
+    {
+        "id":  "fruit_mix",
+        "name":  {
+                     "en":  "Fruit Mix",
+                     "tr":  "Meyve Karışımı"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  1800,
+        "stackSize":  5,
+        "craftBench":  "in_raid",
+        "recipe":  {
+                       "apricot":  1,
+                       "lemon":  1,
+                       "prickly_pear":  1
+                   },
+        "recyclesInto":  null,
+        "salvagesInto":  null
+    },
+    {
+        "id":  "gas_grenade",
+        "name":  {
+                     "en":  "Gas Grenade",
+                     "tr":  "Gaz Bombası"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  270,
+        "stackSize":  3,
+        "craftBench":  "explosives_bench",
+        "recipe":  {
+                       "chemicals":  4,
+                       "rubber_parts":  2
+                   },
+        "recyclesInto":  {
+                             "chemicals":  1,
+                             "rubber_parts":  1
+                         },
+        "salvagesInto":  {
+                             "chemicals":  1
+                         }
+    },
+    {
+        "id":  "gas_grenade_trap",
+        "name":  {
+                     "en":  "Gas Grenade Trap",
+                     "tr":  "Lazer Tuzağı: Gaz"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  300,
+        "stackSize":  3,
+        "craftBench":  "workbench",
+        "recipe":  {
+                       "gas_grenade":  1,
+                       "wires":  1
+                   },
+        "recyclesInto":  null,
+        "salvagesInto":  null
+    },
+    {
+        "id":  "gas_mine",
+        "name":  {
+                     "en":  "Gas Mine",
+                     "tr":  "Sıçrama Mayını: Enerji Azaltıcı"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  270,
+        "stackSize":  3,
+        "craftBench":  "explosives_bench",
+        "recipe":  {
+                       "chemicals":  4,
+                       "rubber_parts":  2
+                   },
+        "recyclesInto":  {
+                             "chemicals":  1,
+                             "rubber_parts":  1
+                         },
+        "salvagesInto":  {
+                             "chemicals":  2
+                         }
+    },
+    {
+        "id":  "green_light_stick",
+        "name":  {
+                     "en":  "Green Light Stick",
+                     "tr":  "Yeşil Işık Çubuğu"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  150,
+        "stackSize":  5,
+        "craftBench":  "utility_bench",
+        "recipe":  {
+                       "chemicals":  3
+                   },
+        "recyclesInto":  {
+                             "chemicals":  1
+                         },
+        "salvagesInto":  {
+                             "chemicals":  1
+                         }
+    },
+    {
+        "id":  "heavy_fuze_grenade",
+        "name":  {
+                     "en":  "Heavy Fuze Grenade",
+                     "tr":  "Ağır Fünye Bombası"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  1600,
+        "stackSize":  3,
+        "craftBench":  "explosives_bench",
+        "recipe":  {
+                       "canister":  2,
+                       "explosive_compound":  1
+                   },
+        "recyclesInto":  {
+                             "oil":  1,
+                             "rubber_parts":  2
+                         },
+        "salvagesInto":  {
+                             "crude_explosives":  1
+                         }
+    },
+    {
+        "id":  "herbal_bandage",
+        "name":  {
+                     "en":  "Herbal Bandage",
+                     "tr":  "Bitkisel Bandaj"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  900,
+        "stackSize":  5,
+        "craftBench":  "med_station",
+        "recipe":  {
+                       "durable_cloth":  1,
+                       "great_mullein":  1
+                   },
+        "recyclesInto":  {
+                             "assorted_seeds":  2,
+                             "fabric":  5
+                         },
+        "salvagesInto":  {
+                             "fabric":  8
+                         }
+    },
+    {
+        "id":  "jolt_mine",
+        "name":  {
+                     "en":  "Jolt Mine",
+                     "tr":  "Şok Mayını"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  850,
+        "stackSize":  3,
+        "craftBench":  "explosives_bench",
+        "recipe":  {
+                       "battery":  1,
+                       "electrical_components":  1
+                   },
+        "recyclesInto":  {
+                             "battery":  1,
+                             "plastic_parts":  2
+                         },
+        "salvagesInto":  {
+                             "battery":  1
+                         }
+    },
+    {
+        "id":  "light_impact_grenade",
+        "name":  {
+                     "en":  "Light Impact Grenade",
+                     "tr":  "Hafif Darbe Bombası"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  270,
+        "stackSize":  5,
+        "craftBench":  [
+                           "workbench",
+                           "explosives_bench"
+                       ],
+        "recipe":  {
+                       "chemicals":  3,
+                       "plastic_parts":  2
+                   },
+        "recyclesInto":  {
+                             "chemicals":  1,
+                             "plastic_parts":  1
+                         },
+        "salvagesInto":  {
+                             "chemicals":  1
+                         }
+    },
+    {
+        "id":  "lil_smoke_grenade",
+        "name":  {
+                     "en":  "Li\u0027l Smoke Grenade",
+                     "tr":  "Küçük Sis Bombası"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  300,
+        "stackSize":  5,
+        "craftBench":  "utility_bench",
+        "recipe":  {
+                       "chemicals":  5,
+                       "plastic_parts":  1
+                   },
+        "recyclesInto":  {
+                             "chemicals":  1,
+                             "plastic_parts":  1
+                         },
+        "salvagesInto":  {
+                             "chemicals":  2
+                         }
+    },
+    {
+        "id":  "lure_grenade",
+        "name":  {
+                     "en":  "Lure Grenade",
+                     "tr":  "Yem Bombası"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  1000,
+        "stackSize":  null,
+        "craftBench":  "utility_bench",
+        "recipe":  {
+                       "electrical_components":  1,
+                       "speaker_component":  1
+                   },
+        "recyclesInto":  {
+                             "speaker_component":  1
+                         },
+        "salvagesInto":  {
+                             "speaker_component":  1
+                         }
+    },
+    {
+        "id":  "lure_grenade_trap",
+        "name":  {
+                     "en":  "Lure Grenade Trap",
+                     "tr":  "Lazer Tuzağı: Yem"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  "workbench",
+        "recipe":  {
+                       "lure_grenade":  1,
+                       "wires":  1
+                   },
+        "recyclesInto":  null,
+        "salvagesInto":  null
+    },
+    {
+        "id":  "noisemaker",
+        "name":  {
+                     "en":  "Noisemaker",
+                     "tr":  "Yaygaracı"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  "in_raid",
+        "recipe":  {
+                       "plastic_parts":  2,
+                       "speaker_component":  1
+                   },
+        "recyclesInto":  {
+                             "speaker_component":  1
+                         },
+        "salvagesInto":  {
+                             "speaker_component":  1
+                         }
+    },
+    {
+        "id":  "photoelectric_cloak",
+        "name":  {
+                     "en":  "Photoelectric Cloak",
+                     "tr":  "Fotoelektrikli Örtü"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  null,
+        "craftBench":  "utility_bench",
+        "recipe":  {
+                       "advanced_electrical_components":  2,
+                       "speaker_component":  4
+                   },
+        "recyclesInto":  {
+                             "advanced_electrical_components":  1,
+                             "speaker_component":  1
+                         },
+        "salvagesInto":  {
+                             "advanced_electrical_components":  1
+                         }
+    },
+    {
+        "id":  "pulse_mine",
+        "name":  {
+                     "en":  "Pulse Mine",
+                     "tr":  "Sıçrama Mayını: İtici"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  470,
+        "stackSize":  3,
+        "craftBench":  "explosives_bench",
+        "recipe":  {
+                       "crude_explosives":  1,
+                       "wires":  1
+                   },
+        "recyclesInto":  {
+                             "chemicals":  6
+                         },
+        "salvagesInto":  {
+                             "chemicals":  3
+                         }
+    },
+    {
+        "id":  "recorder",
+        "name":  {
+                     "en":  "Recorder",
+                     "tr":  "Çalınabilen Flüt"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Uncommon",
+        "foundIn":  "Residential",
+        "value":  1000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "plastic_parts":  10
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  4
+                         }
+    },
+    {
+        "id":  "red_light_stick",
+        "name":  {
+                     "en":  "Red Light Stick",
+                     "tr":  "Kırmızı Işık Çubuğu"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  150,
+        "stackSize":  5,
+        "craftBench":  "utility_bench",
+        "recipe":  {
+                       "chemicals":  3
+                   },
+        "recyclesInto":  {
+                             "chemicals":  1
+                         },
+        "salvagesInto":  {
+                             "chemicals":  1
+                         }
+    },
+    {
+        "id":  "remote_raider_flare",
+        "name":  {
+                     "en":  "Remote Raider Flare",
+                     "tr":  "Kumandalı Raider Fişeği"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  270,
+        "stackSize":  3,
+        "craftBench":  "utility_bench",
+        "recipe":  {
+                       "chemicals":  2,
+                       "rubber_parts":  4
+                   },
+        "recyclesInto":  {
+                             "chemicals":  1,
+                             "rubber_parts":  1
+                         },
+        "salvagesInto":  {
+                             "chemicals":  1
+                         }
+    },
+    {
+        "id":  "seeker_grenade",
+        "name":  {
+                     "en":  "Seeker Grenade",
+                     "tr":  "Güdümlü Bomba"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  640,
+        "stackSize":  5,
+        "craftBench":  "explosives_bench",
+        "recipe":  {
+                       "arc_alloy":  2,
+                       "crude_explosives":  1
+                   },
+        "recyclesInto":  {
+                             "crude_explosives":  1
+                         },
+        "salvagesInto":  {
+                             "chemicals":  3
+                         }
+    },
+    {
+        "id":  "shaker",
+        "name":  {
+                     "en":  "Shaker",
+                     "tr":  "Marakas"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Uncommon",
+        "foundIn":  "Residential",
+        "value":  1000,
+        "stackSize":  1,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "plastic_parts":  10
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  4
+                         }
+    },
+    {
+        "id":  "shield_recharger",
+        "name":  {
+                     "en":  "Shield Recharger",
+                     "tr":  "Kalkan Doldurucu"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  520,
+        "stackSize":  5,
+        "craftBench":  [
+                           "workbench",
+                           "med_station",
+                           "in_raid"
+                       ],
+        "recipe":  {
+                       "arc_powercell":  1,
+                       "rubber_parts":  5
+                   },
+        "recyclesInto":  {
+                             "rubber_parts":  4
+                         },
+        "salvagesInto":  {
+                             "rubber_parts":  3
+                         }
+    },
+    {
+        "id":  "showstopper",
+        "name":  {
+                     "en":  "Showstopper",
+                     "tr":  "Efsane"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  2200,
+        "stackSize":  5,
+        "craftBench":  "explosives_bench",
+        "recipe":  {
+                       "advanced_electrical_components":  1,
+                       "voltage_converter":  1
+                   },
+        "recyclesInto":  {
+                             "battery":  2,
+                             "electrical_components":  1
+                         },
+        "salvagesInto":  {
+                             "battery":  2
+                         }
+    },
+    {
+        "id":  "shrapnel_grenade",
+        "name":  {
+                     "en":  "Shrapnel Grenade",
+                     "tr":  "Şarapnel Bombası"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  800,
+        "stackSize":  5,
+        "craftBench":  "explosives_bench",
+        "recipe":  {
+                       "crude_explosives":  1,
+                       "steel_spring":  2
+                   },
+        "recyclesInto":  {
+                             "crude_explosives":  1,
+                             "metal_parts":  1
+                         },
+        "salvagesInto":  {
+                             "crude_explosives":  1
+                         }
+    },
+    {
+        "id":  "smoke_grenade",
+        "name":  {
+                     "en":  "Smoke Grenade",
+                     "tr":  "Sis Bombası"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  "utility_bench",
+        "recipe":  {
+                       "canister":  1,
+                       "chemicals":  14
+                   },
+        "recyclesInto":  {
+                             "canister":  1,
+                             "chemicals":  2
+                         },
+        "salvagesInto":  {
+                             "chemicals":  3
+                         }
+    },
+    {
+        "id":  "smoke_grenade_trap",
+        "name":  {
+                     "en":  "Smoke Grenade Trap",
+                     "tr":  "Lazer Tuzağı: Sis"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  "workbench",
+        "recipe":  {
+                       "smoke_grenade":  1,
+                       "wires":  1
+                   },
+        "recyclesInto":  null,
+        "salvagesInto":  null
+    },
+    {
+        "id":  "snap_blast_grenade",
+        "name":  {
+                     "en":  "Snap Blast Grenade",
+                     "tr":  "Seri Patlama Bombası"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  800,
+        "stackSize":  3,
+        "craftBench":  "explosives_bench",
+        "recipe":  {
+                       "crude_explosives":  2,
+                       "magnet":  1
+                   },
+        "recyclesInto":  {
+                             "chemicals":  1,
+                             "magnet":  1
+                         },
+        "salvagesInto":  {
+                             "chemicals":  2
+                         }
+    },
+    {
+        "id":  "snap_hook",
+        "name":  {
+                     "en":  "Snap Hook",
+                     "tr":  "Kanca"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Legendary",
+        "foundIn":  null,
+        "value":  14000,
+        "stackSize":  null,
+        "craftBench":  "utility_bench",
+        "recipe":  {
+                       "exodus_modules":  1,
+                       "power_rod":  2,
+                       "rope":  3
+                   },
+        "recyclesInto":  {
+                             "power_rod":  1,
+                             "rope":  3
+                         },
+        "salvagesInto":  {
+                             "advanced_electrical_components":  2
+                         }
+    },
+    {
+        "id":  "snowball",
+        "name":  {
+                     "en":  "Snowball",
+                     "tr":  "Kar Topu"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Common",
+        "foundIn":  "Nature",
+        "value":  10,
+        "stackSize":  5,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+
+                         },
+        "salvagesInto":  null
+    },
+    {
+        "id":  "sterilized_bandage",
+        "name":  {
+                     "en":  "Sterilized Bandage",
+                     "tr":  "Steril Bandaj"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  2000,
+        "stackSize":  3,
+        "craftBench":  "med_station",
+        "recipe":  {
+                       "antiseptic":  1,
+                       "durable_cloth":  2
+                   },
+        "recyclesInto":  {
+                             "antiseptic":  1,
+                             "fabric":  1
+                         },
+        "salvagesInto":  {
+                             "durable_cloth":  1
+                         }
+    },
+    {
+        "id":  "surge_shield_recharger",
+        "name":  {
+                     "en":  "Surge Shield Recharger",
+                     "tr":  "Seri Kalkan Doldurucu"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  1200,
+        "stackSize":  5,
+        "craftBench":  "med_station",
+        "recipe":  {
+                       "advanced_arc_powercell":  1,
+                       "electrical_components":  1
+                   },
+        "recyclesInto":  {
+                             "electrical_components":  1
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  5
+                         }
+    },
+    {
+        "id":  "tagging_grenade",
+        "name":  {
+                     "en":  "Tagging Grenade",
+                     "tr":  "İşaretleme Bombası"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  "utility_bench",
+        "recipe":  {
+                       "electrical_components":  1,
+                       "sensors":  1
+                   },
+        "recyclesInto":  {
+                             "plastic_parts":  1,
+                             "sensors":  1
+                         },
+        "salvagesInto":  {
+                             "sensors":  1
+                         }
+    },
+    {
+        "id":  "trailblazer",
+        "name":  {
+                     "en":  "Trailblazer",
+                     "tr":  "Yol Açan"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  1600,
+        "stackSize":  3,
+        "craftBench":  "explosives_bench",
+        "recipe":  {
+                       "explosive_compound":  1,
+                       "synthesized_fuel":  1
+                   },
+        "recyclesInto":  {
+                             "crude_explosives":  2
+                         },
+        "salvagesInto":  {
+                             "crude_explosives":  1
+                         }
+    },
+    {
+        "id":  "trigger_nade",
+        "name":  {
+                     "en":  "Trigger \u0027Nade",
+                     "tr":  "Tetikleme Bombası"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  "explosives_bench",
+        "recipe":  {
+                       "crude_explosives":  2,
+                       "processor":  1
+                   },
+        "recyclesInto":  {
+                             "chemicals":  1,
+                             "processor":  1
+                         },
+        "salvagesInto":  {
+                             "processor":  1
+                         }
+    },
+    {
+        "id":  "vita_shot",
+        "name":  {
+                     "en":  "Vita Shot",
+                     "tr":  "Sağlık İğnesi"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  2200,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  {
+                       "antiseptic":  2,
+                       "syringe":  1
+                   },
+        "recyclesInto":  {
+                             "chemicals":  4,
+                             "syringe":  1
+                         },
+        "salvagesInto":  {
+                             "syringe":  1
+                         }
+    },
+    {
+        "id":  "vita_spray",
+        "name":  {
+                     "en":  "Vita Spray",
+                     "tr":  "Sağlık Spreyi"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  3000,
+        "stackSize":  1,
+        "craftBench":  "med_station",
+        "recipe":  {
+                       "antiseptic":  3,
+                       "canister":  1
+                   },
+        "recyclesInto":  {
+                             "antiseptic":  1,
+                             "canister":  2
+                         },
+        "salvagesInto":  {
+                             "antiseptic":  1
+                         }
+    },
+    {
+        "id":  "wolfpack",
+        "name":  {
+                     "en":  "Wolfpack",
+                     "tr":  "Kurt Sürüsü"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  5000,
+        "stackSize":  1,
+        "craftBench":  "explosives_bench",
+        "recipe":  {
+                       "arc_motion_core":  2,
+                       "explosive_compound":  3
+                   },
+        "recyclesInto":  {
+                             "arc_motion_core":  1,
+                             "explosive_compound":  1
+                         },
+        "salvagesInto":  {
+                             "explosive_compound":  2
+                         }
+    },
+    {
+        "id":  "yellow_light_stick",
+        "name":  {
+                     "en":  "Yellow Light Stick",
+                     "tr":  "Sarı Işık Çubuğu"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Common",
+        "foundIn":  null,
+        "value":  150,
+        "stackSize":  5,
+        "craftBench":  "utility_bench",
+        "recipe":  {
+                       "chemicals":  3
+                   },
+        "recyclesInto":  {
+                             "chemicals":  1
+                         },
+        "salvagesInto":  {
+                             "chemicals":  1
+                         }
+    },
+    {
+        "id":  "zipline",
+        "name":  {
+                     "en":  "Zipline",
+                     "tr":  "Halat Makarası"
+                 },
+        "type":  "Quick Use",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  1000,
+        "stackSize":  null,
+        "craftBench":  "utility_bench",
+        "recipe":  {
+                       "mechanical_components":  1,
+                       "rope":  1
+                   },
+        "recyclesInto":  {
+                             "metal_parts":  1,
+                             "rope":  1
+                         },
+        "salvagesInto":  {
+                             "rope":  1
+                         }
+    },
+    {
+        "id":  "alarm_clock",
+        "name":  {
+                     "en":  "Alarm Clock",
+                     "tr":  "Çalar Saat"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Residential",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "plastic_parts":  6,
+                             "processor":  1
+                         },
+        "salvagesInto":  {
+                             "processor":  1
+                         }
+    },
+    {
+        "id":  "arc_coolant",
+        "name":  {
+                     "en":  "ARC Coolant",
+                     "tr":  "ARC Soğutma Sıvısı"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "ARC",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "chemicals":  16
+                         },
+        "salvagesInto":  {
+                             "chemicals":  9
+                         }
+    },
+    {
+        "id":  "arc_flex_rubber",
+        "name":  {
+                     "en":  "ARC Flex Rubber",
+                     "tr":  "ARC Esnek Kauçuğu"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "ARC",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "rubber_parts":  16
+                         },
+        "salvagesInto":  {
+                             "rubber_parts":  9
+                         }
+    },
+    {
+        "id":  "arc_performance_steel",
+        "name":  {
+                     "en":  "ARC Performance Steel",
+                     "tr":  "ARC Performans Çeliği"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "ARC",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  12
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  7
+                         }
+    },
+    {
+        "id":  "arc_synthetic_resin",
+        "name":  {
+                     "en":  "ARC Synthetic Resin",
+                     "tr":  "ARC Sentetik Reçinesi"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "ARC",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "plastic_parts":  14
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  9
+                         }
+    },
+    {
+        "id":  "arc_thermo_lining",
+        "name":  {
+                     "en":  "ARC Thermo Lining",
+                     "tr":  "ARC Metal Kaplaması"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "ARC",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "fabric":  16
+                         },
+        "salvagesInto":  {
+                             "fabric":  9
+                         }
+    },
+    {
+        "id":  "bastion_cell",
+        "name":  {
+                     "en":  "Bastion Cell",
+                     "tr":  "Burç Hücresi"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Epic",
+        "foundIn":  "ARC",
+        "value":  5000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  2,
+                             "arc_alloy":  2
+                         },
+        "salvagesInto":  {
+                             "advanced_mechanical_components":  2
+                         }
+    },
+    {
+        "id":  "bicycle_pump",
+        "name":  {
+                     "en":  "Bicycle Pump",
+                     "tr":  "Bisiklet Pompası"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Residential",
+        "value":  2000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "canister":  4,
+                             "metal_parts":  10
+                         },
+        "salvagesInto":  {
+                             "canister":  3
+                         }
+    },
+    {
+        "id":  "bombardier_cell",
+        "name":  {
+                     "en":  "Bombardier Cell",
+                     "tr":  "Bombardımancı Hücresi"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Epic",
+        "foundIn":  "ARC",
+        "value":  5000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  2,
+                             "arc_alloy":  2
+                         },
+        "salvagesInto":  null
+    },
+    {
+        "id":  "broken_flashlight",
+        "name":  {
+                     "en":  "Broken Flashlight",
+                     "tr":  "Kırık El Feneri"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Security",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "battery":  2,
+                             "metal_parts":  6
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  7
+                         }
+    },
+    {
+        "id":  "broken_guidance_system",
+        "name":  {
+                     "en":  "Broken Guidance System",
+                     "tr":  "Kırık Yönlendirme Sistemi"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Exodus",
+        "value":  2000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "processor":  4
+                         },
+        "salvagesInto":  {
+                             "processor":  2
+                         }
+    },
+    {
+        "id":  "broken_handheld_radio",
+        "name":  {
+                     "en":  "Broken Handheld Radio",
+                     "tr":  "Kırık El Telsizi"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Security",
+        "value":  2000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "sensors":  3,
+                             "wires":  2
+                         },
+        "salvagesInto":  {
+                             "sensors":  2
+                         }
+    },
+    {
+        "id":  "broken_taser",
+        "name":  {
+                     "en":  "Broken Taser",
+                     "tr":  "Kırık Şok Tabancası"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Security",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "battery":  2,
+                             "wires":  2
+                         },
+        "salvagesInto":  {
+                             "battery":  2
+                         }
+    },
+    {
+        "id":  "burned_arc_circuitry",
+        "name":  {
+                     "en":  "Burned Arc Circuitry",
+                     "tr":  "Yanmış Arc Devresi"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "ARC",
+        "value":  640,
+        "stackSize":  5,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "arc_alloy":  2
+                         },
+        "salvagesInto":  {
+                             "arc_alloy":  1
+                         }
+    },
+    {
+        "id":  "camera_lens",
+        "name":  {
+                     "en":  "Camera Lens",
+                     "tr":  "Kamera Lensi"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "Security",
+        "value":  640,
+        "stackSize":  5,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "plastic_parts":  8
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  4
+                         }
+    },
+    {
+        "id":  "candle_holder",
+        "name":  {
+                     "en":  "Candle Holder",
+                     "tr":  "Şamdan"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "Residential",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  8
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  4
+                         }
+    },
+    {
+        "id":  "coolant",
+        "name":  {
+                     "en":  "Coolant",
+                     "tr":  "Soğutma Sıvısı"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Mechanical",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "chemicals":  5,
+                             "oil":  2
+                         },
+        "salvagesInto":  {
+                             "oil":  2
+                         }
+    },
+    {
+        "id":  "cooling_coil",
+        "name":  {
+                     "en":  "Cooling Coil",
+                     "tr":  "Soğutma Bibonu"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Industrial",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "chemicals":  6,
+                             "steel_spring":  2
+                         },
+        "salvagesInto":  {
+                             "steel_spring":  2
+                         }
+    },
+    {
+        "id":  "cooling_fan",
+        "name":  {
+                     "en":  "Cooling Fan",
+                     "tr":  "Soğutma Fanı"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Technological",
+        "value":  2000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "plastic_parts":  14,
+                             "wires":  4
+                         },
+        "salvagesInto":  {
+                             "wires":  4
+                         }
+    },
+    {
+        "id":  "cracked_bioscanner",
+        "name":  {
+                     "en":  "Cracked Bioscanner",
+                     "tr":  "Çatlamış Biyotarayıcı"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Medical",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "battery":  3,
+                             "rubber_parts":  3
+                         },
+        "salvagesInto":  {
+                             "battery":  2
+                         }
+    },
+    {
+        "id":  "crumpled_plastic_bottle",
+        "name":  {
+                     "en":  "Crumpled Plastic Bottle",
+                     "tr":  "Buruşuk Plastik Şişe"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "Residential",
+        "value":  270,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "plastic_parts":  4
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  1
+                         }
+    },
+    {
+        "id":  "damaged_arc_motion_core",
+        "name":  {
+                     "en":  "Damaged ARC Motion Core",
+                     "tr":  "Hasarlı ARC Hareket Çekirdeği"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "ARC",
+        "value":  640,
+        "stackSize":  5,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "arc_alloy":  2
+                         },
+        "salvagesInto":  {
+                             "arc_alloy":  1
+                         }
+    },
+    {
+        "id":  "damaged_arc_powercell",
+        "name":  {
+                     "en":  "Damaged ARC Powercell",
+                     "tr":  "Hasarlı ARC Güç Pili"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Common",
+        "foundIn":  "ARC",
+        "value":  293,
+        "stackSize":  5,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "arc_alloy":  1
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  1
+                         }
+    },
+    {
+        "id":  "damaged_fireball_burner",
+        "name":  {
+                     "en":  "Damaged Fireball Burner",
+                     "tr":  "Hasarlı Ateş Topu Yakıcı"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Common",
+        "foundIn":  "ARC",
+        "value":  270,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "arc_alloy":  1
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  1
+                         }
+    },
+    {
+        "id":  "damaged_heat_sink",
+        "name":  {
+                     "en":  "Damaged Heat Sink",
+                     "tr":  "Hasarlı Isı Emici"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Technological",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  6,
+                             "wires":  2
+                         },
+        "salvagesInto":  {
+                             "wires":  3
+                         }
+    },
+    {
+        "id":  "damaged_hornet_driver",
+        "name":  {
+                     "en":  "Damaged Hornet Driver",
+                     "tr":  "Hasarlı Yaban Arısı Sürücüsü"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Common",
+        "foundIn":  "ARC",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "arc_alloy":  2
+                         },
+        "salvagesInto":  {
+                             "arc_alloy":  1
+                         }
+    },
+    {
+        "id":  "damaged_rocketeer_driver",
+        "name":  {
+                     "en":  "Damaged Rocketeer Driver",
+                     "tr":  "Hasarlı Roketçi Sürücüsü"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Common",
+        "foundIn":  "ARC",
+        "value":  2000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "arc_alloy":  3
+                         },
+        "salvagesInto":  {
+                             "arc_alloy":  2
+                         }
+    },
+    {
+        "id":  "damaged_snitch_scanner",
+        "name":  {
+                     "en":  "Damaged Snitch Scanner",
+                     "tr":  "Hasarlı Muhbir Aracı"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Common",
+        "foundIn":  "ARC",
+        "value":  659,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  null,
+        "salvagesInto":  null
+    },
+    {
+        "id":  "damaged_tick_pod",
+        "name":  {
+                     "en":  "Damaged Tick Pod",
+                     "tr":  "Hasarlı Kene Kozası"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Common",
+        "foundIn":  "ARC",
+        "value":  270,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "arc_alloy":  1
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  1
+                         }
+    },
+    {
+        "id":  "damaged_wasp_driver",
+        "name":  {
+                     "en":  "Damaged Wasp Driver",
+                     "tr":  "Hasarlı Eşek Arısı Sürücüsü"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Common",
+        "foundIn":  "ARC",
+        "value":  270,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "arc_alloy":  1
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  1
+                         }
+    },
+    {
+        "id":  "deflated_football",
+        "name":  {
+                     "en":  "Deflated Football",
+                     "tr":  "Sönmüş Top"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "Residential",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "fabric":  9,
+                             "rubber_parts":  9
+                         },
+        "salvagesInto":  {
+                             "rubber_parts":  9
+                         }
+    },
+    {
+        "id":  "degraded_arc_rubber",
+        "name":  {
+                     "en":  "Degraded ARC Rubber",
+                     "tr":  "Bozulmuş ARC Kauçuğu"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "ARC",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "rubber_parts":  11
+                         },
+        "salvagesInto":  {
+                             "rubber_parts":  5
+                         }
+    },
+    {
+        "id":  "diving_goggles",
+        "name":  {
+                     "en":  "Diving Goggles",
+                     "tr":  "Dalış Gözlüğü"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Residential",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "rubber_parts":  12
+                         },
+        "salvagesInto":  {
+                             "rubber_parts":  5
+                         }
+    },
+    {
+        "id":  "dog_collar",
+        "name":  {
+                     "en":  "Dog Collar",
+                     "tr":  "Köpek Tasması"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Residential",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "fabric":  8,
+                             "metal_parts":  1
+                         },
+        "salvagesInto":  {
+                             "fabric":  5
+                         }
+    },
+    {
+        "id":  "dried_out_arc_resin",
+        "name":  {
+                     "en":  "Dried-Out ARC Resin",
+                     "tr":  "Kurumuş ARC Reçinesi"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "ARC",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "plastic_parts":  9
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  4
+                         }
+    },
+    {
+        "id":  "expired_respirator",
+        "name":  {
+                     "en":  "Expired Respirator",
+                     "tr":  "Eski Gaz Maskesi"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Medical",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "fabric":  4,
+                             "rubber_parts":  8
+                         },
+        "salvagesInto":  {
+                             "rubber_parts":  5
+                         }
+    },
+    {
+        "id":  "fireball_burner",
+        "name":  {
+                     "en":  "Fireball Burner",
+                     "tr":  "Ateş Topu Yakıcı"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "ARC",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "arc_alloy":  1,
+                             "chemicals":  1
+                         },
+        "salvagesInto":  {
+                             "arc_alloy":  1
+                         }
+    },
+    {
+        "id":  "flow_controller",
+        "name":  {
+                     "en":  "Flow Controller",
+                     "tr":  "Akıntı Kontrolcüsü"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Exodus",
+        "value":  3000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  1,
+                             "sensors":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         }
+    },
+    {
+        "id":  "frequency_modulation_box",
+        "name":  {
+                     "en":  "Frequency Modulation Box",
+                     "tr":  "Frekans Ayar Kutusu"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Exodus",
+        "value":  3000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_electrical_components":  1,
+                             "speaker_component":  1
+                         },
+        "salvagesInto":  {
+                             "electrical_components":  2
+                         }
+    },
+    {
+        "id":  "fried_motherboard",
+        "name":  {
+                     "en":  "Fried Motherboard",
+                     "tr":  "Yanmış Anakart"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Technological",
+        "value":  2000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "electrical_components":  2,
+                             "plastic_parts":  5
+                         },
+        "salvagesInto":  {
+                             "wires":  5
+                         }
+    },
+    {
+        "id":  "frying_pan",
+        "name":  {
+                     "en":  "Frying Pan",
+                     "tr":  "Kızartma Tavası"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Residential",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  8
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  4
+                         }
+    },
+    {
+        "id":  "garlic_press",
+        "name":  {
+                     "en":  "Garlic Press",
+                     "tr":  "Sarımsak Ezici"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "Residential, Commercial",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  12
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  7
+                         }
+    },
+    {
+        "id":  "geiger_counter",
+        "name":  {
+                     "en":  "Geiger Counter",
+                     "tr":  "Geiger Sayacı"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Epic",
+        "foundIn":  "Exodus",
+        "value":  3500,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "battery":  3,
+                             "exodus_modules":  1
+                         },
+        "salvagesInto":  {
+                             "battery":  3
+                         }
+    },
+    {
+        "id":  "headphones",
+        "name":  {
+                     "en":  "Headphones",
+                     "tr":  "Kulaklık"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Residential, Commercial",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "rubber_parts":  7,
+                             "speaker_component":  1
+                         },
+        "salvagesInto":  {
+                             "speaker_component":  1
+                         }
+    },
+    {
+        "id":  "hornet_driver",
+        "name":  {
+                     "en":  "Hornet Driver",
+                     "tr":  "Yaban Arısı Sürücüsü"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "ARC",
+        "value":  2000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "arc_alloy":  2,
+                             "electrical_components":  2
+                         },
+        "salvagesInto":  {
+                             "electrical_components":  2
+                         }
+    },
+    {
+        "id":  "household_cleaner",
+        "name":  {
+                     "en":  "Household Cleaner",
+                     "tr":  "Ev Temizlik Ürünü"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "Residential",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "chemicals":  11
+                         },
+        "salvagesInto":  {
+                             "chemicals":  5
+                         }
+    },
+    {
+        "id":  "humidifier",
+        "name":  {
+                     "en":  "Humidifier",
+                     "tr":  "Nemlendirici"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Residential",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "canister":  2,
+                             "wires":  2
+                         },
+        "salvagesInto":  {
+                             "canister":  2
+                         }
+    },
+    {
+        "id":  "ice_cream_scooper",
+        "name":  {
+                     "en":  "Ice Cream Scooper",
+                     "tr":  "Dondurma Kaşığı"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "Commercial",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  7
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  3
+                         }
+    },
+    {
+        "id":  "impure_arc_coolant",
+        "name":  {
+                     "en":  "Impure ARC Coolant",
+                     "tr":  "Kirli ARC Soğutma Sıvısı"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "ARC",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "chemicals":  12
+                         },
+        "salvagesInto":  {
+                             "chemicals":  5
+                         }
+    },
+    {
+        "id":  "industrial_battery",
+        "name":  {
+                     "en":  "Industrial Battery",
+                     "tr":  "Endüstriyel Pil"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Industrial",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "battery":  2,
+                             "chemicals":  7
+                         },
+        "salvagesInto":  {
+                             "battery":  2
+                         }
+    },
+    {
+        "id":  "industrial_charger",
+        "name":  {
+                     "en":  "Industrial Charger",
+                     "tr":  "Endüstriyel Şarj Aleti"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Industrial",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  5,
+                             "voltage_converter":  1
+                         },
+        "salvagesInto":  {
+                             "voltage_converter":  1
+                         }
+    },
+    {
+        "id":  "industrial_magnet",
+        "name":  {
+                     "en":  "Industrial Magnet",
+                     "tr":  "Endüstriyel Mıknatıs"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Industrial",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "magnet":  2,
+                             "metal_parts":  4
+                         },
+        "salvagesInto":  {
+                             "magnet":  2
+                         }
+    },
+    {
+        "id":  "ion_sputter",
+        "name":  {
+                     "en":  "Ion Sputter",
+                     "tr":  "İyon Püskürtücü"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Epic",
+        "foundIn":  "Exodus",
+        "value":  6000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "exodus_modules":  1,
+                             "voltage_converter":  4
+                         },
+        "salvagesInto":  {
+                             "exodus_modules":  1
+                         }
+    },
+    {
+        "id":  "laboratory_reagents",
+        "name":  {
+                     "en":  "Laboratory Reagents",
+                     "tr":  "Laboratuvar Ayıraçları"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Medical",
+        "value":  2000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "chemicals":  16,
+                             "crude_explosives":  3
+                         },
+        "salvagesInto":  {
+                             "crude_explosives":  3
+                         }
+    },
+    {
+        "id":  "leaper_pulse_unit",
+        "name":  {
+                     "en":  "Leaper Pulse Unit",
+                     "tr":  "Sıçrayıcı Vurucu Birimi"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Epic",
+        "foundIn":  "ARC",
+        "value":  5000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  2,
+                             "arc_alloy":  3
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         }
+    },
+    {
+        "id":  "magnetron",
+        "name":  {
+                     "en":  "Magnetron",
+                     "tr":  "Mıknatıs Robot"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Epic",
+        "foundIn":  "Exodus",
+        "value":  6000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "magnetic_accelerator":  1,
+                             "steel_spring":  1
+                         },
+        "salvagesInto":  {
+                             "advanced_mechanical_components":  1
+                         }
+    },
+    {
+        "id":  "matriarch_reactor",
+        "name":  {
+                     "en":  "Matriarch Reactor",
+                     "tr":  "Maderşah Reaktörü"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Legendary",
+        "foundIn":  null,
+        "value":  13000,
+        "stackSize":  1,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "magnetic_accelerator":  1,
+                             "power_rod":  1
+                         },
+        "salvagesInto":  {
+                             "power_rod":  1
+                         }
+    },
+    {
+        "id":  "metal_brackets",
+        "name":  {
+                     "en":  "Metal Brackets",
+                     "tr":  "Metal Plakalar"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "Mechanical, Electrical",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  8
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  4
+                         }
+    },
+    {
+        "id":  "microscope",
+        "name":  {
+                     "en":  "Microscope",
+                     "tr":  "Mikroskop"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Exodus",
+        "value":  3000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  1,
+                             "magnet":  3
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         }
+    },
+    {
+        "id":  "mini_centrifuge",
+        "name":  {
+                     "en":  "Mini Centrifuge",
+                     "tr":  "Mini Santrifüj"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Exodus",
+        "value":  3000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  1,
+                             "canister":  2
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         }
+    },
+    {
+        "id":  "motor",
+        "name":  {
+                     "en":  "Motor",
+                     "tr":  "Motor"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Mechanical",
+        "value":  2000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  2,
+                             "oil":  2
+                         },
+        "salvagesInto":  {
+                             "oil":  3
+                         }
+    },
+    {
+        "id":  "number_plate",
+        "name":  {
+                     "en":  "Number Plate",
+                     "tr":  "Araç Plakası"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "Mechanical",
+        "value":  270,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  3
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  2
+                         }
+    },
+    {
+        "id":  "polluted_air_filter",
+        "name":  {
+                     "en":  "Polluted Air Filter",
+                     "tr":  "Kirlenmiş Hava Filtresi"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Industrial",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "fabric":  6,
+                             "oil":  2
+                         },
+        "salvagesInto":  {
+                             "oil":  2
+                         }
+    },
+    {
+        "id":  "pop_trigger",
+        "name":  {
+                     "en":  "Pop Trigger",
+                     "tr":  "Ani Tetik"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "ARC",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "arc_alloy":  1,
+                             "crude_explosives":  1
+                         },
+        "salvagesInto":  {
+                             "crude_explosives":  1
+                         }
+    },
+    {
+        "id":  "portable_tv",
+        "name":  {
+                     "en":  "Portable TV",
+                     "tr":  "Portatif Televizyon"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Residential",
+        "value":  2000,
+        "stackSize":  1,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "battery":  2,
+                             "wires":  6
+                         },
+        "salvagesInto":  {
+                             "wires":  4
+                         }
+    },
+    {
+        "id":  "power_bank",
+        "name":  {
+                     "en":  "Power Bank",
+                     "tr":  "Taşınabilir Şarj Aleti"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Electrical, Residential, Commercial",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "battery":  2,
+                             "wires":  2
+                         },
+        "salvagesInto":  {
+                             "battery":  2
+                         }
+    },
+    {
+        "id":  "power_cable",
+        "name":  {
+                     "en":  "Power Cable",
+                     "tr":  "Güç Kablosu"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Electrical, Residential, Commercial",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "wires":  4
+                         },
+        "salvagesInto":  {
+                             "wires":  3
+                         }
+    },
+    {
+        "id":  "projector",
+        "name":  {
+                     "en":  "Projector",
+                     "tr":  "Projeksiyon"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Residential",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "processor":  1,
+                             "wires":  2
+                         },
+        "salvagesInto":  {
+                             "processor":  1
+                         }
+    },
+    {
+        "id":  "queen_reactor",
+        "name":  {
+                     "en":  "Queen Reactor",
+                     "tr":  "Kraliçe Reaktörü"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Legendary",
+        "foundIn":  "ARC",
+        "value":  13000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "magnetic_accelerator":  1,
+                             "power_rod":  1
+                         },
+        "salvagesInto":  {
+                             "power_rod":  1
+                         }
+    },
+    {
+        "id":  "radio",
+        "name":  {
+                     "en":  "Radio",
+                     "tr":  "Radyo"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Commercial, Residential",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "sensors":  1,
+                             "speaker_component":  1
+                         },
+        "salvagesInto":  {
+                             "speaker_component":  1
+                         }
+    },
+    {
+        "id":  "radio_relay",
+        "name":  {
+                     "en":  "Radio Relay",
+                     "tr":  "Radyo Rölesi"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Exodus",
+        "value":  3000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "sensors":  2,
+                             "speaker_component":  2
+                         },
+        "salvagesInto":  {
+                             "sensors":  2
+                         }
+    },
+    {
+        "id":  "remote_control",
+        "name":  {
+                     "en":  "Remote Control",
+                     "tr":  "Uzaktan Kumanda"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Residential",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "plastic_parts":  7,
+                             "sensors":  1
+                         },
+        "salvagesInto":  {
+                             "sensors":  1
+                         }
+    },
+    {
+        "id":  "ripped_safety_vest",
+        "name":  {
+                     "en":  "Ripped Safety Vest",
+                     "tr":  "Yırtık Güvenlik Yeleği"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "durable_cloth":  1,
+                             "magnet":  1
+                         },
+        "salvagesInto":  {
+                             "fabric":  8
+                         }
+    },
+    {
+        "id":  "rocket_thruster",
+        "name":  {
+                     "en":  "Rocket Thruster",
+                     "tr":  "İtici Roket"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Exodus",
+        "value":  2000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  6,
+                             "synthesized_fuel":  2
+                         },
+        "salvagesInto":  {
+                             "synthesized_fuel":  1
+                         }
+    },
+    {
+        "id":  "rocketeer_driver",
+        "name":  {
+                     "en":  "Rocketeer Driver",
+                     "tr":  "Roketçi Sürücüsü"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Epic",
+        "foundIn":  "ARC",
+        "value":  5000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_electrical_components":  2,
+                             "arc_alloy":  3
+                         },
+        "salvagesInto":  {
+                             "arc_circuitry":  2
+                         }
+    },
+    {
+        "id":  "rotary_encoder",
+        "name":  {
+                     "en":  "Rotary Encoder",
+                     "tr":  "Dönen Kodlayıcı"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Exodus",
+        "value":  3000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "electrical_components":  2,
+                             "processor":  2
+                         },
+        "salvagesInto":  {
+                             "processor":  2
+                         }
+    },
+    {
+        "id":  "rubber_pad",
+        "name":  {
+                     "en":  "Rubber Pad",
+                     "tr":  "Kauçuk Yastık"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Electrical",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "rubber_parts":  18
+                         },
+        "salvagesInto":  {
+                             "rubber_parts":  9
+                         }
+    },
+    {
+        "id":  "ruined_accordion",
+        "name":  {
+                     "en":  "Ruined Accordion",
+                     "tr":  "Mahvolmuş Akordiyon"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Residential",
+        "value":  2000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "rubber_parts":  18,
+                             "steel_spring":  3
+                         },
+        "salvagesInto":  {
+                             "rubber_parts":  13
+                         }
+    },
+    {
+        "id":  "ruined_augment",
+        "name":  {
+                     "en":  "Ruined Augment",
+                     "tr":  "Harap Güçlendirme"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Common",
+        "foundIn":  "ARC",
+        "value":  270,
+        "stackSize":  1,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "plastic_parts":  2,
+                             "rubber_parts":  2
+                         },
+        "salvagesInto":  null
+    },
+    {
+        "id":  "ruined_baton",
+        "name":  {
+                     "en":  "Ruined Baton",
+                     "tr":  "Mahvolmuş Cop"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "Security",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  6,
+                             "rubber_parts":  3
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  4
+                         }
+    },
+    {
+        "id":  "ruined_handcuffs",
+        "name":  {
+                     "en":  "Ruined Handcuffs",
+                     "tr":  "Mahvolmuş Kelepçe"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "Security",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  8
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  4
+                         }
+    },
+    {
+        "id":  "ruined_parachute",
+        "name":  {
+                     "en":  "Ruined Parachute",
+                     "tr":  "Kırık Paraşüt"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "Exodus",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "fabric":  10
+                         },
+        "salvagesInto":  {
+                             "fabric":  5
+                         }
+    },
+    {
+        "id":  "ruined_riot_shield",
+        "name":  {
+                     "en":  "Ruined Riot Shield",
+                     "tr":  "Mahvolmuş İsyan Kalkanı"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Security",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "plastic_parts":  10,
+                             "rubber_parts":  6
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  10
+                         }
+    },
+    {
+        "id":  "ruined_tactical_vest",
+        "name":  {
+                     "en":  "Ruined Tactical Vest",
+                     "tr":  "Mahvolmuş Taktiksel Yelek"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "Security",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "fabric":  5,
+                             "magnet":  1
+                         },
+        "salvagesInto":  {
+                             "fabric":  5
+                         }
+    },
+    {
+        "id":  "rusted_bolts",
+        "name":  {
+                     "en":  "Rusted Bolts",
+                     "tr":  "Paslı Cıvatalar"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "Industrial, Mechanical",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  8
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  4
+                         }
+    },
+    {
+        "id":  "rusted_gear",
+        "name":  {
+                     "en":  "Rusted Gear",
+                     "tr":  "Paslı Techizat"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Industrial",
+        "value":  2000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  2,
+                             "metal_parts":  4
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  12
+                         }
+    },
+    {
+        "id":  "rusted_shut_medical_kit",
+        "name":  {
+                     "en":  "Rusted Shut Medical Kit",
+                     "tr":  "Paslı Kapalı Tıbbi Kit"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Medical",
+        "value":  2000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "antiseptic":  1,
+                             "syringe":  2
+                         },
+        "salvagesInto":  {
+                             "syringe":  2
+                         }
+    },
+    {
+        "id":  "rusted_tools",
+        "name":  {
+                     "en":  "Rusted Tools",
+                     "tr":  "Paslı Aletler"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Mechanical",
+        "value":  1000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  8,
+                             "steel_spring":  1
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  7
+                         }
+    },
+    {
+        "id":  "rusty_arc_steel",
+        "name":  {
+                     "en":  "Rusty ARC Steel",
+                     "tr":  "Paslı ARC Çeliği"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "ARC",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  8
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  3
+                         }
+    },
+    {
+        "id":  "sample_cleaner",
+        "name":  {
+                     "en":  "Sample Cleaner",
+                     "tr":  "Numune Temizleyici"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Exodus",
+        "value":  3000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "assorted_seeds":  14,
+                             "electrical_components":  2
+                         },
+        "salvagesInto":  {
+                             "assorted_seeds":  12
+                         }
+    },
+    {
+        "id":  "sentinel_firing_core",
+        "name":  {
+                     "en":  "Sentinel Firing Core",
+                     "tr":  "Nöbetçi Ateşleme Çekirdeği"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "ARC",
+        "value":  3000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "arc_alloy":  2,
+                             "mechanical_components":  3
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         }
+    },
+    {
+        "id":  "shredder_gyro",
+        "name":  {
+                     "en":  "Shredder Gyro",
+                     "tr":  "Öğütücü Jiroskop"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "ARC",
+        "value":  3000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "arc_alloy":  3,
+                             "mechanical_components":  3
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         }
+    },
+    {
+        "id":  "signal_amplifier",
+        "name":  {
+                     "en":  "Signal Amplifier",
+                     "tr":  "Sinyal Güçlendirici"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Exodus",
+        "value":  3000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "electrical_components":  2,
+                             "voltage_converter":  2
+                         },
+        "salvagesInto":  {
+                             "voltage_converter":  2
+                         }
+    },
+    {
+        "id":  "snitch_scanner",
+        "name":  {
+                     "en":  "Snitch Scanner",
+                     "tr":  "Muhbir Aracı"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "ARC",
+        "value":  2000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "arc_alloy":  1,
+                             "electrical_components":  2
+                         },
+        "salvagesInto":  {
+                             "electrical_components":  2
+                         }
+    },
+    {
+        "id":  "spectrometer",
+        "name":  {
+                     "en":  "Spectrometer",
+                     "tr":  "Spektrometre"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Exodus",
+        "value":  3000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_electrical_components":  1,
+                             "sensors":  1
+                         },
+        "salvagesInto":  {
+                             "electrical_components":  2
+                         }
+    },
+    {
+        "id":  "spectrum_analyzer",
+        "name":  {
+                     "en":  "Spectrum Analyzer",
+                     "tr":  "Spektrum Analizörü"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Epic",
+        "foundIn":  "Exodus",
+        "value":  3500,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "exodus_modules":  1,
+                             "sensors":  1
+                         },
+        "salvagesInto":  {
+                             "processor":  2
+                         }
+    },
+    {
+        "id":  "spotter_relay",
+        "name":  {
+                     "en":  "Spotter Relay",
+                     "tr":  "Gözleyici Rölesi"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "ARC",
+        "value":  2000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "arc_alloy":  1,
+                             "electrical_components":  2
+                         },
+        "salvagesInto":  null
+    },
+    {
+        "id":  "spring_cushion",
+        "name":  {
+                     "en":  "Spring Cushion",
+                     "tr":  "Yaylı Minder"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Residential, Commercial",
+        "value":  2000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "durable_cloth":  2,
+                             "steel_spring":  2
+                         },
+        "salvagesInto":  {
+                             "steel_spring":  2
+                         }
+    },
+    {
+        "id":  "surveyor_vault",
+        "name":  {
+                     "en":  "Surveyor Vault",
+                     "tr":  "Gözetleyici Kasası"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "ARC",
+        "value":  2000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "arc_alloy":  2,
+                             "mechanical_components":  2
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  2
+                         }
+    },
+    {
+        "id":  "tattered_arc_lining",
+        "name":  {
+                     "en":  "Tattered Arc Lining",
+                     "tr":  "Parçalanmış ARC Kaplaması"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "ARC",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "fabric":  12
+                         },
+        "salvagesInto":  {
+                             "fabric":  5
+                         }
+    },
+    {
+        "id":  "tattered_clothes",
+        "name":  {
+                     "en":  "Tattered Clothes",
+                     "tr":  "Yırtık Kıyafetler"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "Residential",
+        "value":  640,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "fabric":  11
+                         },
+        "salvagesInto":  {
+                             "fabric":  5
+                         }
+    },
+    {
+        "id":  "telemetry_transceiver",
+        "name":  {
+                     "en":  "Telemetry Transceiver",
+                     "tr":  "Telemetri Telsizi"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Exodus",
+        "value":  3000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "advanced_electrical_components":  1,
+                             "processor":  1
+                         },
+        "salvagesInto":  {
+                             "electrical_components":  2
+                         }
+    },
+    {
+        "id":  "thermostat",
+        "name":  {
+                     "en":  "Thermostat",
+                     "tr":  "Termostat"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Residential",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "rubber_parts":  7,
+                             "sensors":  1
+                         },
+        "salvagesInto":  {
+                             "sensors":  1
+                         }
+    },
+    {
+        "id":  "tick_pod",
+        "name":  {
+                     "en":  "Tick Pod",
+                     "tr":  "Kene Kozası"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Uncommon",
+        "foundIn":  "ARC",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "arc_alloy":  2,
+                             "chemicals":  2
+                         },
+        "salvagesInto":  {
+                             "arc_alloy":  1
+                         }
+    },
+    {
+        "id":  "toaster",
+        "name":  {
+                     "en":  "Toaster",
+                     "tr":  "Tost Makinesi"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Residential",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "plastic_parts":  5,
+                             "wires":  3
+                         },
+        "salvagesInto":  {
+                             "wires":  3
+                         }
+    },
+    {
+        "id":  "torn_blanket",
+        "name":  {
+                     "en":  "Torn Blanket",
+                     "tr":  "Parçalanmış Battaniye"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Residential, Medical",
+        "value":  640,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "fabric":  12
+                         },
+        "salvagesInto":  {
+                             "fabric":  5
+                         }
+    },
+    {
+        "id":  "turbo_pump",
+        "name":  {
+                     "en":  "Turbo Pump",
+                     "tr":  "Turbo Pompası"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Exodus",
+        "value":  2000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "mechanical_components":  1,
+                             "oil":  3
+                         },
+        "salvagesInto":  {
+                             "steel_spring":  3
+                         }
+    },
+    {
+        "id":  "unusable_weapon",
+        "name":  {
+                     "en":  "Unusable Weapon",
+                     "tr":  "Kullanılamaz Haldeki Silah"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Security",
+        "value":  2000,
+        "stackSize":  null,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  4,
+                             "simple_gun_parts":  5
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  3
+                         }
+    },
+    {
+        "id":  "wasp_driver",
+        "name":  {
+                     "en":  "Wasp Driver",
+                     "tr":  "Eşek Arısı Sürücüsü"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "ARC",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "arc_alloy":  1,
+                             "electrical_components":  1
+                         },
+        "salvagesInto":  {
+                             "electrical_components":  1
+                         }
+    },
+    {
+        "id":  "water_filter",
+        "name":  {
+                     "en":  "Water Filter",
+                     "tr":  "Su Filtresi"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Industrial",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "canister":  3,
+                             "rubber_parts":  2
+                         },
+        "salvagesInto":  {
+                             "canister":  2
+                         }
+    },
+    {
+        "id":  "water_pump",
+        "name":  {
+                     "en":  "Water Pump",
+                     "tr":  "Su Pompası"
+                 },
+        "type":  "Recyclable",
+        "rarity":  "Rare",
+        "foundIn":  "Mechanical, Industrial",
+        "value":  1000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  4,
+                             "oil":  2
+                         },
+        "salvagesInto":  {
+                             "oil":  2
+                         }
+    },
+    {
+        "id":  "advanced_electrical_components",
+        "name":  {
+                     "en":  "Advanced Electrical Components",
+                     "tr":  "Gelişmiş Elektrik Bileşenleri"
+                 },
+        "type":  "Refined Material",
+        "rarity":  "Rare",
+        "foundIn":  "Electrical",
+        "value":  1750,
+        "stackSize":  5,
+        "craftBench":  "refiner",
+        "recipe":  {
+                       "electrical_components":  2,
+                       "wires":  3
+                   },
+        "recyclesInto":  {
+                             "electrical_components":  1,
+                             "wires":  1
+                         },
+        "salvagesInto":  {
+                             "electrical_components":  1
+                         }
+    },
+    {
+        "id":  "advanced_mechanical_components",
+        "name":  {
+                     "en":  "Advanced Mechanical Components",
+                     "tr":  "Gelişmiş Mekanik Bileşenler"
+                 },
+        "type":  "Refined Material",
+        "rarity":  "Rare",
+        "foundIn":  "Mechanical",
+        "value":  1750,
+        "stackSize":  5,
+        "craftBench":  "refiner",
+        "recipe":  {
+                       "mechanical_components":  2,
+                       "steel_spring":  2
+                   },
+        "recyclesInto":  {
+                             "mechanical_components":  1,
+                             "steel_spring":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  1
+                         }
+    },
+    {
+        "id":  "antiseptic",
+        "name":  {
+                     "en":  "Antiseptic",
+                     "tr":  "Antiseptik"
+                 },
+        "type":  "Refined Material",
+        "rarity":  "Rare",
+        "foundIn":  "Medical",
+        "value":  1000,
+        "stackSize":  5,
+        "craftBench":  "refiner",
+        "recipe":  {
+                       "chemicals":  10,
+                       "great_mullein":  2
+                   },
+        "recyclesInto":  {
+                             "chemicals":  10
+                         },
+        "salvagesInto":  {
+                             "chemicals":  5
+                         }
+    },
+    {
+        "id":  "crude_explosives",
+        "name":  {
+                     "en":  "Crude Explosives",
+                     "tr":  "Basit Patlayıcılar"
+                 },
+        "type":  "Refined Material",
+        "rarity":  "Uncommon",
+        "foundIn":  "Industrial, Security",
+        "value":  270,
+        "stackSize":  10,
+        "craftBench":  "refiner",
+        "recipe":  {
+                       "chemicals":  6
+                   },
+        "recyclesInto":  {
+                             "chemicals":  3
+                         },
+        "salvagesInto":  {
+                             "chemicals":  2
+                         }
+    },
+    {
+        "id":  "durable_cloth",
+        "name":  {
+                     "en":  "Durable Cloth",
+                     "tr":  "Dayanıklı Kumaş"
+                 },
+        "type":  "Refined Material",
+        "rarity":  "Uncommon",
+        "foundIn":  "Medical, Commercial",
+        "value":  640,
+        "stackSize":  10,
+        "craftBench":  "refiner",
+        "recipe":  {
+                       "fabric":  14
+                   },
+        "recyclesInto":  {
+                             "fabric":  6
+                         },
+        "salvagesInto":  {
+                             "fabric":  2
+                         }
+    },
+    {
+        "id":  "electrical_components",
+        "name":  {
+                     "en":  "Electrical Components",
+                     "tr":  "Elektrik Bileşenleri"
+                 },
+        "type":  "Refined Material",
+        "rarity":  "Uncommon",
+        "foundIn":  "Electrical",
+        "value":  640,
+        "stackSize":  10,
+        "craftBench":  "refiner",
+        "recipe":  {
+                       "plastic_parts":  8,
+                       "rubber_parts":  4
+                   },
+        "recyclesInto":  {
+                             "plastic_parts":  3,
+                             "rubber_parts":  3
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  3
+                         }
+    },
+    {
+        "id":  "explosive_compound",
+        "name":  {
+                     "en":  "Explosive Compound",
+                     "tr":  "Patlayıcı Bileşiği "
+                 },
+        "type":  "Refined Material",
+        "rarity":  "Rare",
+        "foundIn":  "Industrial, Security",
+        "value":  1000,
+        "stackSize":  5,
+        "craftBench":  "refiner",
+        "recipe":  {
+                       "crude_explosives":  2,
+                       "oil":  2
+                   },
+        "recyclesInto":  {
+                             "crude_explosives":  2
+                         },
+        "salvagesInto":  {
+                             "crude_explosives":  1
+                         }
+    },
+    {
+        "id":  "magnetic_accelerator",
+        "name":  {
+                     "en":  "Magnetic Accelerator",
+                     "tr":  "Manyetik Hızlandırıcı"
+                 },
+        "type":  "Refined Material",
+        "rarity":  "Epic",
+        "foundIn":  "Exodus",
+        "value":  5500,
+        "stackSize":  3,
+        "craftBench":  "refiner",
+        "recipe":  {
+                       "advanced_mechanical_components":  2,
+                       "arc_motion_core":  2
+                   },
+        "recyclesInto":  {
+                             "advanced_mechanical_components":  1,
+                             "arc_motion_core":  1
+                         },
+        "salvagesInto":  {
+                             "advanced_mechanical_components":  1
+                         }
+    },
+    {
+        "id":  "mechanical_components",
+        "name":  {
+                     "en":  "Mechanical Components",
+                     "tr":  "Mekanik Bileşenler"
+                 },
+        "type":  "Refined Material",
+        "rarity":  "Uncommon",
+        "foundIn":  "Mechanical",
+        "value":  640,
+        "stackSize":  10,
+        "craftBench":  "refiner",
+        "recipe":  {
+                       "metal_parts":  7,
+                       "rubber_parts":  3
+                   },
+        "recyclesInto":  {
+                             "metal_parts":  3,
+                             "rubber_parts":  2
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  3
+                         }
+    },
+    {
+        "id":  "mod_components",
+        "name":  {
+                     "en":  "Mod Components",
+                     "tr":  "Mod Bileşenleri"
+                 },
+        "type":  "Refined Material",
+        "rarity":  "Rare",
+        "foundIn":  "Security",
+        "value":  1750,
+        "stackSize":  5,
+        "craftBench":  "refiner",
+        "recipe":  {
+                       "mechanical_components":  2,
+                       "steel_spring":  2
+                   },
+        "recyclesInto":  {
+                             "mechanical_components":  1,
+                             "steel_spring":  1
+                         },
+        "salvagesInto":  {
+                             "mechanical_components":  1
+                         }
+    },
+    {
+        "id":  "power_rod",
+        "name":  {
+                     "en":  "Power Rod",
+                     "tr":  "Güç Bağlantısı"
+                 },
+        "type":  "Refined Material",
+        "rarity":  "Epic",
+        "foundIn":  "Exodus",
+        "value":  5000,
+        "stackSize":  3,
+        "craftBench":  "refiner",
+        "recipe":  {
+                       "advanced_electrical_components":  2,
+                       "arc_circuitry":  2
+                   },
+        "recyclesInto":  {
+                             "advanced_electrical_components":  1,
+                             "arc_circuitry":  1
+                         },
+        "salvagesInto":  {
+                             "advanced_electrical_components":  1
+                         }
+    },
+    {
+        "id":  "heavy_shield",
+        "name":  {
+                     "en":  "Heavy Shield",
+                     "tr":  "Ağır Kalkan"
+                 },
+        "type":  "Shield",
+        "rarity":  "Epic",
+        "foundIn":  null,
+        "value":  5500,
+        "stackSize":  null,
+        "craftBench":  "equipment_bench",
+        "recipe":  {
+                       "power_rod":  1,
+                       "voltage_converter":  2
+                   },
+        "recyclesInto":  {
+                             "arc_circuitry":  2,
+                             "voltage_converter":  1
+                         },
+        "salvagesInto":  {
+                             "arc_alloy":  4
+                         }
+    },
+    {
+        "id":  "light_shield",
+        "name":  {
+                     "en":  "Light Shield",
+                     "tr":  "Hafif Kalkan"
+                 },
+        "type":  "Shield",
+        "rarity":  "Uncommon",
+        "foundIn":  null,
+        "value":  640,
+        "stackSize":  null,
+        "craftBench":  [
+                           "workbench",
+                           "equipment_bench"
+                       ],
+        "recipe":  {
+                       "arc_alloy":  2,
+                       "plastic_parts":  4
+                   },
+        "recyclesInto":  {
+                             "plastic_parts":  4
+                         },
+        "salvagesInto":  {
+                             "arc_alloy":  1
+                         }
+    },
+    {
+        "id":  "medium_shield",
+        "name":  {
+                     "en":  "Medium Shield",
+                     "tr":  "Orta Kalkan"
+                 },
+        "type":  "Shield",
+        "rarity":  "Rare",
+        "foundIn":  null,
+        "value":  2000,
+        "stackSize":  null,
+        "craftBench":  "equipment_bench",
+        "recipe":  {
+                       "arc_circuitry":  1,
+                       "battery":  4
+                   },
+        "recyclesInto":  {
+                             "arc_circuitry":  1
+                         },
+        "salvagesInto":  null
+    },
+    {
+        "id":  "advanced_arc_powercell",
+        "name":  {
+                     "en":  "Advanced ARC Powercell",
+                     "tr":  "Gelişmiş ARC Güç Pili"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Rare",
+        "foundIn":  "ARC",
+        "value":  640,
+        "stackSize":  5,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "arc_powercell":  2
+                         },
+        "salvagesInto":  {
+                             "arc_powercell":  1
+                         }
+    },
+    {
+        "id":  "arc_alloy",
+        "name":  {
+                     "en":  "ARC Alloy",
+                     "tr":  "ARC Alaşımı"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Uncommon",
+        "foundIn":  "ARC",
+        "value":  200,
+        "stackSize":  15,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  2
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  1
+                         }
+    },
+    {
+        "id":  "arc_circuitry",
+        "name":  {
+                     "en":  "ARC Circuitry",
+                     "tr":  "ARC Devresi"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Rare",
+        "foundIn":  "ARC",
+        "value":  1000,
+        "stackSize":  5,
+        "craftBench":  "refiner",
+        "recipe":  {
+                       "arc_alloy":  8
+                   },
+        "recyclesInto":  {
+                             "arc_alloy":  2
+                         },
+        "salvagesInto":  {
+                             "arc_alloy":  1
+                         }
+    },
+    {
+        "id":  "arc_motion_core",
+        "name":  {
+                     "en":  "ARC Motion Core",
+                     "tr":  "ARC Hareket Çekirdeği"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Rare",
+        "foundIn":  "ARC",
+        "value":  1000,
+        "stackSize":  5,
+        "craftBench":  "refiner",
+        "recipe":  {
+                       "arc_alloy":  8
+                   },
+        "recyclesInto":  {
+                             "arc_alloy":  2
+                         },
+        "salvagesInto":  {
+                             "arc_alloy":  1
+                         }
+    },
+    {
+        "id":  "arc_powercell",
+        "name":  {
+                     "en":  "ARC Powercell",
+                     "tr":  "ARC Güç Pili"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Common",
+        "foundIn":  "ARC",
+        "value":  270,
+        "stackSize":  5,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+
+                         },
+        "salvagesInto":  null
+    },
+    {
+        "id":  "battery",
+        "name":  {
+                     "en":  "Battery",
+                     "tr":  "Pil"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Uncommon",
+        "foundIn":  "Technological, Electrical",
+        "value":  250,
+        "stackSize":  15,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  2
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  1
+                         }
+    },
+    {
+        "id":  "canister",
+        "name":  {
+                     "en":  "Canister",
+                     "tr":  "Kapsül"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Uncommon",
+        "foundIn":  "Commercial",
+        "value":  300,
+        "stackSize":  15,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "plastic_parts":  3
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  1
+                         }
+    },
+    {
+        "id":  "complex_gun_parts",
+        "name":  {
+                     "en":  "Complex Gun Parts",
+                     "tr":  "Karmaşık Silah Parçaları"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Epic",
+        "foundIn":  "Security",
+        "value":  3000,
+        "stackSize":  3,
+        "craftBench":  "refiner",
+        "recipe":  {
+                       "heavy_gun_parts":  2,
+                       "light_gun_parts":  2,
+                       "medium_gun_parts":  2
+                   },
+        "recyclesInto":  {
+                             "simple_gun_parts":  3
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  2
+                         }
+    },
+    {
+        "id":  "duct_tape",
+        "name":  {
+                     "en":  "Duct Tape",
+                     "tr":  "Koli Bandı"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Uncommon",
+        "foundIn":  "Residential, Commercial",
+        "value":  300,
+        "stackSize":  15,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "fabric":  3
+                         },
+        "salvagesInto":  {
+                             "fabric":  1
+                         }
+    },
+    {
+        "id":  "exodus_modules",
+        "name":  {
+                     "en":  "Exodus Modules",
+                     "tr":  "Exodus Modülleri"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Epic",
+        "foundIn":  "Exodus",
+        "value":  2750,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "magnet":  2,
+                             "processor":  2
+                         },
+        "salvagesInto":  {
+                             "processor":  2
+                         }
+    },
+    {
+        "id":  "fossilized_lightning",
+        "name":  {
+                     "en":  "Fossilized Lightning",
+                     "tr":  "Fosilleşmiş Şimşek"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Epic",
+        "foundIn":  "Nature",
+        "value":  4000,
+        "stackSize":  3,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "explosive_compound":  3
+                         },
+        "salvagesInto":  {
+                             "explosive_compound":  2
+                         }
+    },
+    {
+        "id":  "great_mullein",
+        "name":  {
+                     "en":  "Great Mullein",
+                     "tr":  "Sığırkuyruğu"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Uncommon",
+        "foundIn":  "Nature",
+        "value":  300,
+        "stackSize":  15,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "assorted_seeds":  2
+                         },
+        "salvagesInto":  {
+                             "assorted_seeds":  1
+                         }
+    },
+    {
+        "id":  "heavy_gun_parts",
+        "name":  {
+                     "en":  "Heavy Gun Parts",
+                     "tr":  "Ağır Silah Parçaları"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Rare",
+        "foundIn":  "Security, Raider",
+        "value":  700,
+        "stackSize":  5,
+        "craftBench":  "refiner",
+        "recipe":  {
+                       "simple_gun_parts":  4
+                   },
+        "recyclesInto":  {
+                             "simple_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  1
+                         }
+    },
+    {
+        "id":  "light_gun_parts",
+        "name":  {
+                     "en":  "Light Gun Parts",
+                     "tr":  "Hafif Silah Parçaları"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Rare",
+        "foundIn":  "Raider, Security",
+        "value":  700,
+        "stackSize":  5,
+        "craftBench":  "refiner",
+        "recipe":  {
+                       "simple_gun_parts":  4
+                   },
+        "recyclesInto":  {
+                             "simple_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  1
+                         }
+    },
+    {
+        "id":  "magnet",
+        "name":  {
+                     "en":  "Magnet",
+                     "tr":  "Mıknatıs"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Uncommon",
+        "foundIn":  "Exodus",
+        "value":  300,
+        "stackSize":  15,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  2
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  1
+                         }
+    },
+    {
+        "id":  "medium_gun_parts",
+        "name":  {
+                     "en":  "Medium Gun Parts",
+                     "tr":  "Orta Silah Parçaları"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Rare",
+        "foundIn":  "Raider, Security",
+        "value":  700,
+        "stackSize":  5,
+        "craftBench":  "refiner",
+        "recipe":  {
+                       "simple_gun_parts":  4
+                   },
+        "recyclesInto":  {
+                             "simple_gun_parts":  2
+                         },
+        "salvagesInto":  {
+                             "simple_gun_parts":  1
+                         }
+    },
+    {
+        "id":  "moss",
+        "name":  {
+                     "en":  "Moss",
+                     "tr":  "Yosun"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Rare",
+        "foundIn":  "Nature",
+        "value":  500,
+        "stackSize":  10,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "assorted_seeds":  3
+                         },
+        "salvagesInto":  {
+                             "assorted_seeds":  2
+                         }
+    },
+    {
+        "id":  "oil",
+        "name":  {
+                     "en":  "Oil",
+                     "tr":  "Yağ"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Uncommon",
+        "foundIn":  "Mechanical",
+        "value":  300,
+        "stackSize":  15,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "chemicals":  3
+                         },
+        "salvagesInto":  {
+                             "chemicals":  1
+                         }
+    },
+    {
+        "id":  "processor",
+        "name":  {
+                     "en":  "Processor",
+                     "tr":  "İşlemci"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Rare",
+        "foundIn":  "Technological",
+        "value":  500,
+        "stackSize":  5,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "plastic_parts":  1,
+                             "wires":  1
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  2
+                         }
+    },
+    {
+        "id":  "rope",
+        "name":  {
+                     "en":  "Rope",
+                     "tr":  "İp"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Rare",
+        "foundIn":  "Residential, Commercial",
+        "value":  500,
+        "stackSize":  5,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "fabric":  5
+                         },
+        "salvagesInto":  {
+                             "fabric":  2
+                         }
+    },
+    {
+        "id":  "sensors",
+        "name":  {
+                     "en":  "Sensors",
+                     "tr":  "Sensörler"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Rare",
+        "foundIn":  "Security, Technological",
+        "value":  500,
+        "stackSize":  5,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  1,
+                             "wires":  1
+                         },
+        "salvagesInto":  {
+                             "wires":  1
+                         }
+    },
+    {
+        "id":  "simple_gun_parts",
+        "name":  {
+                     "en":  "Simple Gun Parts",
+                     "tr":  "Basit Silah Parçaları"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Uncommon",
+        "foundIn":  "Raider, Security",
+        "value":  330,
+        "stackSize":  10,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  2
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  1
+                         }
+    },
+    {
+        "id":  "speaker_component",
+        "name":  {
+                     "en":  "Speaker Component",
+                     "tr":  "Hoparlör Bileşeni"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Rare",
+        "foundIn":  "Commercial",
+        "value":  500,
+        "stackSize":  5,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "plastic_parts":  2,
+                             "rubber_parts":  3
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  2
+                         }
+    },
+    {
+        "id":  "steel_spring",
+        "name":  {
+                     "en":  "Steel Spring",
+                     "tr":  "Metal Yay"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Uncommon",
+        "foundIn":  "Industrial",
+        "value":  300,
+        "stackSize":  15,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "metal_parts":  2
+                         },
+        "salvagesInto":  {
+                             "metal_parts":  1
+                         }
+    },
+    {
+        "id":  "synthesized_fuel",
+        "name":  {
+                     "en":  "Synthesized Fuel",
+                     "tr":  "Sentetik Yakıt"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Rare",
+        "foundIn":  "Exodus",
+        "value":  700,
+        "stackSize":  5,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "oil":  1,
+                             "plastic_parts":  1
+                         },
+        "salvagesInto":  {
+                             "oil":  1
+                         }
+    },
+    {
+        "id":  "syringe",
+        "name":  {
+                     "en":  "Syringe",
+                     "tr":  "Şırınga"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Rare",
+        "foundIn":  "Medical",
+        "value":  500,
+        "stackSize":  5,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "chemicals":  2,
+                             "plastic_parts":  3
+                         },
+        "salvagesInto":  {
+                             "plastic_parts":  2
+                         }
+    },
+    {
+        "id":  "voltage_converter",
+        "name":  {
+                     "en":  "Voltage Converter",
+                     "tr":  "Voltaj Dönüştürücü"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Rare",
+        "foundIn":  "Electrical",
+        "value":  500,
+        "stackSize":  5,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "rubber_parts":  1,
+                             "wires":  1
+                         },
+        "salvagesInto":  {
+                             "rubber_parts":  2
+                         }
+    },
+    {
+        "id":  "wires",
+        "name":  {
+                     "en":  "Wires",
+                     "tr":  "Kablolar"
+                 },
+        "type":  "Topside Material",
+        "rarity":  "Uncommon",
+        "foundIn":  "Electrical, Technological",
+        "value":  200,
+        "stackSize":  15,
+        "craftBench":  null,
+        "recipe":  null,
+        "recyclesInto":  {
+                             "rubber_parts":  2
+                         },
+        "salvagesInto":  {
+                             "rubber_parts":  1
+                         }
+    }
+]

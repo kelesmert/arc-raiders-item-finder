@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARC Item Finder</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Header -->
+    <header class="header">
+      <h1>ARC Item Finder</h1>
+      <nav class="tab-bar">
+        <button class="tab-btn active" data-tab="browse">Item Browser</button>
+        <button class="tab-btn" data-tab="calc">Calculator</button>
+      </nav>
+    </header>
+
+    <!-- ========== TAB 1: Item Browser ========== -->
+    <div id="page-browse" class="page active">
+      <section class="panel search-panel">
+        <div class="search-box">
+          <input type="text" id="browseSearch" placeholder="Search items..." autocomplete="off">
+          <div id="browseResults" class="search-results hidden"></div>
+        </div>
+      </section>
+
+      <!-- Item Detail (appears after selection) -->
+      <div id="itemDetail" class="hidden"></div>
+    </div>
+
+    <!-- ========== TAB 2: Calculator ========== -->
+    <div id="page-calc" class="page hidden">
+      <section class="panel search-panel">
+        <div class="search-box">
+          <input type="text" id="calcSearch" placeholder="Add items to calculate..." autocomplete="off">
+          <div id="calcResults" class="search-results hidden"></div>
+        </div>
+
+        <div id="selectedItems" class="selected-items"></div>
+        <button id="calculateBtn" class="btn-calculate" disabled>Calculate</button>
+      </section>
+
+      <div id="resultsContainer" class="results-container hidden">
+        <section class="panel">
+          <h2>Recipe Tree</h2>
+          <div id="recipeTrees" class="recipe-trees"></div>
+        </section>
+        <section class="panel">
+          <h2>Total Base Materials Needed</h2>
+          <div id="baseMaterials" class="base-materials"></div>
+        </section>
+        <section class="panel">
+          <h2>Materials by Location</h2>
+          <div id="byLocation" class="by-location"></div>
+        </section>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
