@@ -14,6 +14,7 @@ let allItems = [];
 let selected = [];          // calculator: { id, quantity }
 let lootSelected = [];      // loot finder: { id }
 let currentDetailId = null; // currently displayed item in browse tab
+let mapZonesData = null;    // loaded data/maps/map-zones.json data
 
 // Location metadata (for future use: photos, descriptions, etc.)
 const LOCATIONS = {
@@ -45,7 +46,7 @@ function benchLabel(bench) {
   return b.replace(/_/g, ' ');
 }
 function imgTag(id, cls) {
-  return `<img class="item-icon ${cls}" src="item-photos/${id}.png" alt="" loading="lazy">`;
+  return `<img class="item-icon ${cls}" src="assets/item-photos/${id}.png" alt="" loading="lazy">`;
 }
 function rarityClass(r) { return r ? `rarity-${r.toLowerCase()}` : ''; }
 
@@ -745,6 +746,7 @@ function onFindLoot() {
   }
 
   renderLootResults(locationScores, itemLocations);
+  renderLootMap(locationScores);
   document.getElementById('lootResultsContainer').classList.remove('hidden');
 }
 
@@ -803,13 +805,359 @@ function renderLootResults(locationScores, itemLocations) {
   }).join('');
 }
 
+// ===== Nearest-Neighbor Route (starts from best-scoring zone) =====
+function nearestNeighborRoute(points, locationScores) {
+  if (points.length <= 1) return [...points];
+
+  // Find the best score among relevant zone types
+  const maxScore = Math.max(...Object.values(locationScores).map(s => s.score));
+  const bestTypes = new Set(
+    Object.entries(locationScores)
+      .filter(([, s]) => s.score === maxScore)
+      .map(([type]) => type)
+  );
+
+  // Sort so best-type zones come first, then pick the first one as start
+  const sorted = [...points].sort((a, b) => {
+    const aIsBest = bestTypes.has(a.type) ? 0 : 1;
+    const bIsBest = bestTypes.has(b.type) ? 0 : 1;
+    return aIsBest - bIsBest;
+  });
+
+  const remaining = sorted.slice(1);
+  const route = [sorted[0]];
+
+  while (remaining.length > 0) {
+    const last = route[route.length - 1];
+    let nearest = 0;
+    let nearestDist = Infinity;
+    for (let i = 0; i < remaining.length; i++) {
+      const dx = remaining[i].x - last.x;
+      const dy = remaining[i].y - last.y;
+      const dist = dx * dx + dy * dy;
+      if (dist < nearestDist) {
+        nearestDist = dist;
+        nearest = i;
+      }
+    }
+    route.push(remaining.splice(nearest, 1)[0]);
+  }
+  return route;
+}
+
+// ===== Loot Map State =====
+let mapScale = 1, mapPanX = 0, mapPanY = 0;
+let mapIsPanning = false, mapPanStartX = 0, mapPanStartY = 0;
+let mapImgW = 0, mapImgH = 0;
+let mapStartPoint = null;    // { x, y } user-chosen start on map
+let mapSettingStart = false; // true when "Set Start" mode is active
+let currentLocationScores = null;
+let currentRelevantZones = null;
+let currentAllZones = null;
+
+function mapUpdateTransform() {
+  const canvas = document.getElementById('imapCanvas');
+  canvas.style.transform = `translate(${mapPanX}px, ${mapPanY}px) scale(${mapScale})`;
+}
+
+function mapFitToView() {
+  const vp = document.getElementById('imapViewport');
+  const vpW = vp.clientWidth;
+  const vpH = vp.clientHeight;
+  if (!mapImgW || !mapImgH) return;
+  mapScale = Math.min(vpW / mapImgW, vpH / mapImgH) * 0.95;
+  mapPanX = (vpW - mapImgW * mapScale) / 2;
+  mapPanY = (vpH - mapImgH * mapScale) / 2;
+  mapUpdateTransform();
+}
+
+function initMapInteraction() {
+  const vp = document.getElementById('imapViewport');
+  const coordsEl = document.getElementById('imapCoords');
+
+  // Wheel zoom
+  vp.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    const rect = vp.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
+    const prev = mapScale;
+    const factor = e.deltaY > 0 ? 0.9 : 1.1;
+    mapScale = Math.max(0.1, Math.min(8, mapScale * factor));
+    mapPanX = mx - (mx - mapPanX) * (mapScale / prev);
+    mapPanY = my - (my - mapPanY) * (mapScale / prev);
+    mapUpdateTransform();
+  }, { passive: false });
+
+  // Pan
+  vp.addEventListener('mousedown', (e) => {
+    if (mapSettingStart) return; // don't pan in set-start mode
+    if (e.button === 0 || e.button === 1) {
+      mapIsPanning = true;
+      mapPanStartX = e.clientX - mapPanX;
+      mapPanStartY = e.clientY - mapPanY;
+      e.preventDefault();
+    }
+  });
+  window.addEventListener('mousemove', (e) => {
+    if (mapIsPanning) {
+      mapPanX = e.clientX - mapPanStartX;
+      mapPanY = e.clientY - mapPanStartY;
+      mapUpdateTransform();
+    }
+    // Show coords
+    const rect = vp.getBoundingClientRect();
+    const mapX = (e.clientX - rect.left - mapPanX) / mapScale;
+    const mapY = (e.clientY - rect.top - mapPanY) / mapScale;
+    if (mapX >= 0 && mapX <= mapImgW && mapY >= 0 && mapY <= mapImgH) {
+      coordsEl.textContent = `${Math.round(mapX)}, ${Math.round(mapY)}`;
+    }
+  });
+  window.addEventListener('mouseup', () => { mapIsPanning = false; });
+  vp.addEventListener('contextmenu', (e) => e.preventDefault());
+
+  // Click — set start point
+  vp.addEventListener('click', (e) => {
+    if (!mapSettingStart) return;
+    const rect = vp.getBoundingClientRect();
+    const mapX = Math.round((e.clientX - rect.left - mapPanX) / mapScale);
+    const mapY = Math.round((e.clientY - rect.top - mapPanY) / mapScale);
+    if (mapX < 0 || mapX > mapImgW || mapY < 0 || mapY > mapImgH) return;
+    mapStartPoint = { x: mapX, y: mapY };
+    mapSettingStart = false;
+    vp.classList.remove('crosshair');
+    document.getElementById('btnSetStart').classList.remove('active');
+    // Re-render SVG with new start point
+    if (currentLocationScores) renderMapSVG();
+  });
+
+  // Buttons
+  document.getElementById('imapZoomIn').addEventListener('click', () => {
+    const vp2 = document.getElementById('imapViewport');
+    const cx = vp2.clientWidth / 2, cy = vp2.clientHeight / 2;
+    const prev = mapScale;
+    mapScale = Math.min(8, mapScale * 1.3);
+    mapPanX = cx - (cx - mapPanX) * (mapScale / prev);
+    mapPanY = cy - (cy - mapPanY) * (mapScale / prev);
+    mapUpdateTransform();
+  });
+  document.getElementById('imapZoomOut').addEventListener('click', () => {
+    const vp2 = document.getElementById('imapViewport');
+    const cx = vp2.clientWidth / 2, cy = vp2.clientHeight / 2;
+    const prev = mapScale;
+    mapScale = Math.max(0.1, mapScale * 0.7);
+    mapPanX = cx - (cx - mapPanX) * (mapScale / prev);
+    mapPanY = cy - (cy - mapPanY) * (mapScale / prev);
+    mapUpdateTransform();
+  });
+  document.getElementById('btnFitMap').addEventListener('click', mapFitToView);
+
+  document.getElementById('btnSetStart').addEventListener('click', () => {
+    mapSettingStart = !mapSettingStart;
+    const vp2 = document.getElementById('imapViewport');
+    vp2.classList.toggle('crosshair', mapSettingStart);
+    document.getElementById('btnSetStart').classList.toggle('active', mapSettingStart);
+  });
+  document.getElementById('btnClearStart').addEventListener('click', () => {
+    mapStartPoint = null;
+    mapSettingStart = false;
+    document.getElementById('imapViewport').classList.remove('crosshair');
+    document.getElementById('btnSetStart').classList.remove('active');
+    if (currentLocationScores) renderMapSVG();
+  });
+}
+
+// ===== Loot Map Rendering =====
+async function loadMapZones() {
+  if (mapZonesData) return mapZonesData;
+  try {
+    const res = await fetch('./data/maps/map-zones.json');
+    mapZonesData = await res.json();
+  } catch (e) {
+    mapZonesData = {};
+  }
+  return mapZonesData;
+}
+
+function renderMapSVG() {
+  const locationScores = currentLocationScores;
+  const overlay = document.getElementById('lootMapOverlay');
+  const relevantTypes = new Set(Object.keys(locationScores));
+  const zones = currentAllZones || [];
+  const relevant = zones.filter(z => relevantTypes.has(z.type));
+  const dimmed = zones.filter(z => !relevantTypes.has(z.type));
+
+  let svg = '';
+
+  // Dimmed zones
+  for (const z of dimmed) {
+    const color = LOCATIONS[z.type]?.color || '#888';
+    svg += `
+      <circle cx="${z.x}" cy="${z.y}" r="16" fill="${color}" fill-opacity="0.15" stroke="${color}" stroke-width="1" stroke-opacity="0.3" />
+      <text x="${z.x}" y="${z.y - 22}" text-anchor="middle" font-size="13" font-weight="600" fill="${color}" fill-opacity="0.3" paint-order="stroke" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">${z.label || z.type}</text>
+    `;
+  }
+
+  // Relevant zones (highlighted)
+  const maxScore = Math.max(...Object.values(locationScores).map(s => s.score));
+  for (const z of relevant) {
+    const color = LOCATIONS[z.type]?.color || '#888';
+    const score = locationScores[z.type];
+    const isBest = score && score.score === maxScore;
+    const r = isBest ? 22 : 18;
+    const pulse = isBest ? `<circle cx="${z.x}" cy="${z.y}" r="${r + 8}" fill="none" stroke="${color}" stroke-width="2" opacity="0.5"><animate attributeName="r" from="${r}" to="${r + 20}" dur="1.5s" repeatCount="indefinite" /><animate attributeName="opacity" from="0.6" to="0" dur="1.5s" repeatCount="indefinite" /></circle>` : '';
+    svg += `
+      ${pulse}
+      <circle cx="${z.x}" cy="${z.y}" r="${r}" fill="${color}" fill-opacity="0.85" stroke="#fff" stroke-width="2.5" />
+      <text x="${z.x}" y="${z.y - r - 6}" text-anchor="middle" font-size="14" font-weight="700" fill="#fff" paint-order="stroke" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">${z.label || z.type}</text>
+    `;
+  }
+
+  // Start point marker
+  if (mapStartPoint) {
+    svg += `
+      <circle cx="${mapStartPoint.x}" cy="${mapStartPoint.y}" r="14" fill="#e74c3c" fill-opacity="0.9" stroke="#fff" stroke-width="3" />
+      <text x="${mapStartPoint.x}" y="${mapStartPoint.y + 5}" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">S</text>
+      <text x="${mapStartPoint.x}" y="${mapStartPoint.y - 20}" text-anchor="middle" font-size="12" font-weight="600" fill="#e74c3c" paint-order="stroke" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">Start</text>
+    `;
+  }
+
+  // Route
+  if (relevant.length >= 1) {
+    // Build route points: start from user start point (if set) or from best-scoring zone
+    let routePoints = [];
+    if (mapStartPoint) {
+      // Start from user's chosen point, then nearest-neighbor through relevant zones
+      // Sort relevant zones: prefer best-scoring ones first when distances are similar
+      routePoints = nearestNeighborFromPoint(mapStartPoint, relevant, locationScores);
+    } else if (relevant.length >= 2) {
+      routePoints = nearestNeighborRoute(relevant, locationScores);
+    }
+
+    if (routePoints.length >= 2) {
+      // Draw from start point to first zone
+      const first = routePoints[0];
+      if (mapStartPoint) {
+        svg += `
+          <line x1="${mapStartPoint.x}" y1="${mapStartPoint.y}" x2="${first.x}" y2="${first.y}" stroke="#e74c3c" stroke-width="4" stroke-opacity="0.4" stroke-linecap="round" />
+          <line x1="${mapStartPoint.x}" y1="${mapStartPoint.y}" x2="${first.x}" y2="${first.y}" stroke="#e74c3c" stroke-width="2" stroke-opacity="0.8" stroke-dasharray="10,6" stroke-linecap="round">
+            <animate attributeName="stroke-dashoffset" from="0" to="-32" dur="1s" repeatCount="indefinite" />
+          </line>
+        `;
+      }
+
+      // Draw route lines between zones
+      for (let i = 0; i < routePoints.length - 1; i++) {
+        const a = routePoints[i];
+        const b = routePoints[i + 1];
+        svg += `
+          <line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" stroke="#fff" stroke-width="5" stroke-opacity="0.15" stroke-linecap="round" />
+          <line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" stroke="#fff" stroke-width="2.5" stroke-opacity="0.7" stroke-dasharray="12,8" stroke-linecap="round">
+            <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="1.5s" repeatCount="indefinite" />
+          </line>
+        `;
+      }
+    }
+
+    // Step numbers on route points
+    const numberedPoints = routePoints.length >= 1 ? routePoints : relevant;
+    for (let i = 0; i < numberedPoints.length; i++) {
+      const z = numberedPoints[i];
+      svg += `
+        <circle cx="${z.x + 26}" cy="${z.y - 26}" r="13" fill="#6c5ce7" stroke="#fff" stroke-width="2" />
+        <text x="${z.x + 26}" y="${z.y - 22}" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">${i + 1}</text>
+      `;
+    }
+  }
+
+  overlay.innerHTML = svg;
+
+  // Legend
+  const legendEl = document.getElementById('mapLegend');
+  const allTypes = [...new Set(zones.map(z => z.type))];
+  legendEl.innerHTML = allTypes.map(type => {
+    const color = LOCATIONS[type]?.color || '#888';
+    const isRelevant = relevantTypes.has(type);
+    const score = locationScores[type];
+    return `
+      <span class="map-legend-item ${isRelevant ? 'relevant' : 'dim'}">
+        <span class="legend-dot" style="background:${color}"></span>
+        ${type}
+        ${score ? `<span class="legend-score">${score.score}/${score.total}</span>` : ''}
+      </span>`;
+  }).join('');
+}
+
+// Nearest-neighbor starting from an arbitrary point
+function nearestNeighborFromPoint(start, points, locationScores) {
+  const remaining = [...points];
+  const route = [];
+  let current = start;
+
+  while (remaining.length > 0) {
+    let nearest = 0;
+    let nearestDist = Infinity;
+    for (let i = 0; i < remaining.length; i++) {
+      const dx = remaining[i].x - current.x;
+      const dy = remaining[i].y - current.y;
+      const dist = dx * dx + dy * dy;
+      if (dist < nearestDist) {
+        nearestDist = dist;
+        nearest = i;
+      }
+    }
+    const next = remaining.splice(nearest, 1)[0];
+    route.push(next);
+    current = next;
+  }
+  return route;
+}
+
+async function renderLootMap(locationScores) {
+  const data = await loadMapZones();
+  const mapIds = Object.keys(data);
+  if (mapIds.length === 0) return;
+
+  const select = document.getElementById('mapSelect');
+  select.innerHTML = mapIds.map(id =>
+    `<option value="${id}">${data[id].name?.en || id}</option>`
+  ).join('');
+
+  currentLocationScores = locationScores;
+
+  function showMap(mapId) {
+    const mapInfo = data[mapId];
+    if (!mapInfo) return;
+
+    const img = document.getElementById('lootMapImg');
+    const overlay = document.getElementById('lootMapOverlay');
+
+    img.src = mapInfo.image;
+    img.onload = () => {
+      mapImgW = img.naturalWidth;
+      mapImgH = img.naturalHeight;
+      overlay.setAttribute('viewBox', `0 0 ${mapImgW} ${mapImgH}`);
+      overlay.style.width = mapImgW + 'px';
+      overlay.style.height = mapImgH + 'px';
+
+      currentAllZones = mapInfo.zones || [];
+      renderMapSVG();
+      mapFitToView();
+    };
+  }
+
+  select.addEventListener('change', () => showMap(select.value));
+  showMap(mapIds[0]);
+}
+
 // ===== Init =====
 async function init() {
-  await loadItems('./filtered-items.json');
+  await loadItems('./data/generated/filtered-items.json');
   allItems = Object.values(itemsMap);
   initTabs();
   initBrowse();
   initCalc();
   initLoot();
+  initMapInteraction();
 }
 init();

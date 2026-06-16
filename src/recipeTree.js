@@ -1,7 +1,7 @@
 /**
  * Recipe Tree Module
  * 
- * filtered-items.json verisini kullanarak:
+ * data/generated/filtered-items.json verisini kullanarak:
  * - Tek bir eşyanın recipe ağacını çıkarır (rekürsif)
  * - Birden fazla eşyanın toplam hammadde listesini hesaplar
  * - Yaprak düğümlerde foundIn bilgisini gösterir
@@ -13,9 +13,9 @@ let recycledFromMap = {};  // materialId → [{ id: sourceItemId, quantity }]
 let salvagedFromMap = {};  // materialId → [{ id: sourceItemId, quantity }]
 
 /**
- * filtered-items.json verisini yükler ve id bazlı lookup map oluşturur
+ * data/generated/filtered-items.json verisini yükler ve id bazlı lookup map oluşturur
  */
-async function loadItems(url = './filtered-items.json') {
+async function loadItems(url = './data/generated/filtered-items.json') {
   const res = await fetch(url);
   const items = await res.json();
   itemsMap = {};

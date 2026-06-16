@@ -1,0 +1,13 @@
+{
+  "name": "arc-item-finder",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Static ARC Raiders item browser, crafting calculator, and loot route helper.",
+  "scripts": {
+    "start": "npx http-server . -p 8123 --cors -c-1",
+    "validate": "node scripts/validate-data.js",
+    "build:data": "node scripts/build-dataset.js",
+    "check": "npm run validate"
+  },
+  "devDependencies": {}
+}

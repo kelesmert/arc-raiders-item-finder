@@ -86,6 +86,31 @@
           <h2>Best Locations</h2>
           <div id="lootLocations"></div>
         </section>
+
+        <section class="panel map-panel">
+          <div class="map-toolbar">
+            <h2>🗺 Map View</h2>
+            <div class="map-toolbar-controls">
+              <label for="mapSelect">Map:</label>
+              <select id="mapSelect"></select>
+              <button class="map-tool-btn" id="btnSetStart" title="Click map to set starting point">📍 Set Start</button>
+              <button class="map-tool-btn" id="btnClearStart" title="Clear starting point">✕ Clear Start</button>
+              <button class="map-tool-btn" id="btnFitMap" title="Fit to view">⬜ Fit</button>
+            </div>
+          </div>
+          <div class="imap-viewport" id="imapViewport">
+            <div class="imap-canvas" id="imapCanvas">
+              <img id="lootMapImg" alt="Map" draggable="false">
+              <svg class="imap-overlay" id="lootMapOverlay"></svg>
+            </div>
+            <div class="imap-zoom-controls">
+              <button class="imap-zoom-btn" id="imapZoomIn">+</button>
+              <button class="imap-zoom-btn" id="imapZoomOut">−</button>
+            </div>
+            <div class="imap-coords" id="imapCoords"></div>
+          </div>
+          <div class="map-legend" id="mapLegend"></div>
+        </section>
       </div>
     </div>
 

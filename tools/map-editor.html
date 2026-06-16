@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map Zone Editor — ARC Item Finder</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0f1117;
+      color: #e2e8f0;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    /* ===== Layout ===== */
+    .editor {
+      display: flex;
+      height: 100vh;
+    }
+
+    /* ===== Sidebar ===== */
+    .sidebar {
+      width: 320px;
+      min-width: 320px;
+      background: #1a1d28;
+      border-right: 1px solid #2d3148;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .sidebar-header {
+      padding: 16px;
+      border-bottom: 1px solid #2d3148;
+    }
+    .sidebar-header h1 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .sidebar-header p {
+      font-size: 0.78rem;
+      color: #8892b0;
+      line-height: 1.5;
+    }
+
+    /* Zone type selector */
+    .type-selector {
+      padding: 12px 16px;
+      border-bottom: 1px solid #2d3148;
+    }
+    .type-selector label {
+      font-size: 0.78rem;
+      color: #8892b0;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .type-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .type-btn {
+      padding: 4px 10px;
+      border-radius: 12px;
+      border: 2px solid transparent;
+      font-size: 0.75rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+      color: #fff;
+    }
+    .type-btn:hover { opacity: 0.85; }
+    .type-btn.active { border-color: #fff; transform: scale(1.05); }
+
+    /* Marker label input */
+    .label-input {
+      padding: 12px 16px;
+      border-bottom: 1px solid #2d3148;
+    }
+    .label-input label {
+      font-size: 0.78rem;
+      color: #8892b0;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .label-input input {
+      width: 100%;
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: 1px solid #2d3148;
+      background: #0f1117;
+      color: #e2e8f0;
+      font-size: 0.85rem;
+    }
+
+    /* Placed zones list */
+    .zone-list {
+      flex: 1;
+      overflow-y: auto;
+      padding: 12px 16px;
+    }
+    .zone-list-header {
+      font-size: 0.78rem;
+      color: #8892b0;
+      margin-bottom: 8px;
+    }
+    .zone-entry {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 8px;
+      border-radius: 6px;
+      margin-bottom: 4px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .zone-entry:hover { background: rgba(255,255,255,0.05); }
+    .zone-entry .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .zone-entry .zone-info { flex: 1; }
+    .zone-entry .zone-type-label { font-weight: 600; }
+    .zone-entry .zone-label-text { color: #8892b0; font-size: 0.72rem; }
+    .zone-entry .zone-coords { color: #8892b0; font-size: 0.68rem; }
+    .zone-entry .zone-delete {
+      background: none;
+      border: none;
+      color: #ff6b6b;
+      cursor: pointer;
+      font-size: 1rem;
+      opacity: 0;
+      transition: opacity 0.15s;
+    }
+    .zone-entry:hover .zone-delete { opacity: 1; }
+
+    /* Action buttons */
+    .sidebar-actions {
+      padding: 12px 16px;
+      border-top: 1px solid #2d3148;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .btn {
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: none;
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .btn-export {
+      background: #6c5ce7;
+      color: #fff;
+    }
+    .btn-export:hover { background: #5a4bd1; }
+    .btn-clear {
+      background: transparent;
+      color: #ff6b6b;
+      border: 1px solid #ff6b6b33;
+    }
+    .btn-clear:hover { background: #ff6b6b22; }
+    .btn-copy {
+      background: #00b894;
+      color: #fff;
+    }
+    .btn-copy:hover { background: #00a382; }
+
+    /* Status bar */
+    .status-bar {
+      padding: 8px 16px;
+      font-size: 0.72rem;
+      color: #8892b0;
+      border-top: 1px solid #2d3148;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* ===== Map Canvas Area ===== */
+    .map-area {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      cursor: crosshair;
+    }
+    .map-container {
+      position: absolute;
+      top: 0; left: 0;
+      transform-origin: 0 0;
+    }
+    .map-container img {
+      display: block;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    /* SVG overlay for markers */
+    .map-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      pointer-events: none;
+    }
+
+    /* Zone markers on map */
+    .zone-marker {
+      pointer-events: all;
+      cursor: pointer;
+      transition: transform 0.15s;
+    }
+    .zone-marker:hover { transform: scale(1.3); }
+    .zone-marker-label {
+      pointer-events: none;
+      font-size: 11px;
+      font-weight: 600;
+      fill: #fff;
+      text-anchor: middle;
+      paint-order: stroke;
+      stroke: #000;
+      stroke-width: 3px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* Zoom controls */
+    .zoom-controls {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .zoom-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      border: 1px solid #2d3148;
+      background: #1a1d28;
+      color: #e2e8f0;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .zoom-btn:hover { background: #2d3148; }
+
+    /* Cursor hint */
+    .cursor-hint {
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1a1d28ee;
+      border: 1px solid #2d3148;
+      border-radius: 8px;
+      padding: 8px 16px;
+      font-size: 0.82rem;
+      color: #e2e8f0;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    /* Toast notification */
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #00b894;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: transform 0.3s;
+      z-index: 100;
+    }
+    .toast.show { transform: translateX(-50%) translateY(0); }
+  </style>
+</head>
+<body>
+  <div class="editor">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>🗺 Map Zone Editor</h1>
+        <p>Click on the map to place zone markers. Select a zone type first, then click where that zone is on the map.</p>
+      </div>
+
+      <div class="type-selector">
+        <label>Select zone type:</label>
+        <div class="type-buttons" id="typeButtons"></div>
+      </div>
+
+      <div class="label-input">
+        <label>Marker label (optional):</label>
+        <input type="text" id="markerLabel" placeholder="e.g. Market District, Hospital...">
+      </div>
+
+      <div class="zone-list">
+        <div class="zone-list-header" id="zoneCount">0 zones placed</div>
+        <div id="zoneEntries"></div>
+      </div>
+
+      <div class="sidebar-actions">
+        <button class="btn btn-copy" id="btnCopy">📋 Copy JSON to Clipboard</button>
+        <button class="btn btn-export" id="btnExport">💾 Download map-zones.json</button>
+        <button class="btn btn-clear" id="btnClear">🗑 Clear All Zones</button>
+      </div>
+
+      <div class="status-bar">
+        <span id="coordDisplay">x: — y: —</span>
+        <span id="zoomDisplay">100%</span>
+      </div>
+    </aside>
+
+    <!-- Map Area -->
+    <div class="map-area" id="mapArea">
+      <div class="cursor-hint" id="cursorHint">Select a zone type from the sidebar, then click on the map</div>
+      <div class="map-container" id="mapContainer">
+        <img id="mapImg" src="../assets/map-images/dam_battlegrounds_map.jpg" alt="Dam Battlegrounds Map">
+        <svg class="map-overlay" id="mapOverlay"></svg>
+      </div>
+      <div class="zoom-controls">
+        <button class="zoom-btn" id="zoomIn">+</button>
+        <button class="zoom-btn" id="zoomOut">−</button>
+        <button class="zoom-btn" id="zoomFit">⊡</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+    // ===== Location Types =====
+    const ZONE_TYPES = {
+      'ARC':           '#6c5ce7',
+      'Residential':   '#00b894',
+      'Exodus':        '#e17055',
+      'Security':      '#d63031',
+      'Commercial':    '#fdcb6e',
+      'Industrial':    '#636e72',
+      'Mechanical':    '#b2bec3',
+      'Electrical':    '#0984e3',
+      'Medical':       '#55efc4',
+      'Technological': '#a29bfe',
+      'Raider':        '#ff7675',
+      'Nature':        '#00cec9'
+    };
+
+    // ===== State =====
+    let zones = [];
+    let activeType = null;
+    let scale = 1;
+    let panX = 0, panY = 0;
+    let isPanning = false;
+    let panStartX, panStartY;
+    let imgWidth = 0, imgHeight = 0;
+
+    // ===== Elements =====
+    const mapArea = document.getElementById('mapArea');
+    const mapContainer = document.getElementById('mapContainer');
+    const mapImg = document.getElementById('mapImg');
+    const mapOverlay = document.getElementById('mapOverlay');
+    const typeButtonsEl = document.getElementById('typeButtons');
+    const zoneEntriesEl = document.getElementById('zoneEntries');
+    const zoneCountEl = document.getElementById('zoneCount');
+    const coordDisplay = document.getElementById('coordDisplay');
+    const zoomDisplay = document.getElementById('zoomDisplay');
+    const cursorHint = document.getElementById('cursorHint');
+    const markerLabel = document.getElementById('markerLabel');
+
+    // ===== Init Type Buttons =====
+    for (const [type, color] of Object.entries(ZONE_TYPES)) {
+      const btn = document.createElement('button');
+      btn.className = 'type-btn';
+      btn.textContent = type;
+      btn.style.background = color;
+      btn.dataset.type = type;
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeType = type;
+        cursorHint.textContent = `Click on map to place: ${type}`;
+      });
+      typeButtonsEl.appendChild(btn);
+    }
+
+    // ===== Map Load =====
+    mapImg.addEventListener('load', () => {
+      imgWidth = mapImg.naturalWidth;
+      imgHeight = mapImg.naturalHeight;
+      mapOverlay.setAttribute('width', imgWidth);
+      mapOverlay.setAttribute('height', imgHeight);
+      fitToView();
+      // Try loading existing data
+      loadExistingZones();
+    });
+
+    async function loadExistingZones() {
+      try {
+        const res = await fetch('../data/maps/map-zones.json');
+        const data = await res.json();
+        if (data.dam_battlegrounds && data.dam_battlegrounds.zones) {
+          zones = data.dam_battlegrounds.zones;
+          renderZones();
+          renderZoneList();
+        }
+      } catch (e) { /* no existing data */ }
+    }
+
+    // ===== Pan & Zoom =====
+    function updateTransform() {
+      mapContainer.style.transform = `translate(${panX}px, ${panY}px) scale(${scale})`;
+      zoomDisplay.textContent = `${Math.round(scale * 100)}%`;
+    }
+
+    function fitToView() {
+      const areaW = mapArea.clientWidth;
+      const areaH = mapArea.clientHeight;
+      scale = Math.min(areaW / imgWidth, areaH / imgHeight) * 0.95;
+      panX = (areaW - imgWidth * scale) / 2;
+      panY = (areaH - imgHeight * scale) / 2;
+      updateTransform();
+    }
+
+    // Mouse wheel zoom
+    mapArea.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      const rect = mapArea.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
+
+      const prevScale = scale;
+      const delta = e.deltaY > 0 ? 0.9 : 1.1;
+      scale = Math.max(0.1, Math.min(5, scale * delta));
+
+      // Zoom toward mouse position
+      panX = mouseX - (mouseX - panX) * (scale / prevScale);
+      panY = mouseY - (mouseY - panY) * (scale / prevScale);
+      updateTransform();
+    });
+
+    // Pan with middle mouse or right click
+    mapArea.addEventListener('mousedown', (e) => {
+      if (e.button === 1 || e.button === 2 || (e.button === 0 && e.shiftKey)) {
+        isPanning = true;
+        panStartX = e.clientX - panX;
+        panStartY = e.clientY - panY;
+        e.preventDefault();
+      }
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (isPanning) {
+        panX = e.clientX - panStartX;
+        panY = e.clientY - panStartY;
+        updateTransform();
+      }
+
+      // Show mouse coordinates on map
+      const rect = mapArea.getBoundingClientRect();
+      const mapX = (e.clientX - rect.left - panX) / scale;
+      const mapY = (e.clientY - rect.top - panY) / scale;
+      if (mapX >= 0 && mapX <= imgWidth && mapY >= 0 && mapY <= imgHeight) {
+        coordDisplay.textContent = `x: ${Math.round(mapX)}  y: ${Math.round(mapY)}`;
+      }
+    });
+
+    window.addEventListener('mouseup', () => { isPanning = false; });
+    mapArea.addEventListener('contextmenu', (e) => e.preventDefault());
+
+    // ===== Click to Place Marker =====
+    mapArea.addEventListener('click', (e) => {
+      if (e.shiftKey || !activeType) return;
+
+      const rect = mapArea.getBoundingClientRect();
+      const mapX = Math.round((e.clientX - rect.left - panX) / scale);
+      const mapY = Math.round((e.clientY - rect.top - panY) / scale);
+
+      if (mapX < 0 || mapX > imgWidth || mapY < 0 || mapY > imgHeight) return;
+
+      const zone = {
+        type: activeType,
+        x: mapX,
+        y: mapY,
+        label: markerLabel.value.trim() || ''
+      };
+
+      zones.push(zone);
+      renderZones();
+      renderZoneList();
+      showToast(`Placed ${activeType} marker at (${mapX}, ${mapY})`);
+    });
+
+    // ===== Render Markers on Map =====
+    function renderZones() {
+      let svg = '';
+      zones.forEach((z, i) => {
+        const color = ZONE_TYPES[z.type] || '#888';
+        const r = 12;
+        svg += `
+          <circle class="zone-marker" cx="${z.x}" cy="${z.y}" r="${r}"
+                  fill="${color}" fill-opacity="0.8" stroke="#fff" stroke-width="2"
+                  data-index="${i}" />
+          <text class="zone-marker-label" x="${z.x}" y="${z.y - 18}">${z.label || z.type}</text>
+        `;
+      });
+      mapOverlay.innerHTML = svg;
+
+      // Click on marker to select in list
+      mapOverlay.querySelectorAll('.zone-marker').forEach(marker => {
+        marker.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const idx = parseInt(marker.dataset.index);
+          highlightZoneEntry(idx);
+        });
+      });
+    }
+
+    // ===== Render Zone List in Sidebar =====
+    function renderZoneList() {
+      zoneCountEl.textContent = `${zones.length} zones placed`;
+      zoneEntriesEl.innerHTML = zones.map((z, i) => `
+        <div class="zone-entry" data-index="${i}">
+          <span class="dot" style="background:${ZONE_TYPES[z.type] || '#888'}"></span>
+          <div class="zone-info">
+            <span class="zone-type-label">${z.type}</span>
+            ${z.label ? `<span class="zone-label-text"> — ${z.label}</span>` : ''}
+            <div class="zone-coords">(${z.x}, ${z.y})</div>
+          </div>
+          <button class="zone-delete" data-index="${i}">✕</button>
+        </div>
+      `).join('');
+
+      zoneEntriesEl.querySelectorAll('.zone-delete').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          zones.splice(parseInt(btn.dataset.index), 1);
+          renderZones();
+          renderZoneList();
+        });
+      });
+
+      zoneEntriesEl.querySelectorAll('.zone-entry').forEach(entry => {
+        entry.addEventListener('click', () => {
+          const idx = parseInt(entry.dataset.index);
+          const z = zones[idx];
+          // Pan to zone
+          const areaW = mapArea.clientWidth;
+          const areaH = mapArea.clientHeight;
+          panX = areaW / 2 - z.x * scale;
+          panY = areaH / 2 - z.y * scale;
+          updateTransform();
+        });
+      });
+    }
+
+    function highlightZoneEntry(idx) {
+      const entries = zoneEntriesEl.querySelectorAll('.zone-entry');
+      entries.forEach(e => e.style.background = '');
+      if (entries[idx]) {
+        entries[idx].style.background = 'rgba(108, 92, 231, 0.2)';
+        entries[idx].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+
+    // ===== Zoom Buttons =====
+    document.getElementById('zoomIn').addEventListener('click', () => {
+      const areaW = mapArea.clientWidth / 2;
+      const areaH = mapArea.clientHeight / 2;
+      const prevScale = scale;
+      scale = Math.min(5, scale * 1.3);
+      panX = areaW - (areaW - panX) * (scale / prevScale);
+      panY = areaH - (areaH - panY) * (scale / prevScale);
+      updateTransform();
+    });
+    document.getElementById('zoomOut').addEventListener('click', () => {
+      const areaW = mapArea.clientWidth / 2;
+      const areaH = mapArea.clientHeight / 2;
+      const prevScale = scale;
+      scale = Math.max(0.1, scale * 0.7);
+      panX = areaW - (areaW - panX) * (scale / prevScale);
+      panY = areaH - (areaH - panY) * (scale / prevScale);
+      updateTransform();
+    });
+    document.getElementById('zoomFit').addEventListener('click', fitToView);
+
+    // ===== Export =====
+    function getExportData() {
+      return {
+        dam_battlegrounds: {
+          image: 'assets/map-images/dam_battlegrounds_map.jpg',
+          name: { en: 'Dam Battlegrounds', tr: 'Baraj Savaş Alanları' },
+          zones: zones
+        }
+      };
+    }
+
+    document.getElementById('btnExport').addEventListener('click', () => {
+      const data = JSON.stringify(getExportData(), null, 2);
+      const blob = new Blob([data], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'map-zones.json';
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast('Downloaded map-zones.json');
+    });
+
+    document.getElementById('btnCopy').addEventListener('click', () => {
+      const data = JSON.stringify(getExportData(), null, 2);
+      navigator.clipboard.writeText(data).then(() => {
+        showToast('JSON copied to clipboard!');
+      });
+    });
+
+    document.getElementById('btnClear').addEventListener('click', () => {
+      if (confirm('Clear all zones?')) {
+        zones = [];
+        renderZones();
+        renderZoneList();
+      }
+    });
+
+    // ===== Toast =====
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2000);
+    }
+  </script>
+</body>
+</html>
