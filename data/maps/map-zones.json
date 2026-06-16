@@ -1,0 +1,53 @@
+{
+  "dam_battlegrounds": {
+    "image": "assets/map-images/dam_battlegrounds_map.jpg",
+    "name": {
+      "en": "Dam Battlegrounds",
+      "tr": "Baraj Savaş Alanları"
+    },
+    "zones": [
+      {
+        "type": "Electrical",
+        "x": 1586,
+        "y": 2089,
+        "label": "Electrical Substation"
+      },
+      {
+        "type": "Industrial",
+        "x": 1618,
+        "y": 1591,
+        "label": "Water Treatment Control"
+      },
+      {
+        "type": "Mechanical",
+        "x": 1620,
+        "y": 1612,
+        "label": "Water Treatment Control"
+      },
+      {
+        "type": "Commercial",
+        "x": 2278,
+        "y": 1817,
+        "label": "Research and Administration"
+      },
+      {
+        "type": "Technological",
+        "x": 2327,
+        "y": 1817,
+        "label": "Research and Administration"
+      },
+      {
+        "type": "Technological",
+        "x": 2366,
+        "y": 1666,
+        "label": "Control Tower"
+      },
+      {
+        "type": "Security",
+        "x": 2414,
+        "y": 1664,
+        "label": "Control Tower"
+      }
+    ]
+  }
+}
